@@ -1,0 +1,425 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PhanThiHoaiAnh_223DATN_DVTC.bundle.scp.css",
+      "PackagePath": "staticwebassets\\PhanThiHoaiAnh_223DATN_DVTC.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\backend\\js\\site.js",
+      "PackagePath": "staticwebassets\\backend\\js\\site.js"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\css\\animate.css",
+      "PackagePath": "staticwebassets\\css\\animate.css"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\css\\prettyPhoto.css",
+      "PackagePath": "staticwebassets\\css\\prettyPhoto.css"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\css\\price-range.css",
+      "PackagePath": "staticwebassets\\css\\price-range.css"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\css\\responsive.css"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\images\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\1.jpg"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\images\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\2.jpg"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\images\\fruit.jpg",
+      "PackagePath": "staticwebassets\\images\\fruit.jpg"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\images\\ga.jpg",
+      "PackagePath": "staticwebassets\\images\\ga.jpg"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\images\\logo0.png",
+      "PackagePath": "staticwebassets\\images\\logo0.png"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\images\\logo2.png",
+      "PackagePath": "staticwebassets\\images\\logo2.png"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\images\\tiec1.jpg",
+      "PackagePath": "staticwebassets\\images\\tiec1.jpg"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\js\\contact.js",
+      "PackagePath": "staticwebassets\\js\\contact.js"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\js\\gmaps.js",
+      "PackagePath": "staticwebassets\\js\\gmaps.js"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\js\\html5shiv.js",
+      "PackagePath": "staticwebassets\\js\\html5shiv.js"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\js\\jquery.js",
+      "PackagePath": "staticwebassets\\js\\jquery.js"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\js\\jquery.prettyPhoto.js",
+      "PackagePath": "staticwebassets\\js\\jquery.prettyPhoto.js"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\js\\jquery.scrollUp.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.scrollUp.min.js"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\js\\price-range.js",
+      "PackagePath": "staticwebassets\\js\\price-range.js"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\services\\0ec6ed09-681b-4cab-945a-8825975535a9_thiepsn2.jpg",
+      "PackagePath": "staticwebassets\\media\\services\\0ec6ed09-681b-4cab-945a-8825975535a9_thiepsn2.jpg"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\services\\1.jpg",
+      "PackagePath": "staticwebassets\\media\\services\\1.jpg"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\services\\2.jpg",
+      "PackagePath": "staticwebassets\\media\\services\\2.jpg"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\services\\2f60b633-5f9b-480d-8203-f48cfde41307_thiepsn2.jpg",
+      "PackagePath": "staticwebassets\\media\\services\\2f60b633-5f9b-480d-8203-f48cfde41307_thiepsn2.jpg"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\services\\6a64310f-2013-403f-8b01-13002564e1fb_1.jpg",
+      "PackagePath": "staticwebassets\\media\\services\\6a64310f-2013-403f-8b01-13002564e1fb_1.jpg"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\services\\6fba0139-bd51-4425-a6a5-f8639a9ca2d2_thiep-moi-mung-tho-2.jpg",
+      "PackagePath": "staticwebassets\\media\\services\\6fba0139-bd51-4425-a6a5-f8639a9ca2d2_thiep-moi-mung-tho-2.jpg"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\services\\7c326281-9e51-4eff-a845-2298c1042c73_thiepsn3.jpg",
+      "PackagePath": "staticwebassets\\media\\services\\7c326281-9e51-4eff-a845-2298c1042c73_thiepsn3.jpg"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\services\\7c46802d-8db4-4533-89ad-44eff8845521_pepa.jpg",
+      "PackagePath": "staticwebassets\\media\\services\\7c46802d-8db4-4533-89ad-44eff8845521_pepa.jpg"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\services\\8de2146f-92a7-4b79-bc7a-17043527d308_thiepsn3.jpg",
+      "PackagePath": "staticwebassets\\media\\services\\8de2146f-92a7-4b79-bc7a-17043527d308_thiepsn3.jpg"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\services\\9402fd37-356f-48fa-b2fa-4f3441eb0b2d_thiep-moi-mung-tho-2.jpg",
+      "PackagePath": "staticwebassets\\media\\services\\9402fd37-356f-48fa-b2fa-4f3441eb0b2d_thiep-moi-mung-tho-2.jpg"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\services\\948013ac-a764-4a00-81d7-b241b32ccb89_logo2.png",
+      "PackagePath": "staticwebassets\\media\\services\\948013ac-a764-4a00-81d7-b241b32ccb89_logo2.png"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\services\\9c1fea0a-3515-44ec-990e-16dd945c9d9a_2.jpg",
+      "PackagePath": "staticwebassets\\media\\services\\9c1fea0a-3515-44ec-990e-16dd945c9d9a_2.jpg"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\services\\af16db8d-165a-484d-9080-45f40dbd917c_2.jpg",
+      "PackagePath": "staticwebassets\\media\\services\\af16db8d-165a-484d-9080-45f40dbd917c_2.jpg"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\services\\c20eefd2-23ae-4be7-aa7a-b6405ab86e5a_thiepsn2.jpg",
+      "PackagePath": "staticwebassets\\media\\services\\c20eefd2-23ae-4be7-aa7a-b6405ab86e5a_thiepsn2.jpg"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\services\\d1fe4349-7160-4b1b-89bb-dd165bfdde08_thiep-moi-mung-tho-2.jpg",
+      "PackagePath": "staticwebassets\\media\\services\\d1fe4349-7160-4b1b-89bb-dd165bfdde08_thiep-moi-mung-tho-2.jpg"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\services\\ec2c7a5a-7b71-43f6-af50-ada39b08c2a9_pepa.jpg",
+      "PackagePath": "staticwebassets\\media\\services\\ec2c7a5a-7b71-43f6-af50-ada39b08c2a9_pepa.jpg"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\services\\feda5bed-759c-4cb4-8267-0f4f4e5ef198_pepa.jpg",
+      "PackagePath": "staticwebassets\\media\\services\\feda5bed-759c-4cb4-8267-0f4f4e5ef198_pepa.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.PhanThiHoaiAnh_223DATN_DVTC.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.PhanThiHoaiAnh_223DATN_DVTC.props",
+      "PackagePath": "build\\PhanThiHoaiAnh_223DATN_DVTC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.PhanThiHoaiAnh_223DATN_DVTC.props",
+      "PackagePath": "buildMultiTargeting\\PhanThiHoaiAnh_223DATN_DVTC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.PhanThiHoaiAnh_223DATN_DVTC.props",
+      "PackagePath": "buildTransitive\\PhanThiHoaiAnh_223DATN_DVTC.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

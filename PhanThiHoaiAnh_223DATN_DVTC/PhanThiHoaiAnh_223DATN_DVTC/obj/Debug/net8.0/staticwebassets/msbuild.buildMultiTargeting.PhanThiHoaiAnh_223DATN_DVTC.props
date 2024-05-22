@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\PhanThiHoaiAnh_223DATN_DVTC.props" />
+</Project>
