@@ -176,6 +176,54 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\2.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\anh1.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>PhanThiHoaiAnh_223DATN_DVTC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/PhanThiHoaiAnh_223DATN_DVTC</BasePath>
+      <RelativePath>images/anh1.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\anh1.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\anh4.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>PhanThiHoaiAnh_223DATN_DVTC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/PhanThiHoaiAnh_223DATN_DVTC</BasePath>
+      <RelativePath>images/anh4.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\anh4.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\anh5.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>PhanThiHoaiAnh_223DATN_DVTC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/PhanThiHoaiAnh_223DATN_DVTC</BasePath>
+      <RelativePath>images/anh5.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\anh5.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\fruit.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>PhanThiHoaiAnh_223DATN_DVTC</SourceId>
@@ -1456,6 +1504,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\media\services\7c46802d-8db4-4533-89ad-44eff8845521_pepa.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\media\services\7d49f096-1025-48c1-8801-578433af5b0d_8de2146f-92a7-4b79-bc7a-17043527d308_thiepsn3.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>PhanThiHoaiAnh_223DATN_DVTC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/PhanThiHoaiAnh_223DATN_DVTC</BasePath>
+      <RelativePath>media/services/7d49f096-1025-48c1-8801-578433af5b0d_8de2146f-92a7-4b79-bc7a-17043527d308_thiepsn3.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\media\services\7d49f096-1025-48c1-8801-578433af5b0d_8de2146f-92a7-4b79-bc7a-17043527d308_thiepsn3.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\media\services\8de2146f-92a7-4b79-bc7a-17043527d308_thiepsn3.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>PhanThiHoaiAnh_223DATN_DVTC</SourceId>
@@ -1520,6 +1584,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\media\services\9c1fea0a-3515-44ec-990e-16dd945c9d9a_2.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\media\services\a598e239-d860-4bf2-b411-879361d5cde2_nc1.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>PhanThiHoaiAnh_223DATN_DVTC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/PhanThiHoaiAnh_223DATN_DVTC</BasePath>
+      <RelativePath>media/services/a598e239-d860-4bf2-b411-879361d5cde2_nc1.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\media\services\a598e239-d860-4bf2-b411-879361d5cde2_nc1.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\media\services\af16db8d-165a-484d-9080-45f40dbd917c_2.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>PhanThiHoaiAnh_223DATN_DVTC</SourceId>
@@ -1552,6 +1632,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\media\services\c20eefd2-23ae-4be7-aa7a-b6405ab86e5a_thiepsn2.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\media\services\c9654f15-a251-407a-9bf3-6ac7377dab23_hinh-dam-cuoi-de-cong-dep-1.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>PhanThiHoaiAnh_223DATN_DVTC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/PhanThiHoaiAnh_223DATN_DVTC</BasePath>
+      <RelativePath>media/services/c9654f15-a251-407a-9bf3-6ac7377dab23_hinh-dam-cuoi-de-cong-dep-1.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\media\services\c9654f15-a251-407a-9bf3-6ac7377dab23_hinh-dam-cuoi-de-cong-dep-1.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\media\services\d1fe4349-7160-4b1b-89bb-dd165bfdde08_thiep-moi-mung-tho-2.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>PhanThiHoaiAnh_223DATN_DVTC</SourceId>
@@ -1567,6 +1663,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\media\services\d1fe4349-7160-4b1b-89bb-dd165bfdde08_thiep-moi-mung-tho-2.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\media\services\eb49796d-fd53-43aa-9066-03a0ed5082dc_d1fe4349-7160-4b1b-89bb-dd165bfdde08_thiep-moi-mung-tho-2.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>PhanThiHoaiAnh_223DATN_DVTC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/PhanThiHoaiAnh_223DATN_DVTC</BasePath>
+      <RelativePath>media/services/eb49796d-fd53-43aa-9066-03a0ed5082dc_d1fe4349-7160-4b1b-89bb-dd165bfdde08_thiep-moi-mung-tho-2.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\media\services\eb49796d-fd53-43aa-9066-03a0ed5082dc_d1fe4349-7160-4b1b-89bb-dd165bfdde08_thiep-moi-mung-tho-2.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\media\services\ec2c7a5a-7b71-43f6-af50-ada39b08c2a9_pepa.jpg))">
       <SourceType>Package</SourceType>

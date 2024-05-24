@@ -1,4 +1,6 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using PhanThiHoaiAnh_223DATN_DVTC.Models;
 using PhanThiHoaiAnh_223DATN_DVTC.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,6 +22,21 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
 });
 
+builder.Services.AddIdentity<AppUserModel,IdentityRole>()
+	.AddEntityFrameworkStores<DataContext>().AddDefaultTokenProviders();
+
+builder.Services.Configure<IdentityOptions>(options =>
+{
+	// Password settings.
+	options.Password.RequireDigit = true;
+	options.Password.RequireLowercase = true;
+	options.Password.RequireNonAlphanumeric = true;
+	options.Password.RequireUppercase = false;
+	options.Password.RequiredLength = 5;
+
+	options.User.RequireUniqueEmail = true;
+});
+
 var app = builder.Build();
 
 app.UseSession();
@@ -33,7 +50,8 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseAuthorization();
+app.UseAuthentication();//xac thuc
+app.UseAuthorization();//quyen
 
 //map BE
 app.MapControllerRoute(

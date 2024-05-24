@@ -1,0 +1,42 @@
+﻿@model LoginViewModel
+@{
+    ViewData["title"] = "Đăng nhập";
+}
+<section id="">
+	<!--form-->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-1">
+				<div class="login-form">
+					<!--login form-->
+
+					<h2>ĐĂNG NHẬP</h2>
+					<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+					<form asp-action="Login" asp-controller="Account">
+
+						<div class="form-group">
+							<label>Tên đăng nhập</label>
+							<input asp-for="UserName" class="form-control" />
+							<span asp-validation-for="UserName" class="text-danger" />
+						</div>
+						<div class="form-group">
+							<label>Mật khẩu</label>
+							<input asp-for="Password" class="form-control" />
+							<span asp-validation-for="Password" class="text-danger" />
+						</div>
+						
+						<button type="submit" class="btn btn-default">ĐĂNG NHẬP</button>
+						<p></p>
+						<p>Bạn chưa có tài khoản? <a asp-action="Create" asp-controller="Account">Tạo mới tại đây!</a></p>
+					</form>
+				</div><!--/login form-->
+			</div>
+
+		</div>
+	</div>
+</section><!--/form-->
+@section Scripts {
+	@{
+		await Html.RenderPartialAsync("_ValidationScriptsPartial");
+	}
+}

@@ -1,22 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\",
+  "WorkspaceRootPath": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|d:\\223datn_0106_phanthihoaianh\\phanthihoaianh_223datn\\phanthihoaianh_223datn_dvtc\\phanthihoaianh_223datn_dvtc\\wwwroot\\backend\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|solutionrelative:phanthihoaianh_223datn_dvtc\\wwwroot\\backend\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|d:\\223datn_0106_phanthihoaianh\\phanthihoaianh_223datn\\doantotnghiep\\phanthihoaianh_223datn_dvtc\\phanthihoaianh_223datn_dvtc\\areas\\admin\\controllers\\otherservicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|solutionrelative:phanthihoaianh_223datn_dvtc\\areas\\admin\\controllers\\otherservicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|d:\\223datn_0106_phanthihoaianh\\phanthihoaianh_223datn\\phanthihoaianh_223datn_dvtc\\phanthihoaianh_223datn_dvtc\\areas\\admin\\views\\servicecategory\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|solutionrelative:phanthihoaianh_223datn_dvtc\\areas\\admin\\views\\servicecategory\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|d:\\223datn_0106_phanthihoaianh\\phanthihoaianh_223datn\\doantotnghiep\\phanthihoaianh_223datn_dvtc\\phanthihoaianh_223datn_dvtc\\areas\\admin\\controllers\\servicecategorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|solutionrelative:phanthihoaianh_223datn_dvtc\\areas\\admin\\controllers\\servicecategorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|d:\\223datn_0106_phanthihoaianh\\phanthihoaianh_223datn\\phanthihoaianh_223datn_dvtc\\phanthihoaianh_223datn_dvtc\\areas\\admin\\views\\otherservices\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|d:\\223datn_0106_phanthihoaianh\\phanthihoaianh_223datn\\doantotnghiep\\phanthihoaianh_223datn_dvtc\\phanthihoaianh_223datn_dvtc\\areas\\admin\\views\\otherservices\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|solutionrelative:phanthihoaianh_223datn_dvtc\\areas\\admin\\views\\otherservices\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|d:\\223datn_0106_phanthihoaianh\\phanthihoaianh_223datn\\doantotnghiep\\phanthihoaianh_223datn_dvtc\\phanthihoaianh_223datn_dvtc\\areas\\admin\\views\\otherservices\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|solutionrelative:phanthihoaianh_223datn_dvtc\\areas\\admin\\views\\otherservices\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|d:\\223datn_0106_phanthihoaianh\\phanthihoaianh_223datn\\phanthihoaianh_223datn_dvtc\\phanthihoaianh_223datn_dvtc\\areas\\admin\\views\\otherservices\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|solutionrelative:phanthihoaianh_223datn_dvtc\\areas\\admin\\views\\otherservices\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|d:\\223datn_0106_phanthihoaianh\\phanthihoaianh_223datn\\doantotnghiep\\phanthihoaianh_223datn_dvtc\\phanthihoaianh_223datn_dvtc\\views\\account\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|solutionrelative:phanthihoaianh_223datn_dvtc\\views\\account\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|d:\\223datn_0106_phanthihoaianh\\phanthihoaianh_223datn\\doantotnghiep\\phanthihoaianh_223datn_dvtc\\phanthihoaianh_223datn_dvtc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|solutionrelative:phanthihoaianh_223datn_dvtc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|d:\\223datn_0106_phanthihoaianh\\phanthihoaianh_223datn\\doantotnghiep\\phanthihoaianh_223datn_dvtc\\phanthihoaianh_223datn_dvtc\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|solutionrelative:phanthihoaianh_223datn_dvtc\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +38,99 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "site.js",
-              "DocumentMoniker": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\backend\\js\\site.js",
-              "RelativeDocumentMoniker": "PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\backend\\js\\site.js",
-              "ToolTip": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\backend\\js\\site.js",
-              "RelativeToolTip": "PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\backend\\js\\site.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAQAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-05-22T20:58:32.248Z",
+              "DocumentIndex": 5,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "PhanThiHoaiAnh_223DATN_DVTC\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "PhanThiHoaiAnh_223DATN_DVTC\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAuwDwAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T08:16:23.788Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Areas\\Admin\\Views\\OtherServices\\Index.cshtml",
-              "RelativeDocumentMoniker": "PhanThiHoaiAnh_223DATN_DVTC\\Areas\\Admin\\Views\\OtherServices\\Index.cshtml",
-              "ToolTip": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Areas\\Admin\\Views\\OtherServices\\Index.cshtml",
-              "RelativeToolTip": "PhanThiHoaiAnh_223DATN_DVTC\\Areas\\Admin\\Views\\OtherServices\\Index.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAACMAAABXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-22T20:58:15.263Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Areas\\Admin\\Views\\OtherServices\\Create.cshtml",
-              "RelativeDocumentMoniker": "PhanThiHoaiAnh_223DATN_DVTC\\Areas\\Admin\\Views\\OtherServices\\Create.cshtml",
-              "ToolTip": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Areas\\Admin\\Views\\OtherServices\\Create.cshtml",
-              "RelativeToolTip": "PhanThiHoaiAnh_223DATN_DVTC\\Areas\\Admin\\Views\\OtherServices\\Create.cshtml",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAAD4AAAAaAAAA",
+              "DocumentMoniker": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Views\\Account\\Create.cshtml",
+              "RelativeDocumentMoniker": "PhanThiHoaiAnh_223DATN_DVTC\\Views\\Account\\Create.cshtml",
+              "ToolTip": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Views\\Account\\Create.cshtml",
+              "RelativeToolTip": "PhanThiHoaiAnh_223DATN_DVTC\\Views\\Account\\Create.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAACwAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-22T20:53:12.031Z",
+              "WhenOpened": "2024-05-24T08:23:23.237Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Areas\\Admin\\Views\\ServiceCategory\\Index.cshtml",
-              "RelativeDocumentMoniker": "PhanThiHoaiAnh_223DATN_DVTC\\Areas\\Admin\\Views\\ServiceCategory\\Index.cshtml",
-              "ToolTip": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Areas\\Admin\\Views\\ServiceCategory\\Index.cshtml",
-              "RelativeToolTip": "PhanThiHoaiAnh_223DATN_DVTC\\Areas\\Admin\\Views\\ServiceCategory\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAABXAAAA",
+              "Title": "ServiceCategoryController.cs",
+              "DocumentMoniker": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Areas\\Admin\\Controllers\\ServiceCategoryController.cs",
+              "RelativeDocumentMoniker": "PhanThiHoaiAnh_223DATN_DVTC\\Areas\\Admin\\Controllers\\ServiceCategoryController.cs",
+              "ToolTip": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Areas\\Admin\\Controllers\\ServiceCategoryController.cs",
+              "RelativeToolTip": "PhanThiHoaiAnh_223DATN_DVTC\\Areas\\Admin\\Controllers\\ServiceCategoryController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T09:58:31.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OtherServicesController.cs",
+              "DocumentMoniker": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Areas\\Admin\\Controllers\\OtherServicesController.cs",
+              "RelativeDocumentMoniker": "PhanThiHoaiAnh_223DATN_DVTC\\Areas\\Admin\\Controllers\\OtherServicesController.cs",
+              "ToolTip": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Areas\\Admin\\Controllers\\OtherServicesController.cs",
+              "RelativeToolTip": "PhanThiHoaiAnh_223DATN_DVTC\\Areas\\Admin\\Controllers\\OtherServicesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T09:58:08.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Areas\\Admin\\Views\\OtherServices\\Edit.cshtml",
+              "RelativeDocumentMoniker": "PhanThiHoaiAnh_223DATN_DVTC\\Areas\\Admin\\Views\\OtherServices\\Edit.cshtml",
+              "ToolTip": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Areas\\Admin\\Views\\OtherServices\\Edit.cshtml",
+              "RelativeToolTip": "PhanThiHoaiAnh_223DATN_DVTC\\Areas\\Admin\\Views\\OtherServices\\Edit.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAADAAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-22T19:59:53.024Z",
+              "WhenOpened": "2024-05-24T09:53:44.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Areas\\Admin\\Views\\OtherServices\\Create.cshtml",
+              "RelativeDocumentMoniker": "PhanThiHoaiAnh_223DATN_DVTC\\Areas\\Admin\\Views\\OtherServices\\Create.cshtml",
+              "ToolTip": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Areas\\Admin\\Views\\OtherServices\\Create.cshtml",
+              "RelativeToolTip": "PhanThiHoaiAnh_223DATN_DVTC\\Areas\\Admin\\Views\\OtherServices\\Create.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAACwAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-24T09:51:43.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserModel.cs",
+              "DocumentMoniker": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Models\\UserModel.cs",
+              "RelativeDocumentMoniker": "PhanThiHoaiAnh_223DATN_DVTC\\Models\\UserModel.cs",
+              "ToolTip": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Models\\UserModel.cs",
+              "RelativeToolTip": "PhanThiHoaiAnh_223DATN_DVTC\\Models\\UserModel.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T08:12:50.96Z",
               "EditorCaption": ""
             }
           ]

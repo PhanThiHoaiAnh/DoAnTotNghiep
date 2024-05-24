@@ -11,8 +11,8 @@ using PhanThiHoaiAnh_223DATN_DVTC.Repository;
 namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240520103326_Init")]
-    partial class Init
+    [Migration("20240523130505_FirstMigration")]
+    partial class FirstMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -34,6 +34,9 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Slug")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.ToTable("FoodCategories");
@@ -42,23 +45,19 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
             modelBuilder.Entity("PhanThiHoaiAnh_223DATN_DVTC.Models.FoodModel", b =>
                 {
                     b.Property<string>("Id")
-                        .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FoodCategoryId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(10)");
 
                     b.Property<string>("FoodSequenceId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(10)");
 
                     b.Property<string>("Image")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
@@ -69,7 +68,6 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("Slug")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -88,7 +86,6 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                         .HasColumnType("nvarchar(10)");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
@@ -96,7 +93,6 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Slug")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -114,14 +110,12 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
 
                     b.Property<string>("CategoryId")
                         .IsRequired()
-                        .HasColumnType("nvarchar(10)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Image")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
@@ -132,11 +126,9 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("Slug")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Status")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -149,8 +141,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
             modelBuilder.Entity("PhanThiHoaiAnh_223DATN_DVTC.Models.ServiceCategoryModel", b =>
                 {
                     b.Property<string>("Id")
-                        .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("CategoryName")
                         .IsRequired()
@@ -161,7 +152,6 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Slug")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -173,15 +163,11 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                 {
                     b.HasOne("PhanThiHoaiAnh_223DATN_DVTC.Models.FoodCategoryModel", "FoodCategory")
                         .WithMany()
-                        .HasForeignKey("FoodCategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("FoodCategoryId");
 
                     b.HasOne("PhanThiHoaiAnh_223DATN_DVTC.Models.FoodSequenceModel", "FoodSequence")
                         .WithMany()
-                        .HasForeignKey("FoodSequenceId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("FoodSequenceId");
 
                     b.Navigation("FoodCategory");
 

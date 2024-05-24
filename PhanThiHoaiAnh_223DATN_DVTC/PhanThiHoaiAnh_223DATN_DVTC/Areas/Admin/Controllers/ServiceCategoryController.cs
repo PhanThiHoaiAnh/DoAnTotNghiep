@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PhanThiHoaiAnh_223DATN_DVTC.Models;
 using PhanThiHoaiAnh_223DATN_DVTC.Repository;
@@ -6,6 +7,7 @@ using PhanThiHoaiAnh_223DATN_DVTC.Repository;
 namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize]
     public class ServiceCategoryController : Controller
     {
         private readonly DataContext _dataContext;
