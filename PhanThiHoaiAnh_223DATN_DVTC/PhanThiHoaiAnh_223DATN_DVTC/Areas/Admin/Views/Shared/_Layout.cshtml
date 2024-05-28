@@ -7,7 +7,7 @@
 	<meta name="author" content="">
 	<title>@ViewData["title"]-Trang quản lý</title>
 	<link href="~/css/bootstrap.min.css" rel="stylesheet">
-	<link href="~/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
 	<link href="~/css/prettyPhoto.css" rel="stylesheet">
 	<link href="~/css/price-range.css" rel="stylesheet">
 	<link href="~/css/animate.css" rel="stylesheet">
@@ -80,6 +80,13 @@
 										<li><a asp-controller="Food">Món ăn</a></li>
 										<li><a asp-controller="FoodSequence">Trình tự món</a></li>
 										<li><a asp-controller="FoodCategory">Loại món</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#">Đơn hàng<i class="fa fa-angle-down"></i></a>
+									<ul role="menu" class="sub-menu">
+										<li><a asp-controller="Order" asp-action="Index">Đơn đặt dịch vụ</a></li>
+										<li><a asp-controller="Order" asp-action="Index">Đơn đặt tiệc</a></li>
 									</ul>
 								</li>
 							</ul>

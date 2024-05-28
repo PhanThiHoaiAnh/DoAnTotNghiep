@@ -5,6 +5,8 @@ using PhanThiHoaiAnh_223DATN_DVTC.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
+//builder.Configuration.AddJsonFile("appsettings.json");
+
 //Connection Db
 builder.Services.AddDbContext<DataContext>(options =>
 {
@@ -36,6 +38,8 @@ builder.Services.Configure<IdentityOptions>(options =>
 
 	options.User.RequireUniqueEmail = true;
 });
+
+//builder.Services.Configure<EmailSe>
 
 var app = builder.Build();
 

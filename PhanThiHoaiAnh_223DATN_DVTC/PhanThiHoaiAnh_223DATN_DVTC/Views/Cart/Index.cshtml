@@ -23,7 +23,6 @@
 						<td class="price">Đơn giá</td>
 						<td class="quantity">Số lượng</td>
 						<td class="total">Tổng tiền</td>
-						<td></td>
 					</tr>
 				</thead>
 				<tbody>
@@ -56,14 +55,19 @@
 								</td>
 							</tr>
 						}
-						<tr rowspan="6">
+						<tr rowspan="5">
 							<td colspan="6">
 								TỔNG TIỀN: <p class="cart_total_price">@Model.GrandTotal.ToString("N0") đ</p>
 							</td>
-							<td>
-								<a class="btn btn-danger btn-sm" asp-controller="Cart" asp-action="Clear"> Xóa tất cả </a>
-
+							<td> <p>Ngày nhận dịch vụ</p>
+								<input asp-for="ReceivedDate" class="form-control" type="date" />
+								<span asp-validation-for="ReceivedDate" class="text-danger" />
 							</td>
+							<td><a class="btn btn-danger btn-sm" asp-controller="Cart" asp-action="Clear"> Xóa tất cả </a></td>
+							@if (User.Identity?.IsAuthenticated ?? false){
+								<td><a class="btn btn-primary btn-sm" asp-controller="Checkout" asp-action="Checkout"> Thanh Toán </a></td>
+							}
+
 						</tr>
 					} else
 					{

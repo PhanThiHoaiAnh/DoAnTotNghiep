@@ -16,5 +16,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Repository
         public DbSet<FoodCategoryModel> FoodCategories { get; set; }
         public DbSet<FoodSequenceModel> FoodSequence { get; set; }
         public DbSet<FoodModel> FoodModel { get; set; }
+		public DbSet<OrderModel> Orders { get; set; }
+		public DbSet<OrderDetails> OrderDetails { get; set; }
     }
 }

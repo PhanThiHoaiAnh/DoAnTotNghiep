@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PhanThiHoaiAnh_223DATN_DVTC.Repository;
 
@@ -11,9 +12,11 @@ using PhanThiHoaiAnh_223DATN_DVTC.Repository;
 namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20240524151415_EditMigration")]
+    partial class EditMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -322,32 +325,19 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                     b.Property<string>("OrderCode")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("OrderModelId")
-                        .HasColumnType("int");
-
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("ReceivedDate")
-                        .HasColumnType("datetime2");
-
                     b.Property<long>("ServiceId")
                         .HasColumnType("bigint");
-
-                    b.Property<int?>("ServiceId1")
-                        .HasColumnType("int");
 
                     b.Property<string>("UserName")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("OrderModelId");
-
-                    b.HasIndex("ServiceId1");
 
                     b.ToTable("OrderDetails");
                 });
@@ -364,9 +354,6 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("OrderDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("ReceivedDate")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("Status")
@@ -503,21 +490,6 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                     b.Navigation("FoodCategory");
 
                     b.Navigation("FoodSequence");
-                });
-
-            modelBuilder.Entity("PhanThiHoaiAnh_223DATN_DVTC.Models.OrderDetails", b =>
-                {
-                    b.HasOne("PhanThiHoaiAnh_223DATN_DVTC.Models.OrderModel", "OrderModel")
-                        .WithMany()
-                        .HasForeignKey("OrderModelId");
-
-                    b.HasOne("PhanThiHoaiAnh_223DATN_DVTC.Models.OtherServicesModel", "Service")
-                        .WithMany()
-                        .HasForeignKey("ServiceId1");
-
-                    b.Navigation("OrderModel");
-
-                    b.Navigation("Service");
                 });
 
             modelBuilder.Entity("PhanThiHoaiAnh_223DATN_DVTC.Models.OtherServicesModel", b =>

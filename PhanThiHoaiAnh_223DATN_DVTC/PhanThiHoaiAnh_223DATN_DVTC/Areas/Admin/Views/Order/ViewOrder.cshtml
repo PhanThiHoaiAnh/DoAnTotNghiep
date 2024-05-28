@@ -1,0 +1,31 @@
+﻿@model IEnumerable<OrderDetails>
+@{
+    ViewData["Titile"] = "Chi tiết đơn hàng";
+}
+<h3>Danh sách đơn hàng</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th scope="col">Mã đơn</th>
+            <th scope="col">Tài khoản đặt dịch vụ</th>
+            <th scope="col">Tên dịch vụ</th>
+            <th scope="col">Đơn giá</th>
+            <th scope="col">Số lượng</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td scope="row">@item.OrderCode</td>
+                <td>@item.UserName</td>
+                <td>@item.Service.Name</td>
+                <td>@item.Price</td>
+                <td>@item.Quantity</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a asp-action="Index">Trở về</a>
