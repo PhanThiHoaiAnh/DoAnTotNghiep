@@ -183,6 +183,9 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                     b.Property<string>("Gender")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("IsEmailConfirmed")
+                        .HasColumnType("bit");
+
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
 
@@ -235,11 +238,13 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
             modelBuilder.Entity("PhanThiHoaiAnh_223DATN_DVTC.Models.FoodCategoryModel", b =>
                 {
                     b.Property<string>("Id")
-                        .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("CategoryName")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Slug")
@@ -260,10 +265,12 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FoodCategoryId")
-                        .HasColumnType("nvarchar(10)");
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("FoodSequenceId")
-                        .HasColumnType("nvarchar(10)");
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Image")
                         .HasColumnType("nvarchar(max)");
@@ -290,8 +297,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
             modelBuilder.Entity("PhanThiHoaiAnh_223DATN_DVTC.Models.FoodSequenceModel", b =>
                 {
                     b.Property<string>("Id")
-                        .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
@@ -306,6 +312,67 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("FoodSequence");
+                });
+
+            modelBuilder.Entity("PhanThiHoaiAnh_223DATN_DVTC.Models.MenuDetailModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FoodId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("MenuId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("FoodId");
+
+                    b.HasIndex("MenuId");
+
+                    b.ToTable("MenuDetails");
+                });
+
+            modelBuilder.Entity("PhanThiHoaiAnh_223DATN_DVTC.Models.MenuModel", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Image")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Slug")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Menu");
                 });
 
             modelBuilder.Entity("PhanThiHoaiAnh_223DATN_DVTC.Models.OrderDetails", b =>
@@ -494,15 +561,38 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                 {
                     b.HasOne("PhanThiHoaiAnh_223DATN_DVTC.Models.FoodCategoryModel", "FoodCategory")
                         .WithMany()
-                        .HasForeignKey("FoodCategoryId");
+                        .HasForeignKey("FoodCategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("PhanThiHoaiAnh_223DATN_DVTC.Models.FoodSequenceModel", "FoodSequence")
                         .WithMany()
-                        .HasForeignKey("FoodSequenceId");
+                        .HasForeignKey("FoodSequenceId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("FoodCategory");
 
                     b.Navigation("FoodSequence");
+                });
+
+            modelBuilder.Entity("PhanThiHoaiAnh_223DATN_DVTC.Models.MenuDetailModel", b =>
+                {
+                    b.HasOne("PhanThiHoaiAnh_223DATN_DVTC.Models.FoodModel", "Food")
+                        .WithMany()
+                        .HasForeignKey("FoodId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("PhanThiHoaiAnh_223DATN_DVTC.Models.MenuModel", "Menu")
+                        .WithMany()
+                        .HasForeignKey("MenuId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Food");
+
+                    b.Navigation("Menu");
                 });
 
             modelBuilder.Entity("PhanThiHoaiAnh_223DATN_DVTC.Models.OrderDetails", b =>

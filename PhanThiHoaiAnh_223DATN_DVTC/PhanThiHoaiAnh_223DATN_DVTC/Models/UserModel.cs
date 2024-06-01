@@ -7,7 +7,6 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Models
 		public int Id { get; set; }
 		[Required(ErrorMessage = "Vui lòng nhập tên của bạn")]
 		public string Name { get; set; }
-		[Required(ErrorMessage ="Vui lòng nhập tên đăng nhập")]
 		public string UserName {  get; set; }
 		[Required(ErrorMessage = "Vui lòng nhập Email"),EmailAddress]
 		public string Email { get; set; }

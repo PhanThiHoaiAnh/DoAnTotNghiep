@@ -4316,6 +4316,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 8.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.5",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.5",
+      "Microsoft.Extensions.Options >= 8.0.2",
       "Newtonsoft.Json >= 8.0.1"
     ]
   },
@@ -4386,6 +4387,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[8.0.5, )"
+          },
+          "Microsoft.Extensions.Options": {
+            "target": "Package",
+            "version": "[8.0.2, )"
           },
           "Newtonsoft.Json": {
             "target": "Package",

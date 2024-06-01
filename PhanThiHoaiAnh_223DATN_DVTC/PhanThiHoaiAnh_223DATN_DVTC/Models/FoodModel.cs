@@ -15,11 +15,13 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Models
 		public decimal Price { get; set; }
 		[Required(ErrorMessage = "Nhập mô tả món ăn")]
 		public string Description { get; set; }
-		public string FoodSequenceId { get; set; }
-		public string FoodCategoryId { get; set; }
-		public string Image {  get; set; }
-		public FoodSequenceModel FoodSequence { get; set; }
+        [Required(ErrorMessage = "Chọn trật tự món")]
+        public string FoodSequenceId { get; set; }
+        [Required(ErrorMessage = "Chọn loại món")]
+        public string FoodCategoryId { get; set; }
 		public FoodCategoryModel FoodCategory { get; set; }
+        public FoodSequenceModel FoodSequence { get; set; }
+        public string Image {  get; set; }
 
         [NotMapped]
         [FileExtension]

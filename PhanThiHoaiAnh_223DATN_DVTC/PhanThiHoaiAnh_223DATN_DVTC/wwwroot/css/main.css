@@ -846,7 +846,7 @@ h2.title {
 }
 
 .product-image-wrapper{
-	height:450px;
+	height:500px;
 	border:1px solid #F7F7F5;
 	overflow: hidden;
 	margin-bottom:30px;
@@ -885,6 +885,7 @@ h2.title {
 
 .productinfo img{
   width: 100%;
+  height:300px;
 }
 
 .productinfo{
@@ -1174,7 +1175,7 @@ h2.title {
 
 .view-product img {
   border: 1px solid #F7F7F0;
-  height: 480px;
+  height: 500px;
   width: 100%;
 }
 

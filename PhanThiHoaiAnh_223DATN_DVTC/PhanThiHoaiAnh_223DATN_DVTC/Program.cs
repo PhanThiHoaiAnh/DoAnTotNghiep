@@ -2,10 +2,11 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using PhanThiHoaiAnh_223DATN_DVTC.Models;
 using PhanThiHoaiAnh_223DATN_DVTC.Repository;
+using Microsoft.Extensions.Configuration;
+using PhanThiHoaiAnh_223DATN_DVTC.Services;
+using Microsoft.AspNetCore.Identity.UI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
-
-//builder.Configuration.AddJsonFile("appsettings.json");
 
 //Connection Db
 builder.Services.AddDbContext<DataContext>(options =>
@@ -27,6 +28,8 @@ builder.Services.AddSession(options =>
 builder.Services.AddIdentity<AppUserModel,IdentityRole>()
 	.AddEntityFrameworkStores<DataContext>().AddDefaultTokenProviders();
 
+builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
+
 builder.Services.Configure<IdentityOptions>(options =>
 {
 	// Password settings.
@@ -39,7 +42,7 @@ builder.Services.Configure<IdentityOptions>(options =>
 	options.User.RequireUniqueEmail = true;
 });
 
-//builder.Services.Configure<EmailSe>
+builder.Services.AddTransient<IEmailSender, EmailSender>();
 
 var app = builder.Build();
 

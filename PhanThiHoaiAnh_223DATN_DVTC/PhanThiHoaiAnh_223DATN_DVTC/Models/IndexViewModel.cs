@@ -2,7 +2,7 @@
 {
     public class IndexViewModel
     {
-        public List<OtherServicesModel> Services { get; set; }
-        public List<FoodModel> Foods { get; set; }
-    }
+		public IEnumerable<OtherServicesModel> OtherServices { get; set; }
+		public IEnumerable<FoodModel> Food { get; set; }
+	}
 }

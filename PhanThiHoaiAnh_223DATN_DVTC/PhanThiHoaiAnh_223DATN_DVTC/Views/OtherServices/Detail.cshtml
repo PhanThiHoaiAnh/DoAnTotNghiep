@@ -21,17 +21,7 @@
 							<a href=""><img src="images/product-details/similar2.jpg" alt=""></a>
 							<a href=""><img src="images/product-details/similar3.jpg" alt=""></a>
 						</div>
-						<div class="item">
-							<a href=""><img src="images/product-details/similar1.jpg" alt=""></a>
-							<a href=""><img src="images/product-details/similar2.jpg" alt=""></a>
-							<a href=""><img src="images/product-details/similar3.jpg" alt=""></a>
-						</div>
-						<div class="item">
-							<a href=""><img src="images/product-details/similar1.jpg" alt=""></a>
-							<a href=""><img src="images/product-details/similar2.jpg" alt=""></a>
-							<a href=""><img src="images/product-details/similar3.jpg" alt=""></a>
-						</div>
-
+						
 					</div>
 
 					<!-- Controls -->
@@ -50,16 +40,14 @@
 					<h2> @Model.Name</h2>
 					<span>
 						<span>@Model.Price.ToString("N0") đ</span>
-						<label>Quantity: 1</label>
+						<label>Quantity:</label>
 						<input type="text" value="3" />
 						<button type="button" class="btn btn-fefault cart">
 							<i class="fa fa-shopping-cart"></i>
 							Thêm vào Giỏ hàng
 						</button>
 					</span>
-                    <p>Availability:<b></b> In Stock</p>
-                    <p>Condition:<b></b> New</p>
-                    <p>Loại:@Model.Category.CategoryName</p>
+                    <p>Loại dịch vụ:@Model.Category.CategoryName</p>
 					<a href=""><img src="images/product-details/share.png" class="share img-responsive" alt="" /></a>
 				</div><!--/product-information-->
 			</div>
@@ -77,7 +65,7 @@
 			</div>
 			<div class="tab-content">
 				<div class="tab-pane fade active in" id="details">
-					@Model.Description
+					@Html.Raw(@Model.Description)
 
 				</div>
 
