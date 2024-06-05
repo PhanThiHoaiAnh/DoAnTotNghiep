@@ -76,10 +76,18 @@
 								<li class="dropdown">
 									<a href="#">Thực đơn<i class="fa fa-angle-down"></i></a>
 									<ul role="menu" class="sub-menu">
-										<li><a asp-controller="MenuList">Danh sách thực đơn</a></li>
+										<li><a asp-controller="Menu">Danh sách thực đơn</a></li>
 										<li><a asp-controller="Food">Món ăn</a></li>
 										<li><a asp-controller="FoodSequence">Trình tự món</a></li>
 										<li><a asp-controller="FoodCategory">Loại món</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#">Quản lý tiệc<i class="fa fa-angle-down"></i></a>
+									<ul role="menu" class="sub-menu">
+										<li><a asp-controller="PartyCategory">Các loại tiệc</a></li>
+										<li><a asp-controller="TableCategory">Loại bàn tiệc</a></li>
+										<li><a asp-controller="Location">Loại địa điểm tiệc</a></li>
 									</ul>
 								</li>
 								<li class="dropdown">

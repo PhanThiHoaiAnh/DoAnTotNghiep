@@ -349,6 +349,14 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\food\\fruit.jpg",
+      "PackagePath": "staticwebassets\\media\\food\\fruit.jpg"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\food\\ga.jpg",
+      "PackagePath": "staticwebassets\\media\\food\\ga.jpg"
+    },
+    {
       "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\services\\1.jpg",
       "PackagePath": "staticwebassets\\media\\services\\1.jpg"
     },

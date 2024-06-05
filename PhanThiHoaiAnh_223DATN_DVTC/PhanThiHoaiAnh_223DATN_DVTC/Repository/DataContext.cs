@@ -18,12 +18,12 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Repository
         public DbSet<FoodModel> FoodModel { get; set; }
         public DbSet<FoodCategoryModel> FoodCategories { get; set; }
         public DbSet<FoodSequenceModel> FoodSequence { get; set; }
-        public DbSet<MenuModel> Menu { get; set; }
-        public DbSet<MenuDetailModel> MenuDetails { get; set; }
+        public DbSet<MenuModel> Menus { get; set; }
+        public DbSet<MenuDetail> MenuDetails { get; set; }
         public DbSet<PartyCategoryModel> PartyCategories { get; set; }
-		public DbSet<PartyModel> BookParty { get; set; }
+		public DbSet<PartyModel> Party { get; set; }
 		public DbSet<LocationModel> Location { get; set; }
 		public DbSet<TableCategoryModel> TableCategories { get; set; }
-        public DbSet<WeddingCardModel> WeddingCards { get; set;}
+        //public DbSet<WeddingCardModel> WeddingCards { get; set;}
 	}
 }

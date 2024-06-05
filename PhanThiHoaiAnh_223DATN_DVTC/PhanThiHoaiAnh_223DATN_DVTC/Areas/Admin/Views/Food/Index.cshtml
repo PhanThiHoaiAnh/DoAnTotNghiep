@@ -26,10 +26,10 @@
                 <td>@item.Name</td>
                 <td width="220">@Html.Raw(@item.Description)</td>
                 <td>@item.Price.ToString("N0")</td>
-                <td><img src="~/media/services/@item.Image" width="120" /></td>
+                <td><img src="~/media/food/@item.Image" width="120" /></td>
                 <td>@item.Slug</td>
-                <td>@item.FoodCategoryId</td>
-                <td>@item.FoodSequenceId</td>
+                <td>@item.FoodCategory.CategoryName</td>
+                <td>@item.FoodSequence.Name</td>
                 <td>
                     <a asp-action="Edit" class="btn btn-warning btn-sm" asp-controller="Food" asp-route-Id="@item.Id">Sửa</a>
                     <a asp-action="Delete" class="btn btn-danger btn-sm confirmDeletion" asp-controller="Food" asp-route-Id="@item.Id">Xóa</a>

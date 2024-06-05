@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
 {
     /// <inheritdoc />
-    public partial class DatabaseMigration : Migration
+    public partial class CreateDBMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -30,7 +30,8 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    FName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    LName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Birthday = table.Column<DateOnly>(type: "date", nullable: false),
                     Address = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Gender = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -84,10 +85,26 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Menu",
+                name: "Location",
                 columns: table => new
                 {
-                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Slug = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Location", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Menus",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Slug = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Quantity = table.Column<int>(type: "int", nullable: false),
@@ -98,7 +115,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Menu", x => x.Id);
+                    table.PrimaryKey("PK_Menus", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -108,7 +125,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     OrderCode = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    UserName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     OrderDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Status = table.Column<int>(type: "int", nullable: false),
                     ReceivedDate = table.Column<DateTime>(type: "datetime2", nullable: false)
@@ -116,6 +133,20 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Orders", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "PartyCategories",
+                columns: table => new
+                {
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Slug = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_PartyCategories", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -130,6 +161,21 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_ServiceCategories", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "TableCategories",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Quantity = table.Column<int>(type: "int", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_TableCategories", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -242,7 +288,8 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                 name: "FoodModel",
                 columns: table => new
                 {
-                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Slug = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
@@ -294,13 +341,57 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Party",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    OrgDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Time = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CusNumber = table.Column<int>(type: "int", nullable: false),
+                    PartyCategoryId = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    LocationId = table.Column<int>(type: "int", nullable: false),
+                    LocationName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    TableId = table.Column<int>(type: "int", nullable: false),
+                    MenuParty = table.Column<int>(type: "int", nullable: false),
+                    PtCategoryId = table.Column<string>(type: "nvarchar(450)", nullable: true),
+                    LocationPtId = table.Column<int>(type: "int", nullable: true),
+                    TablePtId = table.Column<int>(type: "int", nullable: true),
+                    ThucDonId = table.Column<int>(type: "int", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Party", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Party_Location_LocationPtId",
+                        column: x => x.LocationPtId,
+                        principalTable: "Location",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_Party_Menus_ThucDonId",
+                        column: x => x.ThucDonId,
+                        principalTable: "Menus",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_Party_PartyCategories_PtCategoryId",
+                        column: x => x.PtCategoryId,
+                        principalTable: "PartyCategories",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_Party_TableCategories_TablePtId",
+                        column: x => x.TablePtId,
+                        principalTable: "TableCategories",
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
                 name: "MenuDetails",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    MenuId = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    FoodId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    MenuId = table.Column<int>(type: "int", nullable: false),
+                    FoodId = table.Column<int>(type: "int", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
@@ -313,9 +404,9 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_MenuDetails_Menu_MenuId",
+                        name: "FK_MenuDetails_Menus_MenuId",
                         column: x => x.MenuId,
-                        principalTable: "Menu",
+                        principalTable: "Menus",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -326,14 +417,13 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    UserName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     OrderCode = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ServiceId = table.Column<long>(type: "bigint", nullable: false),
+                    ServiceId = table.Column<int>(type: "int", nullable: false),
                     Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     Quantity = table.Column<int>(type: "int", nullable: false),
                     ReceivedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Discount = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    ServiceId1 = table.Column<int>(type: "int", nullable: true),
                     OrderModelId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
@@ -345,10 +435,11 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                         principalTable: "Orders",
                         principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_OrderDetails_OtherServices_ServiceId1",
-                        column: x => x.ServiceId1,
+                        name: "FK_OrderDetails_OtherServices_ServiceId",
+                        column: x => x.ServiceId,
                         principalTable: "OtherServices",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
@@ -416,14 +507,34 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                 column: "OrderModelId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_OrderDetails_ServiceId1",
+                name: "IX_OrderDetails_ServiceId",
                 table: "OrderDetails",
-                column: "ServiceId1");
+                column: "ServiceId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_OtherServices_CategoryId",
                 table: "OtherServices",
                 column: "CategoryId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Party_LocationPtId",
+                table: "Party",
+                column: "LocationPtId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Party_PtCategoryId",
+                table: "Party",
+                column: "PtCategoryId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Party_TablePtId",
+                table: "Party",
+                column: "TablePtId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Party_ThucDonId",
+                table: "Party",
+                column: "ThucDonId");
         }
 
         /// <inheritdoc />
@@ -451,6 +562,9 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                 name: "OrderDetails");
 
             migrationBuilder.DropTable(
+                name: "Party");
+
+            migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
@@ -460,13 +574,22 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                 name: "FoodModel");
 
             migrationBuilder.DropTable(
-                name: "Menu");
-
-            migrationBuilder.DropTable(
                 name: "Orders");
 
             migrationBuilder.DropTable(
                 name: "OtherServices");
+
+            migrationBuilder.DropTable(
+                name: "Location");
+
+            migrationBuilder.DropTable(
+                name: "Menus");
+
+            migrationBuilder.DropTable(
+                name: "PartyCategories");
+
+            migrationBuilder.DropTable(
+                name: "TableCategories");
 
             migrationBuilder.DropTable(
                 name: "FoodCategories");

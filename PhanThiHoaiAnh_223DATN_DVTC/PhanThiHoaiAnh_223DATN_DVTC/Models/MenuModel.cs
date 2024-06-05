@@ -7,7 +7,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Models
     public class MenuModel
     {
         [Key]
-        public string Id { get; set; }
+        public int Id { get; set; }
         [Required(ErrorMessage = "Yêu cầu nhập Tên thực đơn")]
         public string Name { get; set; }
         public string Slug { get; set; }

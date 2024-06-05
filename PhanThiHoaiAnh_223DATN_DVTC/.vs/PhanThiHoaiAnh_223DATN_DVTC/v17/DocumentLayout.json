@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|d:\\223datn_0106_phanthihoaianh\\phanthihoaianh_223datn\\doantotnghiep\\phanthihoaianh_223datn_dvtc\\phanthihoaianh_223datn_dvtc\\models\\weddingcardmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|solutionrelative:phanthihoaianh_223datn_dvtc\\models\\weddingcardmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|d:\\223datn_0106_phanthihoaianh\\phanthihoaianh_223datn\\doantotnghiep\\phanthihoaianh_223datn_dvtc\\phanthihoaianh_223datn_dvtc\\repository\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|solutionrelative:phanthihoaianh_223datn_dvtc\\repository\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|d:\\223datn_0106_phanthihoaianh\\phanthihoaianh_223datn\\doantotnghiep\\phanthihoaianh_223datn_dvtc\\phanthihoaianh_223datn_dvtc\\controllers\\dattieccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|solutionrelative:phanthihoaianh_223datn_dvtc\\controllers\\dattieccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "WeddingCardModel.cs",
-              "DocumentMoniker": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Models\\WeddingCardModel.cs",
-              "RelativeDocumentMoniker": "PhanThiHoaiAnh_223DATN_DVTC\\Models\\WeddingCardModel.cs",
-              "ToolTip": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Models\\WeddingCardModel.cs",
-              "RelativeToolTip": "PhanThiHoaiAnh_223DATN_DVTC\\Models\\WeddingCardModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAnAAAA",
+              "Title": "DatTiecController.cs",
+              "DocumentMoniker": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Controllers\\DatTiecController.cs",
+              "RelativeDocumentMoniker": "PhanThiHoaiAnh_223DATN_DVTC\\Controllers\\DatTiecController.cs",
+              "ToolTip": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Controllers\\DatTiecController.cs",
+              "RelativeToolTip": "PhanThiHoaiAnh_223DATN_DVTC\\Controllers\\DatTiecController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T09:26:13.336Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DataContext.cs",
-              "DocumentMoniker": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Repository\\DataContext.cs",
-              "RelativeDocumentMoniker": "PhanThiHoaiAnh_223DATN_DVTC\\Repository\\DataContext.cs",
-              "ToolTip": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Repository\\DataContext.cs",
-              "RelativeToolTip": "PhanThiHoaiAnh_223DATN_DVTC\\Repository\\DataContext.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAxwBoAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T19:49:11.388Z",
+              "WhenOpened": "2024-06-05T17:23:07.975Z",
               "EditorCaption": ""
             }
           ]

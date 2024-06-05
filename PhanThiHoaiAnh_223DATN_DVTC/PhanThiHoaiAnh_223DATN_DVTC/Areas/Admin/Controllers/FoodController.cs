@@ -21,12 +21,12 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            return View(await _dataContext.FoodModel.OrderByDescending(s => s.Id).ToListAsync());
+            return View(await _dataContext.FoodModel.OrderByDescending(s => s.Id).Include(s=> s.FoodSequence).Include(s=> s.FoodCategory).ToListAsync());
         }
         public IActionResult Create()
         {
             ViewBag.FoodCategories = new SelectList(_dataContext.FoodCategories, "Id", "CategoryName");
-            ViewBag.FoodSequence = new SelectList(_dataContext.FoodSequence, "Id", "CategoryName");
+            ViewBag.FoodSequence = new SelectList(_dataContext.FoodSequence, "Id", "Name");
             return View();
         }
         [HttpPost]
@@ -34,6 +34,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
         public async Task<IActionResult> Create(FoodModel food)
         {
             ViewBag.FoodCategories = new SelectList(_dataContext.FoodCategories, "Id", "CategoryName", food.FoodCategoryId);
+            ViewBag.FoodSequence = new SelectList(_dataContext.FoodSequence, "Id", "Name", food.FoodSequenceId);
 
             if (ModelState.IsValid)
             {
@@ -78,24 +79,26 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
 
             return View(food);
         }
-        public async Task<IActionResult> Edit(string Id)
+        public async Task<IActionResult> Edit(int Id)
         {
             FoodModel food = await _dataContext.FoodModel.FindAsync(Id);
             ViewBag.FoodCategories = new SelectList(_dataContext.FoodCategories, "Id", "CategoryName", food.FoodCategoryId);
+            ViewBag.FoodSequence = new SelectList(_dataContext.FoodSequence, "Id", "Name", food.FoodSequenceId);
 
             return View(food);
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string Id, FoodModel food)
+        public async Task<IActionResult> Edit(int Id, FoodModel food)
         {
             ViewBag.FoodCategories = new SelectList(_dataContext.FoodCategories, "Id", "CategoryName", food.FoodCategoryId);
+            ViewBag.FoodSequence = new SelectList(_dataContext.FoodSequence, "Id", "Name", food.FoodSequenceId);
 
             if (ModelState.IsValid)
             {
                 //them du lieu
                 food.Slug = food.Name.Replace(" ", "-");
-                var slug = await _dataContext.OtherServices.FirstOrDefaultAsync(f => f.Slug == food.Slug);
+                var slug = await _dataContext.FoodModel.FirstOrDefaultAsync(f => f.Slug == food.Slug);
                 if (slug != null)
                 {
                     ModelState.AddModelError("", "Món ăn đã tồn tại");
@@ -114,7 +117,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
                 }
                 _dataContext.Update(food);
                 await _dataContext.SaveChangesAsync();
-                TempData["success"] = "Cập nhật dịch vụ thành công";
+                TempData["success"] = "Cập nhật món ăn thành công";
                 return RedirectToAction("Index");
             }
             else
@@ -133,6 +136,23 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
             }
             return View(food);
         }
-        
+        public async Task<IActionResult> Delete(int Id)
+        {
+            FoodModel food = await _dataContext.FoodModel.FindAsync(Id);
+            if (!string.Equals(food.Image, "noimage.jpg"))
+            {
+                string uploadDir = Path.Combine(_webHostEnvironment.WebRootPath, "media/food");
+                string oldfileImg = Path.Combine(uploadDir, food.Image);
+                if (System.IO.File.Exists(oldfileImg))
+                {
+                    System.IO.File.Delete(oldfileImg);
+                }
+            }
+            _dataContext.FoodModel.Remove(food);
+            await _dataContext.SaveChangesAsync();
+            TempData["error"] = "Dịch vụ đã được xóa";
+            return RedirectToAction("Index");
+        }
+
     }
 }

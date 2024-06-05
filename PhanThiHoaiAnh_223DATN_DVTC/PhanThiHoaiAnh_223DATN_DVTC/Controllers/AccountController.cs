@@ -61,7 +61,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Controllers
 		{
 			if (ModelState.IsValid)
 			{
-                AppUserModel newUser = new AppUserModel { Name = user.Name, UserName = user.Email, Email = user.Email, Birthday = user.Birth, Gender = user.Gender, PhoneNumber = user.PhoneNumber, Address = user.Address, EmailConfirmed = false };
+                AppUserModel newUser = new AppUserModel { LName = user.LastName, FName = user.FirstName, UserName = user.Email, Email = user.Email, Birthday = user.Birth, Gender = user.Gender, PhoneNumber = user.PhoneNumber, Address = user.Address, EmailConfirmed = false };
                 IdentityResult result = await _userManage.CreateAsync(newUser, user.Password);
                 if (result.Succeeded)
                 {

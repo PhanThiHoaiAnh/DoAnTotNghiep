@@ -21,13 +21,13 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Repository
             }
             if (!_context.FoodModel.Any())
             {
-                FoodSequenceModel foods1 = new FoodSequenceModel { Id = "MC", Name = "Món chính", Slug = "mon chinh", Description = "Món chính trong tiệc" };
-                FoodSequenceModel foods2 = new FoodSequenceModel { Id = "MTM", Name = "Món tráng miệng", Slug = "mon trang mieng", Description = "Món tráng miệng trong tiệc" };
+                FoodSequenceModel foods1 = new FoodSequenceModel { Id = "MC", Name = "Món chính", Slug = "mon-chinh", Description = "Món chính trong tiệc" };
+                FoodSequenceModel foods2 = new FoodSequenceModel { Id = "MTM", Name = "Món tráng miệng", Slug = "mon-trang-mieng", Description = "Món tráng miệng trong tiệc" };
                 FoodCategoryModel foodc1 = new FoodCategoryModel { Id = "MMan", CategoryName = "Món mặn", Description = "Món ăn mặn" };
                 FoodCategoryModel foodc2 = new FoodCategoryModel { Id = "MChien", CategoryName = "Món chiên", Description = "Món chiên dùng dẫu/ mỡ" };
                 _context.FoodModel.AddRange(
-                    new FoodModel { Id = "MA1", Name = "Gà bó xôi", Slug = "Ga bo xoi", Image = "ga.jpg", Price = 150000, Description = "1con gà/phần", FoodSequence = foods1, FoodCategory = foodc1 },
-                    new FoodModel { Id = "MA2", Name = "Trái cây và sữa chua", Slug = "Trai cay", Image = "fruit.jpg", Price = 150000, Description = "sữa chua và trái cây", FoodSequence = foods2, FoodCategory = foodc2 }
+                    new FoodModel { Name = "Gà bó xôi", Slug = "Ga-bo-xoi", Image = "ga.jpg", Price = 150000, Description = "1con gà/phần", FoodSequence = foods1, FoodCategory = foodc1 },
+                    new FoodModel { Name = "Trái cây và sữa chua", Slug = "Traicay", Image = "fruit.jpg", Price = 150000, Description = "sữa chua và trái cây", FoodSequence = foods2, FoodCategory = foodc2 }
                  );
                 _context.SaveChanges();
             }

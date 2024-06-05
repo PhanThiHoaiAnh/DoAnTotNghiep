@@ -12,8 +12,8 @@ using PhanThiHoaiAnh_223DATN_DVTC.Repository;
 namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240530084843_DatabaseMigration")]
-    partial class DatabaseMigration
+    [Migration("20240605152127_CreateDBMigration")]
+    partial class CreateDBMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -183,20 +183,23 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
 
+                    b.Property<string>("FName")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Gender")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsEmailConfirmed")
                         .HasColumnType("bit");
 
+                    b.Property<string>("LName")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
 
                     b.Property<DateTimeOffset?>("LockoutEnd")
                         .HasColumnType("datetimeoffset");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NormalizedEmail")
                         .HasMaxLength(256)
@@ -260,8 +263,11 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
 
             modelBuilder.Entity("PhanThiHoaiAnh_223DATN_DVTC.Models.FoodModel", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -317,7 +323,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                     b.ToTable("FoodSequence");
                 });
 
-            modelBuilder.Entity("PhanThiHoaiAnh_223DATN_DVTC.Models.MenuDetailModel", b =>
+            modelBuilder.Entity("PhanThiHoaiAnh_223DATN_DVTC.Models.LocationModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -328,13 +334,34 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("FoodId")
+                    b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("MenuId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<string>("Slug")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Location");
+                });
+
+            modelBuilder.Entity("PhanThiHoaiAnh_223DATN_DVTC.Models.MenuDetail", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("FoodId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MenuId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -347,8 +374,11 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
 
             modelBuilder.Entity("PhanThiHoaiAnh_223DATN_DVTC.Models.MenuModel", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -375,7 +405,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Menu");
+                    b.ToTable("Menus");
                 });
 
             modelBuilder.Entity("PhanThiHoaiAnh_223DATN_DVTC.Models.OrderDetails", b =>
@@ -404,20 +434,18 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                     b.Property<DateTime>("ReceivedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<long>("ServiceId")
-                        .HasColumnType("bigint");
-
-                    b.Property<int?>("ServiceId1")
+                    b.Property<int>("ServiceId")
                         .HasColumnType("int");
 
                     b.Property<string>("UserName")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
 
                     b.HasKey("Id");
 
                     b.HasIndex("OrderModelId");
 
-                    b.HasIndex("ServiceId1");
+                    b.HasIndex("ServiceId");
 
                     b.ToTable("OrderDetails");
                 });
@@ -443,7 +471,8 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("UserName")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
 
                     b.HasKey("Id");
 
@@ -488,6 +517,85 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                     b.ToTable("OtherServices");
                 });
 
+            modelBuilder.Entity("PhanThiHoaiAnh_223DATN_DVTC.Models.PartyCategoryModel", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Slug")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("PartyCategories");
+                });
+
+            modelBuilder.Entity("PhanThiHoaiAnh_223DATN_DVTC.Models.PartyModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CusNumber")
+                        .HasColumnType("int");
+
+                    b.Property<int>("LocationId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("LocationName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("LocationPtId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MenuParty")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("OrgDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("PartyCategoryId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PtCategoryId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("TableId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("TablePtId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("ThucDonId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Time")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("LocationPtId");
+
+                    b.HasIndex("PtCategoryId");
+
+                    b.HasIndex("TablePtId");
+
+                    b.HasIndex("ThucDonId");
+
+                    b.ToTable("Party");
+                });
+
             modelBuilder.Entity("PhanThiHoaiAnh_223DATN_DVTC.Models.ServiceCategoryModel", b =>
                 {
                     b.Property<string>("Id")
@@ -507,6 +615,29 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("ServiceCategories");
+                });
+
+            modelBuilder.Entity("PhanThiHoaiAnh_223DATN_DVTC.Models.TableCategoryModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("TableCategories");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -579,7 +710,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                     b.Navigation("FoodSequence");
                 });
 
-            modelBuilder.Entity("PhanThiHoaiAnh_223DATN_DVTC.Models.MenuDetailModel", b =>
+            modelBuilder.Entity("PhanThiHoaiAnh_223DATN_DVTC.Models.MenuDetail", b =>
                 {
                     b.HasOne("PhanThiHoaiAnh_223DATN_DVTC.Models.FoodModel", "Food")
                         .WithMany()
@@ -606,7 +737,9 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
 
                     b.HasOne("PhanThiHoaiAnh_223DATN_DVTC.Models.OtherServicesModel", "Service")
                         .WithMany()
-                        .HasForeignKey("ServiceId1");
+                        .HasForeignKey("ServiceId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("OrderModel");
 
@@ -622,6 +755,33 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Migrations
                         .IsRequired();
 
                     b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("PhanThiHoaiAnh_223DATN_DVTC.Models.PartyModel", b =>
+                {
+                    b.HasOne("PhanThiHoaiAnh_223DATN_DVTC.Models.LocationModel", "LocationPt")
+                        .WithMany()
+                        .HasForeignKey("LocationPtId");
+
+                    b.HasOne("PhanThiHoaiAnh_223DATN_DVTC.Models.PartyCategoryModel", "PtCategory")
+                        .WithMany()
+                        .HasForeignKey("PtCategoryId");
+
+                    b.HasOne("PhanThiHoaiAnh_223DATN_DVTC.Models.TableCategoryModel", "TablePt")
+                        .WithMany()
+                        .HasForeignKey("TablePtId");
+
+                    b.HasOne("PhanThiHoaiAnh_223DATN_DVTC.Models.MenuModel", "ThucDon")
+                        .WithMany()
+                        .HasForeignKey("ThucDonId");
+
+                    b.Navigation("LocationPt");
+
+                    b.Navigation("PtCategory");
+
+                    b.Navigation("TablePt");
+
+                    b.Navigation("ThucDon");
                 });
 #pragma warning restore 612, 618
         }
