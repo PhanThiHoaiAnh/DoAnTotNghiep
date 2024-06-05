@@ -1,0 +1,51 @@
+﻿@model IEnumerable<MenuModel>
+@{
+    ViewData["title"] = "Danh sách thực đơn";
+}
+<h3>Danh sách Thực đơn</h3>
+<a asp-action="Create" asp-controller="Menu">Thêm Thực đơn</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Tên menu</th>
+            <th scope="col">Số lượng món</th>
+            <th scope="col">Giá Menu</th>
+            <th scope="col">Hình ảnh</th>
+            <th scope="col">Mô tả</th>
+            <th scope="col">Đường dẫn</th>
+            <th scope="col">Trạng thái</th>
+            <th scope="col">Thao tác</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">@item.Id</th>
+                <td>@item.Name</td>
+                <td>@item.Quantity</td>
+                <td>@item.Price.ToString("N0")</td>
+                <td><img src="~/media/food/@item.Image" width="120" /></td>
+                <td width="280">@Html.Raw(@item.Description)</td>
+                <td>@item.Slug</td>
+                <td>
+                    @if (@item.Status == true)
+                    {
+                    <span class="text text-success">Đang kinh doanh</span>
+                    }
+                    else
+                    {
+                    <span class="text text-success">Ngừng kinh doanh</span>
+                    }
+                </td>
+                <td width="110">
+                    <a asp-action="Edit" class="btn btn-warning btn-sm" asp-controller="Menu" asp-route-Id="@item.Id">Sửa</a>
+                    <a asp-action="Delete" class="btn btn-danger btn-sm confirmDeletion" asp-controller="Menu" asp-route-Id="@item.Id">Xóa</a>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>

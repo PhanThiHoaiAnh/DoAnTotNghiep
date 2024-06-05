@@ -62,6 +62,10 @@ a#scrollUp i{
   font-size: 30px;
 }
 
+.form-check-input[type="radio"] {
+	width: 16px;
+	height: 16px;
+}
 
 /*************************
 *******Header CSS******

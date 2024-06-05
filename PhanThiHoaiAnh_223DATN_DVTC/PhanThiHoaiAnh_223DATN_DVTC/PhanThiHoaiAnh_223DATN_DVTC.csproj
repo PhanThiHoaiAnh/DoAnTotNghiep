@@ -7,13 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Views\Menu\**" />
-    <Content Remove="Views\Menu\**" />
-    <EmbeddedResource Remove="Views\Menu\**" />
-    <None Remove="Views\Menu\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.5">
@@ -31,8 +24,6 @@
 
   <ItemGroup>
     <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="Areas\Admin\Views\MenuDetail\" />
-    <Folder Include="Areas\Admin\Views\Menu\" />
     <Folder Include="Areas\Admin\Views\Shared\Components\" />
     <Folder Include="wwwroot\backend\css\" />
     <Folder Include="wwwroot\backend\images\" />

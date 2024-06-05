@@ -1,0 +1,92 @@
+﻿@model PartyModel
+@{
+    ViewData["title"] = "Đặt tiệc";
+}
+<section id=""> <!--form--> 
+    <div class="container"> 
+        <div class="row">
+			<div class="col-sm-8 col-sm-offset-1">
+				<div class="signup-form">
+					<!--sign up form-->
+					<h2>ĐẶT TIỆC</h2>
+					<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+					<form asp-controller="DatTiec" asp-action="Index">
+
+						<div class="form-group">
+							<label>Ngày tổ chức tiệc</label>
+							<input id="OrgDate" asp-for="OrgDate" class="form-control" type="date" placeholder="dd/mm/yyyy" />
+							<span asp-validation-for="OrgDate" class="text-danger" />
+						</div>
+						<div class="form-group">
+							<label>Giờ cụ thể (trong 24 giờ theo giờ Việt Nam)</label>
+							<input asp-for="Time" class="form-control" />
+							<span asp-validation-for="Time" class="text-danger" />
+						</div>
+
+						<div class="form-group">
+							<label>Số lượng khách mời</label>
+							<input asp-for="CusNumber" class="form-control" />
+							<span asp-validation-for="CusNumber" class="text-danger" />
+						</div>
+						<div class="form-group">
+							<label>Loại tiệc</label>
+							<select asp-for="PartyCategoryId" class="form-control" asp-items="ViewBag.PartyCategories">
+								<option>--Chọn loại tiệc</option>
+							</select>
+							<span asp-validation-for="PartyCategoryId" class="text-danger" />
+						</div>
+						<div class="form-group">
+							<label>Địa điểm tiệc</label>
+							<select asp-for="LocationId" class="form-control" asp-items="ViewBag.Location">
+								<option>--Chọn loại địa điểm</option>
+							</select>
+							<span asp-validation-for="LocationId" class="text-danger" />
+						</div>
+
+						<div class="form-group">
+							<label>Nhập địa chỉ cụ thể: số nhà,xã/phường/thị trấn,huyện/quận,tỉnh/TP</label>
+							<input asp-for="LocationName" class="form-control" />
+							<span asp-validation-for="CusNumber" class="text-danger" />
+						</div>
+
+						<div class="form-group">
+							<label>Loại bàn tiệc</label>
+							<select asp-for="TableId" class="form-control" asp-items="ViewBag.TableCategories">
+								<option>--Chọn loại bàn tiệc</option>
+							</select>
+							<span asp-validation-for="TableId" class="text-danger" />
+						</div>
+						@{
+							var menus = ViewBag.Menus as List<MenuModel>;
+						}
+						@if (menus != null)
+						{
+							<div class="form-group">
+								<label>Menu - giá - số lượng món - mô tả</label>
+								@foreach (var menu in menus)
+								{
+									<div class="form-check">
+										<input class="form-check-input" type="radio" asp-for="MenuParty" value="@menu.Id">
+										<label class="form-check-label">
+											@menu.Name - @menu.Price.ToString("N0") - @menu.Quantity - @Html.Raw(@menu.Description)
+										</label>
+									</div>
+								}
+								<span asp-validation-for="MenuParty" class="text-danger"></span>
+							</div>
+						}
+
+						<button type="submit" class="btn btn-default">ĐĂNG KÝ</button>
+					</form>
+				</div><!--/sign up form-->
+			</div>
+		</div>
+	</div>
+</section><!--/form-->
+@section Scripts {
+	<script>
+		var orgDateInput = document.getElementById("OrgDate");
+		var today = new Date().toISOString().split("T")[0];
+		orgDateInput.setAttribute("min", today);
+	</script>
+}

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using PhanThiHoaiAnh_223DATN_DVTC.Repository;
 
 namespace PhanThiHoaiAnh_223DATN_DVTC.Controllers
@@ -11,8 +12,10 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Controllers
 			_dataContext = dataContext;
 		}
 
-		public IActionResult Index()
-		{  return View(); }
+		public async Task<IActionResult> Index()
+		{  
+			return View(await _dataContext.OtherServices.OrderByDescending(s => s.Id).Include("Category").ToListAsync()); 
+		}
 
 		public async Task<IActionResult> Detail(int Id)
 		{ 

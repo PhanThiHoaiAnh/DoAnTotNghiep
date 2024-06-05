@@ -1,0 +1,41 @@
+﻿@model MenuDetail
+@{
+    ViewData["title"] = "Chỉnh sửa";
+}
+<h4>Chỉnh sửa</h4>
+<div class="col-md-9">
+    <form asp-action="Edit" enctype="multipart/form-data">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="form-group">
+            <label>Tên thực đơn</label>
+            <select asp-for="MenuId" class="form-control" asp-items="ViewBag.Menus">
+                <option>--Chọn tên thực đơn</option>
+            </select>
+            <span asp-validation-for="MenuId" class="text-danger" />
+        </div>
+        <div class="form-group">
+            <label>Tên món</label>
+            <select asp-for="FoodId" class="form-control" asp-items="ViewBag.FoodModel">
+                <option>--Chọn tên món</option>
+            </select>
+            <span asp-validation-for="FoodId" class="text-danger" />
+        </div>
+        <div class="form-group">
+            <label>Mô tả</label>
+            <input asp-for="Description" class="form-control" />
+            <span asp-validation-for="Description" class="text-danger" />
+        </div>
+
+        <div class="form-group">
+            <button class="btn btn-primary">Cập nhật</button>
+        </div>
+
+    </form>
+    <a asp-action="Index">Trở về</a>
+</div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

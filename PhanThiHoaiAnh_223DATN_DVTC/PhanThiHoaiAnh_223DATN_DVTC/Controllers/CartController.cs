@@ -124,6 +124,49 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Controllers
 			TempData["success"] = "Đã xóa giỏ hàng thành công";
 			return RedirectToAction("Index");
 		}
+		// Mon An
+		public async Task<IActionResult> AddFood(int Id)
+		{
+			FoodModel food = await _dataContext.FoodModel.FindAsync(Id);
 
+			List<CartItemModel> cart = HttpContext.Session.GetJson<List<CartItemModel>>("Cart") ?? new List<CartItemModel>();
+
+			CartItemModel cartItems = cart.Where(s => s.ServiceId == Id).FirstOrDefault();
+			if (cartItems == null)
+			{
+				cart.Add(new CartItemModel(food));
+			}
+			else
+			{
+				cartItems.Quantity += 1;
+			}
+
+			HttpContext.Session.SetJson("Cart", cart);
+			TempData["success"] = "Thêm vào giỏ hàng thành công";
+
+			return Redirect(Request.Headers["Referer"].ToString());
+		}
+		// Thuc Don
+		public async Task<IActionResult> AddMenu(int Id)
+		{
+			MenuModel menu = await _dataContext.Menus.FindAsync(Id);
+
+			List<CartItemModel> cart = HttpContext.Session.GetJson<List<CartItemModel>>("Cart") ?? new List<CartItemModel>();
+
+			CartItemModel cartItems = cart.Where(s => s.ServiceId == Id).FirstOrDefault();
+			if (cartItems == null)
+			{
+				cart.Add(new CartItemModel(menu));
+			}
+			else
+			{
+				cartItems.Quantity += 1;
+			}
+
+			HttpContext.Session.SetJson("Cart", cart);
+			TempData["success"] = "Thêm vào giỏ hàng thành công";
+
+			return Redirect(Request.Headers["Referer"].ToString());
+		}
 	}
 }

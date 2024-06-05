@@ -24,5 +24,21 @@
 			Quantity = 1;
 			Image = service.Image;
 		}
+		public CartItemModel(FoodModel food)
+		{
+			ServiceId = food.Id;
+			ServiceName = food.Name;
+			Price = food.Price;
+			Quantity = 1;
+			Image = food.Image;
+		}
+		public CartItemModel(MenuModel menu)
+		{
+			ServiceId = menu.Id;
+			ServiceName = menu.Name;
+			Price = menu.Price;
+			Quantity = 1;
+			Image = menu.Image;
+		}
 	}
 }

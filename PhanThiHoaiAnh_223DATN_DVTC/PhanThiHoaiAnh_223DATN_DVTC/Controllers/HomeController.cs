@@ -22,14 +22,6 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Controllers
 
             return View(services);
 		}
-
-		public IActionResult Index1()
-		{
-			var food = _dataContext.FoodModel.Include("FoodSequence").Include("FoodCategory").ToList();
-
-			return View(food);
-		}
-
 		public IActionResult Privacy()
         {
             return View();

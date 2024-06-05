@@ -7,8 +7,20 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Controllers
 {
 	public class FoodSequenceController : Controller
 	{
-        public IActionResult Index()
-        { return View(); }
+		private readonly DataContext _dataContext;
+		public FoodSequenceController(DataContext context)
+		{
+			_dataContext = context;
+		}
+		public async Task<IActionResult> Index(String Slug = "")
+		{
+			FoodSequenceModel serviceCate = _dataContext.FoodSequence.Where(c => c.Slug == Slug).FirstOrDefault();
+			if (serviceCate == null) return RedirectToAction("Index");
 
-    }
+			var serviceByCategory = _dataContext.FoodModel.Where(s => s.FoodSequenceId == serviceCate.Id);
+
+			return View(await serviceByCategory.OrderByDescending(s => s.Id).Include("FoodCategory").Include("FoodSequence").ToListAsync());
+		}
+
+	}
 }
