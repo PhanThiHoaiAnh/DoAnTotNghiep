@@ -10,6 +10,10 @@ Project mong muốn với các chức năng:
 
   +cập nhật danh sách đặt dịch vụ
   
+  +cập nhật các thực đơn
+
+  +cập nhật danh sách đặt tiệc
+  
   +cập nhật tài khoản KH
   
   +cập nhật dịch vụ, các loại dịch vụ, món ăn, loại món...
@@ -22,10 +26,12 @@ Project mong muốn với các chức năng:
 
 -chọn hình thức thanh toán
 
+-Đặt thiệp cưới
+
 ---Admin còn thiếu:
 
--cập nhật các thực đơn
+-phân quyền
 
--cập nhật danh sách đặt tiệc
+-xuất pdf
 
 -cập nhật ds nhân viên
