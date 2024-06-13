@@ -22,6 +22,7 @@
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+	
 	<style>
     .password-input-wrapper {
         position: relative;
@@ -81,15 +82,22 @@
 
                                 @if(User.Identity?.IsAuthenticated ?? false)
 								{
-									<li><a asp-controller="Account" asp-action="Logout"><i class="fa fa-lock"></i>Chào @User.Identity.Name - Đăng xuất</a></li>
-									<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Thanh toán</a></li>
-									<li><a href="#"><i class="fa fa-user"></i> Tài khoản</a></li>
+									<li><a href="#"><i class="fa fa-lock"></i>Chào @User.Identity.Name</a></li>
+								
+									<li class="dropdown">
+										<a href="#"><i class="fa fa-user"></i>Tài Khoản<i class="fa fa-angle-down"></i></a>
+										<ul role="menu" class="sub-menu">
+											<li><a asp-controller="Account" asp-action="Profile">Thông tin cá nhân</a></li>
+											<li><a asp-controller="Account" asp-action="EditProfile">Cập nhật thông tin cá nhân</a></li>
+											<li><a asp-controller="Account" asp-action="Logout">Đăng xuất</a></li>
+										</ul>
+									</li>
 									<li><a href="#"><i class="fa fa-star"></i> Yêu thích</a></li>
 									
 								}
 								else
 								{
-									<li><a asp-controller="Account" asp-action="Login"><i class="fa fa-lock"></i> Đăng nhập</a></li>
+									<li><a asp-controller="Account" asp-action="Login"><i class="fa fa-lock"></i> Đăng nhập/Đăng ký</a></li>
 								}
 							</ul>
 						</div>
@@ -117,13 +125,13 @@
 								<li><a asp-controller="Introduce" class="active">Giới thiệu</a></li>
 								<li class="dropdown">
 									<a href="#">Dịch vụ<i class="fa fa-angle-down"></i></a>
-									<ul role="menu" class="sub-menu">
-										<li><a asp-controller="DatTiec">Đặt tiệc</a></li>
+									<ul class="sub-menu">
+										<li><a asp-controller="DatTiec" asp-action="Create">Đặt tiệc</a></li>
+										<li><a asp-controller="DatTiec" asp-action="DatTiec">Đặt tiệc - Demo</a></li>
 										<li><a asp-controller="WeddingCard">Đặt thiệp cưới</a></li>
 										<li><a asp-controller="Food">Các món ăn</a></li>
 										<li><a asp-controller="Menu">Thực đơn</a></li>
 										<li><a asp-controller="OtherServices">Các dịch vụ</a></li>
-										<li><a asp-controller="Cart" asp-action="Checkout">Thanh toán</a></li>
 										<li><a asp-controller="Cart">Giỏ hàng</a></li>
 									</ul>
 								</li>
@@ -139,9 +147,9 @@
 						</div>
 					</div>
 					<div class="col-sm-3">
-						<div class="search_box pull-right">
-							<input type="text" placeholder="Search" />
-						</div>
+						<form class="search_box pull-right" asp-controller="Home" asp-action="TimKiem">
+							<input type="text" name="name" placeholder="Search" /><button class="btn-search">Tìm kiếm</button>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -298,6 +306,13 @@
 	<script src="~/js/price-range.js"></script>
 	<script src="~/js/jquery.prettyPhoto.js"></script>
 	<script src="~/js/main.js"></script>
+	<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+	<df-messenger intent="WELCOME"
+				  chat-title="DVTC_VanPhan"
+				  agent-id="97e3c318-962f-41d0-837e-2ea3d3cae4d3"
+				  language-code="vi"></df-messenger>
+
+
 	@await RenderSectionAsync("Scripts", required: false)
 
 </body>

@@ -1,0 +1,88 @@
+﻿@model DatTiecModel
+@{
+    ViewData["title"] = "Hóa Đơn Đặt Tiệc";
+}
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .invoice {
+            width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .invoice-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .invoice-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+            .invoice-table th, .invoice-table td {
+                border: 1px solid #ccc;
+                padding: 8px;
+            }
+
+        .invoice-total {
+            text-align: right;
+            margin-top: 20px;
+        }
+        .info{
+            text-align: center;
+            font-size: 13px;
+            padding-top:1px;
+        }
+    </style>
+
+<body>
+    <div class="invoice">
+        <div class="invoice-header">
+            <h1>HÓA ĐƠN ĐẶT TIỆC</h1>
+            <h5 class="info">Cơ sở tổ chức sự kiện và tiệc cưới Văn Phán</h5>
+            <h5 class="info">Liên hệ: 0348 593 256 - Xóm 3, thôn Hy Văn, xã Hoài Sơn, TX. Hoài Nhơn, Bình Định</h5>
+        </div>
+        <h4>THÔNG TIN KHÁCH HÀNG</h4>
+        <p>Tài khoản: @Model.UserName</p>
+        <p>Địa chỉ: @Model.Address</p>
+
+        <h4>THÔNG TIN ĐƠN HÀNG</h4>
+        <p>Mã đơn: @Model.PartyCode</p>
+        <p>Ngày đặt dịch vụ:@Model.OrderDate.ToString("dd/MM/yyyy hh:mm")</p>
+        <p>Ngày tổ chức:@Model.OrderOrg.ToString("dd/MM/yyyy")</p>
+        <p>Ngày xuất: @DateTime.Now.ToString("dd/MM/yyyy hh:mm")</p>
+
+        <table class="invoice-table">
+            <tr>
+                <th>Sản phẩm</th>
+                <th>Số lượng</th>
+                <th>Tổng tiền</th>
+                <th>Đặt cọc</th>
+                <th>Còn lại</th>
+            </tr>
+            <tr>
+                <td>@Model.ServiceName</td>
+                <td>@Model.TableCount</td>
+                <td>@Model.Total.ToString("##,##") </td>
+                <td>@Model.Deposit.ToString("##,##") </td>
+                <td>@Model.Pay.ToString("##,##")</td>
+            </tr>
+
+            <tr>
+                <td colspan="3">Thanh toán</td>
+                <td colspan ="2">@Model.Pay.ToString("##,##") VNĐ</td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        // Chờ cho trang tải xong rồi gọi hàm in
+        window.onload = function () {
+            window.print();
+        };
+    </script>
+</body>

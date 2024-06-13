@@ -1,0 +1,34 @@
+﻿@model IEnumerable<PositionModel>
+@{
+    ViewData["title"] = "Danh sách chức vụ";
+}
+<h3>Danh sách chức vụ</h3>
+<a asp-action="Create" asp-controller="Position">Thêm chức vụ </a>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Mã </th>
+            <th scope="col">Tên chức vụ</th>
+            <th scope="col">Mô tả</th>
+            <th scope="col">Đường dẫn</th>
+            <th scope="col">Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td >@item.Name</td>
+                <td >@item.Description</td>
+                <td >@item.Slug</td>
+                <td width="110">
+                    <a asp-action="Edit" class="btn btn-warning btn-sm" asp-controller="Position" asp-route-Id="@item.Id">Sửa</a>
+                    <a asp-action="Delete" class="btn btn-danger btn-sm confirmDeletion" asp-controller="Position" asp-route-Id="@item.Id">Xóa</a>
+                </td>
+            </tr>
+
+        }
+
+    </tbody>
+</table>

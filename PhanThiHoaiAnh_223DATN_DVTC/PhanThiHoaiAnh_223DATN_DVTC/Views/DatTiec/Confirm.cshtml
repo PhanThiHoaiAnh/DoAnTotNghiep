@@ -1,0 +1,97 @@
+﻿@model DatTiecModel
+@{
+    ViewData["Title"] = "Thông tin đặt tiệc và Thanh toán";
+    Layout = "_Template";
+}
+<div class="container">
+    <h2>Thông Tin Đặt Tiệc</h2>
+    <form asp-action="Confirm">
+        <input type="hidden" id="paypal-order-id" />
+    <table class="table" width="500px">
+
+        <tr>
+            <td class="of_width"><label>Tài khoản</label></td>
+            <td>@Model.UserName</td>
+        </tr>
+        <tr>
+            <td class="of_width"><label>Mã đặt tiệc</label></td>
+            <td>@Model.PartyCode</td>
+        </tr>
+        <tr>
+            <td class="of_width"><label>Thực đơn</label></td>
+            <td>@ViewData["TenThucDon"]</td>
+        </tr>
+        <tr>
+            <td class="of_width"><label>Ngày đặt tiệc</label></td>
+            <td>@Model.OrderDate.ToString("dd/MM/yyyy")</td>
+        </tr>
+        <tr>
+            <td class="of_width"><label>Ngày tổ chức tiệc</label></td>
+            <td>@Model.OrderOrg.ToString("dd/MM/yyyy")</td>
+        </tr>
+        <tr>
+            <td class="of_width"><label>Số lượng bàn tiệc</label></td>
+            <td>@Model.TableCount</td>
+        </tr>
+        <tr>
+            <td class="of_width"><label>Địa điểm tổ chức</label></td>
+            <td>@Model.Address</td>
+        </tr>
+        <tr>
+            <td class="of_width"><label>Tổng tiền</label></td>
+            <td>@Model.Total.ToString("##,##")</td>
+        </tr>
+        <tr>
+            <td class="of_width"><label>Tiền cọc cần thanh toán (30% trên tổng hóa đơn)</label></td>
+                <td>@Model.Deposit.ToString("##,##")</td>
+        </tr>
+        <tr>
+            <td class="of_width"><label>Số tiền còn lại sẽ thanh toán</label></td>
+            <td>@Model.Pay.ToString("##,##")</td>
+        </tr>
+            <td>
+                <a asp-action="CompletePayment" asp-controller="DatTiec" class="btn btn-success" >ĐẶT TIỆC</a>
+            </td>
+    </table>
+        
+        <div id="paypal-button-container"></div>
+    </form>
+</div>
+@section Scripts{
+
+    <script src="https://www.paypal.com/sdk/js?client-id=ASBwPS-af7uXbV3Amdfrt4mHQhcekRfRqP6xIREKo8OiygVvDBoGdVdN_yMUURGcFMw0_79NMjWhYCui"></script>
+    <script>
+        $(function () {
+            var ttAmount = @Model.Deposit;
+            paypal.Buttons({
+                createOrder: function (data, action) {
+                    return action.order.create({
+                        "purchase_units": [
+                            {
+                                "amount": {
+                                    "currency_code": "USD",
+                                    "value": ttAmount
+                                },
+                                "items":[]
+                            }
+                        ]
+                    })
+                },
+                onApprove: function (data, action) {
+                    return action.order.capture().then(function (response) {
+                        console.log(response);
+                        if (response?.status === "COMPLETED") {
+                            $('#paypal-order-id').value(response.id);
+                        }
+                    })
+                },
+                  style: {
+                    layout: 'vertical',
+                    color:  'blue',
+                    shape:  'rect',
+                    label:  'paypal'
+                  }
+                }).render('#paypal-button-container');
+        });
+    </script>
+}

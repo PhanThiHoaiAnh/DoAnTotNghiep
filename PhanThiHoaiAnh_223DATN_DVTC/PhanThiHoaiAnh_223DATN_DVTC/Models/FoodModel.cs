@@ -12,7 +12,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Models
 		public string Name { get; set; }
 		public string Slug { get; set; }
 		[Required(ErrorMessage = "Nhập Giá món")]
-		public decimal Price { get; set; }
+		public long Price { get; set; }
 		[Required(ErrorMessage = "Nhập mô tả món ăn")]
 		public string Description { get; set; }
         [Required(ErrorMessage = "Chọn trật tự món")]

@@ -1,0 +1,80 @@
+﻿@using PhanThiHoaiAnh_223DATN_DVTC.Models.Views
+@model ProfileViewModel
+@{
+	ViewData["title"] = "Cập nhật thông tin";
+	Layout = "_Template";
+}
+<section id="">
+	<!--form-->
+	<div class="container">
+		<div class="row">
+
+			<div class="col-sm-8 col-sm-offset-1">
+				<div class="signup-form">
+					<!--sign up form-->
+					<h2>Cập nhật thông tin</h2>
+					<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+					<form asp-controller="Account" asp-action="EditProfile">
+						<div class="row">
+							<div class="col-md-12 col-lg-6">
+								<div class="form-item w-100">
+									<label class="form-label my-3">Họ<sup>*</sup></label>
+									<input asp-for="LastName" class="form-control" />
+									<span asp-validation-for="LastName" class="text-danger" />
+								</div>
+							</div>
+							<div class="col-md-12 col-lg-6">
+								<div class="form-item w-100">
+									<label class="form-label my-3">Tên<sup>*</sup></label>
+									<input asp-for="FirstName" class="form-control" />
+									<span asp-validation-for="FirstName" class="text-danger" />
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label>Email</label>
+							<input asp-for="Email" class="form-control" />
+							<span asp-validation-for="Email" class="text-danger" />
+						</div>
+
+						<div class="form-row">
+							<div class="form-group">
+								<label for="Birth">Ngày sinh</label>
+								<input id="Birth" asp-for="Birthday" class="form-control" type="date" min="1935-01-01" placeholder="dd/mm/yy" />
+								<span asp-validation-for="Birthday" class="text-danger"></span>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label>Giới tính</label>
+							<select asp-for="Gender" class="form-control">
+								<option value="Nam">Nam</option>
+								<option value="Nữ">Nữ</option>
+								<option value="Khác">Khác</option>
+							</select>
+							<span asp-validation-for="Gender" class="text-danger" />
+						</div>
+						<div class="form-group">
+							<label>Số điện thoại</label>
+							<input asp-for="PhoneNumber" class="form-control" />
+							<span asp-validation-for="PhoneNumber" class="text-danger" />
+						</div>
+						<div class="form-group">
+							<label>Địa chỉ</label>
+							<input asp-for="Address" class="form-control" />
+							<span asp-validation-for="Address" class="text-danger" />
+						</div>
+
+						<button type="submit" class="btn btn-default">CẬP NHẬT</button>
+					</form>
+				</div><!--/sign up form-->
+			</div>
+		</div>
+	</div>
+</section><!--/form-->
+@section Scripts {
+	@{
+		await Html.RenderPartialAsync("_ValidationScriptsPartial");
+	}
+}

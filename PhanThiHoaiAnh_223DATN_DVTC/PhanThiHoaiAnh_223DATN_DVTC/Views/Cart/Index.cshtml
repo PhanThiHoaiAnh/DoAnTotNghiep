@@ -1,5 +1,5 @@
-﻿@using PhanThiHoaiAnh_223DATN_DVTC.Models.Views
-@model CartItemViewModel
+﻿<!--/#cart_items@using PhanThiHoaiAnh_223DATN_DVTC.Models.Views-->
+@model IEnumerable<CartItemModel>
 @*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
@@ -11,7 +11,7 @@
 		<div class="breadcrumbs">
 			<ol class="breadcrumb">
 				<li><a href="#">Home</a></li>
-				<li class="active">Services Cart</li>
+				<li class="active">Giỏ hàng</li>
 			</ol>
 		</div>
 		<div class="table-responsive cart_info">
@@ -19,21 +19,17 @@
 				<thead>
 					<tr class="cart_menu">
 						<td class="image">Sản phẩm</td>
-						<td class="description"></td>
 						<td class="price">Đơn giá</td>
 						<td class="quantity">Số lượng</td>
-						<td class="total">Tổng tiền</td>
+						<td class="total">Thành tiền</td>
 					</tr>
 				</thead>
 				<tbody>
-					@if(Model.CartItems.Count > 0)
+					@if(Model.Count() > 0)
 					{
-						foreach (var item in Model.CartItems)
+						foreach (var item in Model)
 						{
 							<tr>
-								<td >
-									<!--<a href=""><img src="~/images/@item.Image" width="20%"></a>-->
-								</td>
 								<td class="cart_description">
 									<h5><a href="">@item.ServiceName</a></h5>
 								</td>
@@ -48,13 +44,13 @@
 									
 								</td>
 								<td class="cart_total">
-									<p class="cart_total_price">@Model.CartItems.Where(x => x.ServiceId == item.ServiceId).Sum(x => x.Quantity *x.Price).ToString("N0")</p>
+									<p class="cart_total_price">@item.Total.ToString("N0")</p>
 								</td>
 							</tr>
 						}
 						<tr rowspan="5">
 							<td colspan="6">
-								TỔNG TIỀN: <p class="cart_total_price">@Model.GrandTotal.ToString("N0") đ</p>
+								TỔNG TIỀN: <p class="cart_total_price">@Model.Sum(x => x.Total).ToString("N0") đ</p>
 							</td>
 							
 						</tr>
@@ -68,7 +64,7 @@
 				<td><a class="btn btn-primary btn-sm" asp-controller="Cart" asp-action="Clear"> Xóa tất cả </a></td>
 				@if (User.Identity?.IsAuthenticated ?? false)
 				{
-					<td><a class="btn btn-primary btn-sm" asp-controller="Checkout" asp-action="Checkout"> Thanh Toán </a></td>
+					<td><a class="btn btn-primary btn-sm" asp-controller="Cart" asp-action="Checkout"> Thanh Toán </a></td>
 				}
 			</table>
 		</div>

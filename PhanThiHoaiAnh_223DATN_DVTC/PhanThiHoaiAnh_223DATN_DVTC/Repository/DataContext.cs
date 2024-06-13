@@ -23,7 +23,13 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Repository
         public DbSet<PartyCategoryModel> PartyCategories { get; set; }
 		public DbSet<PartyModel> Party { get; set; }
 		public DbSet<LocationModel> Location { get; set; }
-		public DbSet<TableCategoryModel> TableCategories { get; set; }
-        //public DbSet<WeddingCardModel> WeddingCards { get; set;}
+        public DbSet<DatTiecModel> OrderParty { get; set; }
+		public DbSet<PositionModel> Positions { get; set; }
+		public DbSet<HoaDonModel> Bills { get; set; }
+        public DbSet<WeddingCardModel> OrderWeddingCard { get; set;}
+        public DbSet<WeddingCardCategoryModel> WeddingCardCategories { get; set;}
+        public DbSet<EmployeeModel> Members { get; set; }
+		public DbSet<TaskModel> tblTasks { get; set; }
+		
 	}
 }

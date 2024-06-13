@@ -1,6 +1,7 @@
 ﻿@model UserModel
 @{
 	ViewData["title"] = "Đăng ký tài khoản";
+	Layout = "_Template";
 }
 <section id="">
 	<!--form-->
@@ -13,17 +14,23 @@
 					<h2>ĐĂNG KÝ TÀI KHOẢN</h2>
 					<div asp-validation-summary="ModelOnly" class="text-danger"></div>
 					<form asp-controller="Account" asp-action="Create">
-
-						<div class="form-group">
-							<label>Họ</label>
-							<input asp-for="LastName" class="form-control" />
-							<span asp-validation-for="LastName" class="text-danger" />
+						<div class="row">
+							<div class="col-md-12 col-lg-6">
+								<div class="form-item w-100">
+									<label class="form-label my-3">Họ<sup>*</sup></label>
+									<input asp-for="LastName" class="form-control" />
+									<span asp-validation-for="LastName" class="text-danger" />
+								</div>
+							</div>
+							<div class="col-md-12 col-lg-6">
+								<div class="form-item w-100">
+									<label class="form-label my-3">Tên<sup>*</sup></label>
+									<input asp-for="FirstName" class="form-control" />
+									<span asp-validation-for="FirstName" class="text-danger" />
+								</div>
+							</div>
 						</div>
-						<div class="form-group">
-							<label>Tên của bạn</label>
-							<input asp-for="FirstName" class="form-control" />
-							<span asp-validation-for="FirstName" class="text-danger" />
-						</div>
+						
 						<div class="form-group">
 							<label>Email</label>
 							<input asp-for="Email" class="form-control" />

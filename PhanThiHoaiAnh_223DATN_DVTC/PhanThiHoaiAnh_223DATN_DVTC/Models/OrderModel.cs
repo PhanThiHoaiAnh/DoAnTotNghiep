@@ -11,6 +11,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Models
 		public DateTime OrderDate { get; set; }
 		public int Status { get; set; }
 		public DateTime ReceivedDate { get; set; }
+		public UserModel User { get; set; }
 
 	}
 }

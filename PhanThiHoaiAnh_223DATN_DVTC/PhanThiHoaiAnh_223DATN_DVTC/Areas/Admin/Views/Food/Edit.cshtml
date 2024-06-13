@@ -29,7 +29,7 @@
             <label>Hình ảnh</label>
             <input asp-for="ImageUpload" class="form-control" />
             <span asp-validation-for="ImageUpload" class="text-danger" />
-            <td><img src="~/media/services/@Model.Image" width="120" /></td>
+            <img id="imgpreview" class="pt-2" />
         </div>
 
         <div class="form-group">

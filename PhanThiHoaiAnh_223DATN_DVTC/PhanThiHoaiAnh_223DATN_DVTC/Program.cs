@@ -5,6 +5,7 @@ using PhanThiHoaiAnh_223DATN_DVTC.Repository;
 using Microsoft.Extensions.Configuration;
 using PhanThiHoaiAnh_223DATN_DVTC.Services;
 using Microsoft.AspNetCore.Identity.UI.Services;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -41,12 +42,15 @@ builder.Services.Configure<IdentityOptions>(options =>
 
 	options.User.RequireUniqueEmail = true;
 });
-
+//gui mail
 builder.Services.AddTransient<IEmailSender, EmailSender>();
+
+//dang ky pdf;
+builder.Services.AddScoped<IViewRenderService, ViewRenderService>();
 
 var app = builder.Build();
 
-app.UseSession();
+app.UseStatusCodePagesWithRedirects("/Home/Error?statuscode={0}");
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -57,8 +61,11 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseSession();
+
 app.UseAuthentication();//xac thuc
 app.UseAuthorization();//quyen
+
 
 //map BE
 app.MapControllerRoute(

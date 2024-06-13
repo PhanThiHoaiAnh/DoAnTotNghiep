@@ -16,10 +16,9 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Controllers
             _logger = logger;
             _dataContext = context;
         }
-		public IActionResult Index()
+		public IActionResult Index(string name)
         {
             var services = _dataContext.OtherServices.Include("Category").ToList();
-
             return View(services);
 		}
 		public IActionResult Privacy()
@@ -28,9 +27,23 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Controllers
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        public IActionResult Error(int statuscode)
         {
+            if (statuscode == 404)
+            {
+                return View("NotFound");
+            }
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+        [HttpGet]
+        public IActionResult TimKiem(string name)
+        {
+            var services = from s in _dataContext.OtherServices select s;
+            if (!string.IsNullOrEmpty(name))
+            {
+                services = services.Where(s => s.Name.Contains(name));
+            }
+            return View(services);
         }
     }
 }

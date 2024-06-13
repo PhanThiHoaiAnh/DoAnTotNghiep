@@ -1,0 +1,65 @@
+﻿@using PhanThiHoaiAnh_223DATN_DVTC.Models.Views
+@model IEnumerable<ProfileViewModel>
+@{
+    ViewData["title"] = "Thông tin cá nhân";
+    Layout = "_Template";
+}
+
+<section id="">
+	<!--form-->
+	<div class="container">
+		<div class="row">
+
+			<div class="col-sm-8 col-sm-offset-1">
+				<div class="signup-form">
+					<!--sign up form-->
+					<h2>THÔNG TIN CÁ NHÂN</h2>
+					<form >
+					@foreach(var item in Model)
+					{
+						<div class="row">
+							<div class="col-md-12 col-lg-6">
+								<div class="form-item w-100">
+									<label class="form-label my-3" >Họ</label>
+									<input type="text" value="@item.LastName" readonly />
+								</div>
+							</div>
+							<div class="col-md-12 col-lg-6">
+								<div class="form-item w-100">
+									<label class="form-label my-3" >Tên</label>
+										<input type="text" value="@item.FirstName" readonly />
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="mail">Email</label>
+								<input class="form-control" type="text" id="mail" value="@item.Email" readonly />
+						</div>
+
+						<div class="form-group">
+							<label for="birth" >Ngày sinh</label>
+								<input class="form-control" type="datetime" id="birth" value="@item.Birthday.ToString("dd/MM/yyyy")" readonly />
+						</div>
+
+						<div class="form-group">
+							<label for="gen">Giới tính</label>
+								<input class="form-control" type="text" id="gen" value="@item.Gender" readonly />
+						</div>
+						<div class="form-group">
+							<label for="phonenum">Số điện thoại</label>
+								<input class="form-control" type="text" id="phonenum" value="@item.PhoneNumber" readonly />
+						</div>
+						<div class="form-group">
+							<label for="address">Địa chỉ</label>
+								<input class="form-control" type="text" id="address" value="@item.Address" readonly />
+						</div>
+					}
+						<button asp-controller="Account" asp-action="EditProfile" type="submit" class="btn btn-default">CHỈNH SỬA THÔNG TIN</button>
+					</form>
+				</div><!--/sign up form-->
+			</div>
+		</div>
+	</div>
+</section><!--/form-->
+

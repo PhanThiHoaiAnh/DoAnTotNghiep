@@ -1,0 +1,58 @@
+﻿@model DatTiecModel
+@{
+    ViewData["Title"] = "Thông tin đặt tiệc và Thanh toán";
+    Layout = "_Template";
+}
+<div class="container">
+    <h2>Thông Tin Đặt Tiệc</h2>
+    <table class="table">
+
+        <tr>
+            <td class="of_width"><label>Tài khoản</label></td>
+            <td>@Model.UserName</td>
+        </tr>
+        <tr>
+            <td class="of_width"><label>Mã đặt tiệc</label></td>
+            <td>@Model.PartyCode</td>
+        </tr>
+        <tr>
+            <td class="of_width"><label>Thực đơn</label></td>
+            <td>@ViewData["TenThucDon"]</td>
+        </tr>
+        <tr>
+            <td class="of_width"><label>Ngày đặt tiệc</label></td>
+        <td>@Model.OrderDate.ToString("dd/MM/yyyy")</td>
+        </tr>
+        <tr>
+            <td class="of_width"><label>Ngày tổ chức tiệc</label></td>
+            <td>@Model.OrderOrg.ToString("dd/MM/yyyy")</td>
+        </tr>
+        <tr>
+            <td class="of_width"><label>Số lượng bàn tiệc</label></td>
+            <td>@Model.TableCount</td>
+        </tr>
+        <tr>
+            <td class="of_width"><label>Địa điểm tổ chức</label></td>
+            <td>@Model.Address</td>
+        </tr>
+        <tr>
+            <td class="of_width"><label>Tổng tiền</label></td>
+            <td>@Model.Total.ToString("N0") VNĐ</td>
+        </tr>
+        <tr>
+            <td class="of_width"><label>Tiền cọc cần thanh toán (30% trên tổng hóa đơn)</label></td>
+            <td>@Model.Deposit.ToString("N0") VNĐ</td>
+        </tr>
+        <tr>
+            <td class="of_width"><label>Số tiền còn lại sẽ thanh toán</label></td>
+            <td>@Model.Pay.ToString("N0") VNĐ</td>
+        </tr>
+    </table>
+
+    <form asp-action="CheckoutParty">
+        <input type="submit" name="payment" class="btn btn-primary" value="Thanh toán bằng tiền mặt">
+        <input type="submit" name="payment" class="btn btn-primary" value="Thanh toán VNPay">
+        
+    </form>
+
+</div>

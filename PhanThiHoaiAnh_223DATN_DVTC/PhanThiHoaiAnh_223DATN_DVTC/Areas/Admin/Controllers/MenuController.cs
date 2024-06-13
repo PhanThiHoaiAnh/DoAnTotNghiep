@@ -8,7 +8,7 @@ using PhanThiHoaiAnh_223DATN_DVTC.Repository;
 namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize]
+    [Authorize(Roles = "Admin")]
     public class MenuController : Controller
     {
         private readonly DataContext _dataContext;
@@ -73,7 +73,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
 
             return View(food);
         }
-        public async Task<IActionResult> Edit(string Id)
+        public async Task<IActionResult> Edit(int Id)
         {
             MenuModel food = await _dataContext.Menus.FindAsync(Id);
             return View(food);

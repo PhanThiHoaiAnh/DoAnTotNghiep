@@ -17,7 +17,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Models
 		public string Password { get; set; }
 		public DateOnly Birth {  get; set; }
 		public string Gender { get; set; }
-		[Required(ErrorMessage = "Vui lòng nhập số điện thoại của bạn")]
+		[Required(ErrorMessage = "Vui lòng nhập số điện thoại của bạn"),MaxLength(10)]
 		public string PhoneNumber { get; set; }
 		[Required(ErrorMessage = "Vui lòng nhập địa chỉ của bạn")]
 		public string Address { get; set; }

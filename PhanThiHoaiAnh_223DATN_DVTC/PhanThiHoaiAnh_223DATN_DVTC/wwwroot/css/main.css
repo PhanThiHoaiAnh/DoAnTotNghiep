@@ -66,13 +66,14 @@ a#scrollUp i{
 	width: 16px;
 	height: 16px;
 }
-
+sup{
+	color:red;
+}
 /*************************
 *******Header CSS******
 **************************/
-
 .header_top {
-  background: none repeat scroll 0 0 #F0F0E9;
+	background: none repeat scroll 0 0 #F0F0E9;
 }
 
 .contactinfo ul li:first-child{
@@ -257,22 +258,28 @@ a#scrollUp i{
 }
 
 .search_box input {
-  background: #F0F0E9;
-  border: medium none;
-  color: #B2B2B2;
-  font-family: 'roboto';
-  font-size: 12px;
-  font-weight: 300;
-  height: 35px;
-  outline: medium none;
-  padding-left: 10px;
-  width: 155px;
-  background-image: url(../images/home/searchicon.png);
-  background-repeat: no-repeat;
-  background-position: 130px;
+	background: #F0F0E9;
+	border: medium none;
+	color: brown;
+	font-family: 'roboto';
+	font-size: 12px;
+	font-weight: 300;
+	height: 35px;
+	outline: medium none;
+	padding-left: 10px;
+	width: 155px;
+	background-image: url(../images/home/searchicon.png);
+	background-repeat: no-repeat;
+	background-position: 130px;
 }
-
-
+.btn-search {
+	height: 34px;
+	font-size: 12px;
+	margin-left: 10px;
+}
+.mgt{
+	margin-top:10px;
+}
 /*  Dropdown menu*/
 
 .navbar-header 
@@ -325,6 +332,11 @@ ul.sub-menu {
 
 .navbar-nav li ul.sub-menu li a:hover{
     color: #FDB45E;
+}
+
+/* drop menu 2*/
+.of_width {
+	width :370px;
 }
 
 .fa-angle-down{

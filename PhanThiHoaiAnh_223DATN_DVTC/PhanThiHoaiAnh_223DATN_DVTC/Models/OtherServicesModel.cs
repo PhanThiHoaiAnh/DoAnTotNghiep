@@ -13,7 +13,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Models
         public string Slug { get; set; }
         public string Image { get; set; } = "noimage.jpg";
         [Required(ErrorMessage = "Yêu cầu nhập Giá dịch vụ")]
-        public decimal Price { get; set; }
+        public long Price { get; set; }
         public string Description { get; set; }
         public string Status { get; set; }
         [Required(ErrorMessage = "Chọn loại dịch vụ")]

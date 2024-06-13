@@ -6,8 +6,8 @@ using PhanThiHoaiAnh_223DATN_DVTC.Repository;
 namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
 {
 	[Area("Admin")]
-	[Authorize]
-	public class OrderController : Controller
+    [Authorize(Roles = "Admin")]
+    public class OrderController : Controller
 	{
 		private readonly DataContext _dataContext;
 		public OrderController(DataContext dataContext)

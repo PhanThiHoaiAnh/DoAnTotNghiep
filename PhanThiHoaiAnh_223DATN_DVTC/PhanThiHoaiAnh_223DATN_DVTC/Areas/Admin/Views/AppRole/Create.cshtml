@@ -1,0 +1,28 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model IdentityRole
+@{
+    ViewData["title"] = "Thêm mới Quyền";
+}
+<h3>Thêm mới Quyền</h3>
+<div class="col-md-9">
+
+        @using (Html.BeginForm("Create", "AppRole", FormMethod.Post))
+        {
+            @Html.ValidationSummary(false)
+            @Html.AntiForgeryToken()
+            <div class="form-group">
+                <label>Tên quyền </label>
+                @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Tạo</button>
+            </div>
+        }
+
+    <a asp-action="Index">Trở về</a>
+</div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

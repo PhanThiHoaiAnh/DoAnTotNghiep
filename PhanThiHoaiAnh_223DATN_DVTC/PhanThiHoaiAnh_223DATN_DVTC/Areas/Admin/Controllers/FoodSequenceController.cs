@@ -9,8 +9,8 @@ using PhanThiHoaiAnh_223DATN_DVTC.Repository;
 namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
 {
 	[Area("Admin")]
-	[Authorize]
-	public class FoodSequenceController : Controller
+    [Authorize(Roles = "Admin")]
+    public class FoodSequenceController : Controller
     {
         private readonly DataContext _dataContext;
         public FoodSequenceController(DataContext context)

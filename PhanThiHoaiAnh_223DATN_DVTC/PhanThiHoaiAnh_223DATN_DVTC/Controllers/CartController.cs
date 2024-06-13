@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using PhanThiHoaiAnh_223DATN_DVTC.Models;
 using PhanThiHoaiAnh_223DATN_DVTC.Models.Views;
 using PhanThiHoaiAnh_223DATN_DVTC.Repository;
+using System.Security.Claims;
 
 namespace PhanThiHoaiAnh_223DATN_DVTC.Controllers
 {
@@ -12,42 +14,44 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Controllers
 		{
 			_dataContext = _context;
 		}
+		public List<CartItemModel> cart => HttpContext.Session.GetJson<List<CartItemModel>>("Cart") ?? new List<CartItemModel>();
 		public IActionResult Index()
 		{
-			List<CartItemModel> cartItems = HttpContext.Session.GetJson<List<CartItemModel>>("Cart") ?? new List<CartItemModel>();
-			CartItemViewModel cartVM = new()
-			{
-				CartItems = cartItems,
-				GrandTotal = cartItems.Sum(x => x.Quantity * x.Price),
-			};
-			return View(cartVM);
+			return View(cart);
 		}
-
-		public ActionResult Checkout()
+		public IActionResult Success()
 		{
-			return View("~/Views/Checkout/Index.cshtml");
+			return View();
 		}
-
-		public async Task<IActionResult> Add(int Id)
+		public async Task<IActionResult> Add(int Id, int quantity=1)
 		{
 			OtherServicesModel service = await _dataContext.OtherServices.FindAsync(Id);
-
-			List<CartItemModel> cart = HttpContext.Session.GetJson<List<CartItemModel>>("Cart") ?? new List<CartItemModel>();
-
-			CartItemModel cartItems = cart.Where(s => s.ServiceId == Id).FirstOrDefault();
+			var gioHang = cart;
+			var cartItems = gioHang.SingleOrDefault(s => s.ServiceId == Id);
 			if (cartItems == null)
 			{
-				cart.Add(new CartItemModel(service));
+				if(service == null)
+				{
+					TempData["Message"] = $"Không tìm thấy mã dịch vụ{Id}";
+					return Redirect("/404");
+				}
+				cartItems = new CartItemModel
+				{
+					ServiceId = service.Id,
+					ServiceName = service.Name,
+					Price = service.Price,
+					Quantity = quantity
+				};
+				gioHang.Add(cartItems);
 			}
 			else
 			{
-				cartItems.Quantity += 1;
+				cartItems.Quantity += quantity;
 			}
-
-			HttpContext.Session.SetJson("Cart", cart);
-			TempData["success"] = "Thêm vào giỏ hàng thành công" ;
-
+			HttpContext.Session.SetJson("Cart", gioHang);
+			TempData["success"] = "Thêm vào giỏ hàng thành công";
 			return Redirect(Request.Headers["Referer"].ToString());
+			
 		}
 		public async Task<IActionResult> Decrease(int Id)
 		{
@@ -168,5 +172,137 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Controllers
 
 			return Redirect(Request.Headers["Referer"].ToString());
 		}
-	}
+        //thanh toan
+
+        [Authorize]
+        [HttpGet]
+        public ActionResult Checkout()
+        {
+            if(cart.Count == 0)
+			{
+				return Redirect("/");
+			}	
+            return View(cart);
+        }
+        
+        [Authorize]
+        [HttpPost]
+        public ActionResult Checkout(CheckoutModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                //var userEmail = User.FindFirstValue(ClaimTypes.Email);
+                var userId = HttpContext.User.FindFirstValue("Id");
+
+                var khachHang = new AppUserModel();
+                if (model.GiongKhachHang == true)
+                {
+					khachHang = _dataContext.Users.SingleOrDefault(k => k.Id == userId);//Users.SingleOrDefault(k => k.UserName == userEmail);
+                }
+                var hoaDon = new HoaDonModel
+                {
+                    Id = Guid.NewGuid().ToString(),
+                    FName = model.FName ?? khachHang.FName ,
+                    LName = model.LName ?? khachHang.LName,
+                    UserName = khachHang.UserName,
+                    Address = model.Address ?? khachHang.Address,
+                    PhoneNum = model.PhoneNumber ?? khachHang.PhoneNumber,
+                    OrderDate = DateTime.Now,
+                    OrgDate = model.OrgDate,
+                    Payment = "COD",
+                    Status = false,
+                    Note = model.Note
+                };
+                _dataContext.Database.BeginTransaction();
+                try
+				{
+					_dataContext.Database.CommitTransaction();
+                    _dataContext.Add(hoaDon);
+                    _dataContext.SaveChanges();
+					var cthd = new List<OrderDetails>();
+					foreach( var item in cart)
+					{
+						cthd.Add(new OrderDetails
+						{
+                            OrderCode = hoaDon.Id,
+							UserName = hoaDon.UserName,
+                            ServiceId= item.ServiceId,
+							Price = item.Price,
+							Quantity = item.Quantity,
+							ReceivedDate = hoaDon.OrgDate,
+							Discount = 0
+                        });
+					}
+					_dataContext.AddRange(cthd);
+					_dataContext.SaveChanges();
+
+                    HttpContext.Session.Remove("Cart");
+                    return RedirectToAction("Success", "Cart");
+                }
+				catch
+				{
+					_dataContext.Database.RollbackTransaction();
+				}
+			}
+            return View();
+        }
+        [Authorize]
+        [HttpPost]
+        public ActionResult CheckoutPage(CheckoutPageModel model)
+		{
+            if (ModelState.IsValid)
+            {
+                var userEmail = User.FindFirstValue(ClaimTypes.Email);
+
+                if (model.CheckoutModel.GiongKhachHang == true)
+                {
+                    var khach = _dataContext.Users.SingleOrDefault(k => k.UserName == userEmail);
+                }
+                var khachHang = new UserModel();
+                var hoaDon = new HoaDonModel
+                {
+                    Id = Guid.NewGuid().ToString(),
+                    FName = model.CheckoutModel.FName ?? khachHang.FirstName,
+                    LName = model.CheckoutModel.LName ?? khachHang.LastName,
+                    UserName = userEmail,
+                    Address = model.CheckoutModel.Address ?? khachHang.Address,
+                    PhoneNum = model.CheckoutModel.PhoneNumber ?? khachHang.PhoneNumber,
+                    OrderDate = DateTime.Now,
+                    OrgDate = model.CheckoutModel.OrgDate,
+                    Payment = "COD",
+                    Status = false,
+                    Note = model.CheckoutModel.Note,
+                };
+                _dataContext.Database.BeginTransaction();
+                try
+                {
+                    _dataContext.Database.CommitTransaction();
+                    _dataContext.Add(hoaDon);
+                    _dataContext.SaveChanges();
+                    var odDetail = new List<OrderDetails>();
+                    foreach (var item in cart)
+                    {
+                        odDetail.Add(new OrderDetails
+                        {
+                            OrderCode = hoaDon.Id,
+                            ServiceId = item.ServiceId,
+                            Quantity = item.Quantity,
+                            Price = item.Price,
+                            Discount = 0,
+                            ReceivedDate = hoaDon.OrgDate
+                        });
+                    }
+                    _dataContext.SaveChanges();
+                    HttpContext.Session.Remove("Cart");
+                    TempData["success"] = "Thanh toán thành công. Vui lòng đợi duyệt!";
+                    return RedirectToAction("Index", "Cart");
+                }
+                catch
+                {
+                    _dataContext.Database.RollbackTransaction();
+                }
+            }
+            return View(model);
+		}
+    }
 }

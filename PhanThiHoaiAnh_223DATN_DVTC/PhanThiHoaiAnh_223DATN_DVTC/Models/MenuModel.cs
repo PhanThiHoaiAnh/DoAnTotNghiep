@@ -14,7 +14,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Models
         [Required(ErrorMessage = "Nhập số lượng món trong thực đơn")]
         public int Quantity { get; set; }
         [Required(ErrorMessage = "Nhập giá của thực đơn")]
-        public decimal Price { get; set; }
+        public long Price { get; set; }
         [Required(ErrorMessage = "Nhập mô tả thực đơn")]
         public string Description { get; set; }
         public bool Status { get; set; }

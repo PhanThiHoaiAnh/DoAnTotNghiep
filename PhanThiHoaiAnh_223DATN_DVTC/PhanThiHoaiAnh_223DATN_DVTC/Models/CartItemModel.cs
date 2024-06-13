@@ -5,11 +5,8 @@
 		public int ServiceId { get; set; }
 		public string ServiceName { get; set; }
 		public int Quantity { get; set; }
-		public decimal Price { get; set; }
-		public decimal Total {
-			get { return Quantity*Price; }
-		}
-		public DateTime ReceivedDate { get; set; }
+		public long Price {get; set;  }
+		public long Total { get { return Price* Quantity; } }
 		public string Image {  get; set; }
 		public CartItemModel() 
 		{

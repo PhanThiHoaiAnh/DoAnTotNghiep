@@ -27,28 +27,6 @@
 <body>
 	<header id="header">
 		<!--header-->
-		<div class="header_top">
-			<!--header_top-->
-			<div class="container">
-				<div class="row">
-					
-				</div>
-			</div>
-		</div><!--/header_top-->
-
-		<div class="header-middle">
-			<!--header-middle-->
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-4">
-						<div class="btn-group pull-right">
-							
-						</div>
-					</div>
-					
-				</div>
-			</div>
-		</div><!--/header-middle-->
 
 		<div class="header-bottom">
 			<!--header-bottom-->
@@ -65,7 +43,7 @@
 						</div>
 						<div class="mainmenu pull-left">
 							<ul class="nav navbar-nav collapse navbar-collapse">
-								<li><a asp-controller="OtherServices" class="active">Trang chủ</a></li>
+								<li><a href="http://localhost:37963/" class="active">Về trang chính</a></li>
 								<li class="dropdown">
 									<a href="#">Dịch vụ<i class="fa fa-angle-down"></i></a>
 									<ul role="menu" class="sub-menu">
@@ -95,14 +73,27 @@
 									<a href="#">Đơn hàng<i class="fa fa-angle-down"></i></a>
 									<ul role="menu" class="sub-menu">
 										<li><a asp-controller="Order" asp-action="Index">Đơn đặt dịch vụ</a></li>
-										<li><a asp-controller="Order" asp-action="Index">Đơn đặt tiệc</a></li>
+										<li><a asp-controller="Party" asp-action="Index">Đơn đặt tiệc</a></li>
+										<li><a asp-controller="OrderParty" asp-action="Index">Hóa đơn đặt tiệc</a></li>
 									</ul>
 								</li>
-								<li><a asp-controller="AccountList">Danh sách khách hàng</a></li>
+								<li class="dropdown">
+									<a href="#">Quản lý người dùng<i class="fa fa-angle-down"></i></a>
+									<ul role="menu" class="sub-menu">
+										<li><a asp-controller="Account" asp-action="Index">Danh sách người dùng</a></li>
+										<li><a asp-controller="Account" asp-action="EmployeeIndex">Danh sách Nhân viên</a></li>
+										<li><a asp-controller="Position" asp-action="Index">Danh sách chức vụ</a></li>
+										<li><a asp-controller="Account" asp-action="Index">Phân công việc</a></li>
+										<li><a asp-controller="AppRole" asp-action="Index">Danh sách Quyền</a></li>
+									</ul>
+								</li>
+								
+								
 							</ul>
 						</div>
 					</div>
 					<div class="col-sm-3">
+						
 						<div class="search_box pull-right">
 							<input type="text" placeholder="Search" />
 						</div>

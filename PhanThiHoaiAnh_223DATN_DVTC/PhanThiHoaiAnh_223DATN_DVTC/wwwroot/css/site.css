@@ -1,0 +1,30 @@
+﻿body {
+    font-family: Arial, sans-serif;
+}
+
+.invoice {
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.invoice-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .invoice-table th, .invoice-table td {
+        border: 1px solid #ccc;
+        padding: 8px;
+    }
+
+.invoice-total {
+    text-align: right;
+    margin-top: 20px;
+}

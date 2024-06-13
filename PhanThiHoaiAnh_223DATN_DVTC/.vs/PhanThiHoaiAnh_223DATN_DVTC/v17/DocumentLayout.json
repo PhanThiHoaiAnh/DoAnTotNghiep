@@ -1,123 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|d:\\223datn_0106_phanthihoaianh\\phanthihoaianh_223datn\\doantotnghiep\\phanthihoaianh_223datn_dvtc\\phanthihoaianh_223datn_dvtc\\views\\dattiec\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|solutionrelative:phanthihoaianh_223datn_dvtc\\views\\dattiec\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|d:\\223datn_0106_phanthihoaianh\\phanthihoaianh_223datn\\doantotnghiep\\phanthihoaianh_223datn_dvtc\\phanthihoaianh_223datn_dvtc\\views\\account\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|solutionrelative:phanthihoaianh_223datn_dvtc\\views\\account\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|d:\\223datn_0106_phanthihoaianh\\phanthihoaianh_223datn\\doantotnghiep\\phanthihoaianh_223datn_dvtc\\phanthihoaianh_223datn_dvtc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|solutionrelative:phanthihoaianh_223datn_dvtc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|d:\\223datn_0106_phanthihoaianh\\phanthihoaianh_223datn\\doantotnghiep\\phanthihoaianh_223datn_dvtc\\phanthihoaianh_223datn_dvtc\\controllers\\foodcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|solutionrelative:phanthihoaianh_223datn_dvtc\\controllers\\foodcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|d:\\223datn_0106_phanthihoaianh\\phanthihoaianh_223datn\\doantotnghiep\\phanthihoaianh_223datn_dvtc\\phanthihoaianh_223datn_dvtc\\controllers\\dattieccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|solutionrelative:phanthihoaianh_223datn_dvtc\\controllers\\dattieccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|d:\\223datn_0106_phanthihoaianh\\phanthihoaianh_223datn\\doantotnghiep\\phanthihoaianh_223datn_dvtc\\phanthihoaianh_223datn_dvtc\\areas\\admin\\controllers\\foodsequencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F889BAB-E0CA-409C-B905-43A978C76613}|PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC.csproj|solutionrelative:phanthihoaianh_223datn_dvtc\\areas\\admin\\controllers\\foodsequencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Views\\DatTiec\\Index.cshtml",
-              "RelativeDocumentMoniker": "PhanThiHoaiAnh_223DATN_DVTC\\Views\\DatTiec\\Index.cshtml",
-              "ToolTip": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Views\\DatTiec\\Index.cshtml",
-              "RelativeToolTip": "PhanThiHoaiAnh_223DATN_DVTC\\Views\\DatTiec\\Index.cshtml",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAAABAAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-05T21:23:10.788Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "PhanThiHoaiAnh_223DATN_DVTC\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "PhanThiHoaiAnh_223DATN_DVTC\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAACUBAAAAAAAAAAAAAC0BAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-05T21:42:34.412Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FoodController.cs",
-              "DocumentMoniker": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Controllers\\FoodController.cs",
-              "RelativeDocumentMoniker": "PhanThiHoaiAnh_223DATN_DVTC\\Controllers\\FoodController.cs",
-              "ToolTip": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Controllers\\FoodController.cs",
-              "RelativeToolTip": "PhanThiHoaiAnh_223DATN_DVTC\\Controllers\\FoodController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T21:39:01.154Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Views\\Account\\Create.cshtml",
-              "RelativeDocumentMoniker": "PhanThiHoaiAnh_223DATN_DVTC\\Views\\Account\\Create.cshtml",
-              "ToolTip": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Views\\Account\\Create.cshtml",
-              "RelativeToolTip": "PhanThiHoaiAnh_223DATN_DVTC\\Views\\Account\\Create.cshtml",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAAAE4AAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-05T21:29:09.497Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FoodSequenceController.cs",
-              "DocumentMoniker": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Areas\\Admin\\Controllers\\FoodSequenceController.cs",
-              "RelativeDocumentMoniker": "PhanThiHoaiAnh_223DATN_DVTC\\Areas\\Admin\\Controllers\\FoodSequenceController.cs",
-              "ToolTip": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Areas\\Admin\\Controllers\\FoodSequenceController.cs",
-              "RelativeToolTip": "PhanThiHoaiAnh_223DATN_DVTC\\Areas\\Admin\\Controllers\\FoodSequenceController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABsAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T21:27:05.032Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DatTiecController.cs",
-              "DocumentMoniker": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Controllers\\DatTiecController.cs",
-              "RelativeDocumentMoniker": "PhanThiHoaiAnh_223DATN_DVTC\\Controllers\\DatTiecController.cs",
-              "ToolTip": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\Controllers\\DatTiecController.cs",
-              "RelativeToolTip": "PhanThiHoaiAnh_223DATN_DVTC\\Controllers\\DatTiecController.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAA1wB0AAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T21:16:41.14Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
