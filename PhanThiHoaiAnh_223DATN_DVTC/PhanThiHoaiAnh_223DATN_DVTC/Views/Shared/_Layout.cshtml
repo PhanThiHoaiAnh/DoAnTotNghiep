@@ -67,29 +67,32 @@
 				</div>
 			</div>
 		</div><!--/header_top-->
-
+		
 		<div class="header-middle">
 			<!--header-middle-->
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-3">
-						<img src="~/images/vanphan.jpg" />
+						<img src="~/images/vanphan.png" />
 					</div>
 					<div class="col-sm-8">
 						<div class="shop-menu pull-right">
 							<ul class="nav navbar-nav">
-                                <li><a asp-controller="Cart"><i class="fa fa-shopping-cart"></i> Giỏ hàng</a></li>
+								<li><a asp-controller="Cart"><i class="fa fa-shopping-cart"></i> Giỏ hàng</a></li>
 
-                                @if(User.Identity?.IsAuthenticated ?? false)
+								@if(User.Identity?.IsAuthenticated ?? false)
 								{
 									<li><a href="#"><i class="fa fa-lock"></i>Chào @User.Identity.Name</a></li>
 								
 									<li class="dropdown">
 										<a href="#"><i class="fa fa-user"></i>Tài Khoản<i class="fa fa-angle-down"></i></a>
 										<ul role="menu" class="sub-menu">
-											<li><a asp-controller="Account" asp-action="Profile">Thông tin cá nhân</a></li>
-											<li><a asp-controller="Account" asp-action="EditProfile">Cập nhật thông tin cá nhân</a></li>
-											<li><a asp-controller="Account" asp-action="Logout">Đăng xuất</a></li>
+											<li><a asp-controller="Account" asp-action="Profile" style="background: none">Thông tin cá nhân</a></li>
+											<li><a asp-controller="Account" asp-action="EditProfile" style="background: none">Cập nhật thông tin cá nhân</a></li>
+											<li><a asp-controller="Order" asp-action="IndexOrder" style="background: none">Lịch sử đặt hàng</a></li>
+											<li><a asp-controller="Order" asp-action="Index" style="background: none">Chi tiết đặt hàng</a></li>
+											<li><a asp-controller="Order" asp-action="IndexParty" style="background: none">Lịch sử đặt tiệc</a></li>
+											<li><a asp-controller="Account" asp-action="Logout" style="background: none">Đăng xuất</a></li>
 										</ul>
 									</li>
 									<li><a href="#"><i class="fa fa-star"></i> Yêu thích</a></li>
@@ -106,19 +109,13 @@
 			</div>
 		</div><!--/header-middle-->
 
-		<div class="header-bottom">
+		<div class="header-bottom ">
 			<!--header-bottom-->
-			<div class="container">
+			<div class="header-bottom-border">
+				<div class="container">
 				<div class="row">
 					<div class="col-sm-9">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-						</div>
+						
 						<div class="mainmenu pull-left">
 							<ul class="nav navbar-nav collapse navbar-collapse">
 								<li><a asp-controller="Home" class="active">Trang chủ</a></li>
@@ -128,9 +125,10 @@
 									<ul class="sub-menu">
 										<li><a asp-controller="DatTiec" asp-action="Create">Đặt tiệc</a></li>
 										<li><a asp-controller="DatTiec" asp-action="DatTiec">Đặt tiệc - Demo</a></li>
-										<li><a asp-controller="WeddingCard">Đặt thiệp cưới</a></li>
+										<li><a asp-controller="OrderCard" asp-action="Create">Đặt thiệp cưới</a></li>
 										<li><a asp-controller="Food">Các món ăn</a></li>
 										<li><a asp-controller="Menu">Thực đơn</a></li>
+										<li><a asp-controller="WeddingCard">Mẫu thiệp cưới</a></li>
 										<li><a asp-controller="OtherServices">Các dịch vụ</a></li>
 										<li><a asp-controller="Cart">Giỏ hàng</a></li>
 									</ul>
@@ -146,60 +144,58 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-sm-3">
-						<form class="search_box pull-right" asp-controller="Home" asp-action="TimKiem">
-							<input type="text" name="name" placeholder="Search" /><button class="btn-search">Tìm kiếm</button>
-						</form>
-					</div>
+						@using (Html.BeginForm("TimKiem", "Home", FormMethod.Get))
+						{
+							<div class="col-sm-3">
+								<input type="search" name="query" placeholder="Nhập từ khóa" />
+								<button class="btn-search">Tìm kiếm</button>
+							</div>
+						}
+						
 				</div>
+			</div>
 			</div>
 		</div><!--/header-bottom-->
-	</header><!--/header-->
+		
+		<!--/header-slider-->
+		<section id="slider">
+		<div class="row">
+			<div class="col-sm-12">
+				<div id="slider-carousel" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#slider-carousel" data-slide-to="0" class="active"></li>
+						<li data-target="#slider-carousel" data-slide-to="1"></li>
+						<li data-target="#slider-carousel" data-slide-to="2"></li>
+					</ol>
 
-	<section id="slider">
-		<!--slider-->
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<div id="slider-carousel" class="carousel slide" data-ride="carousel">
-						<ol class="carousel-indicators">
-							<li data-target="#slider-carousel" data-slide-to="0" class="active"></li>
-							<li data-target="#slider-carousel" data-slide-to="1"></li>
-							<li data-target="#slider-carousel" data-slide-to="2"></li>
-						</ol>
-
-						<div class="carousel-inner">
+					<div class="carousel-inner">
 							<div class="item active">
-								<div class="col-sm-8">
-									<img src="./images/anh5.jpg" height="580"/>
-								</div>
+							<div class="col-sm-8">
+								<img src="./images/anh5.jpg" />
 							</div>
+						</div>
 							<div class="item">
-								<div class="col-sm-8">
-									<img src="./images/anh1.jpg" height="580" />
-								</div>
+							<div class="col-sm-8">
+									<img src="./images/anh1.jpg" />
 							</div>
-
-							<div class="item">
-								<div class="col-sm-8">
-									<img src="./images/anh4.jpg" height="580" />
-								</div>
-							</div>
-
 						</div>
 
-						<a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
-							<i class="fa fa-angle-left"></i>
-						</a>
-						<a href="#slider-carousel" class="right control-carousel hidden-xs" data-slide="next">
-							<i class="fa fa-angle-right"></i>
-						</a>
+							<div class="item">
+							<div class="col-sm-8">
+									<img src="./images/anh4.jpg" />
+							</div>
+						</div>
+
 					</div>
 
 				</div>
+
 			</div>
-		</div>
-	</section><!--/slider-->
+		</div><!--/header-slider-->
+		</section>
+	</header><!--/header-->
+
+
 
 	<section>
 		<div class="container">
@@ -212,54 +208,23 @@
 
 	<footer id="footer">
 		<!--Footer-->
-		<div class="footer-top">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-2">
-						<div class="companyinfo">
-							<img src="~/images/logo2.png"/>
-							<p></p>
-						</div>
-					</div>
-					<div class="col-sm-7">
-
-						<div class="col-sm-3">
-							<div class="video-gallery text-center">
-								<a href="#">
-									<div class="iframe-img">
-										<img src="images/home/iframe3.png" alt="" />
-									</div>
-									<div class="overlay-icon">
-										<i class="fa fa-play-circle-o"></i>
-									</div>
-								</a>
-								<p>Circle of Hands</p>
-								<h2>24 DEC 2014</h2>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="address">
-							<img src="images/home/map.png" alt="" />
-							<p>505 S Atlantic Ave Virginia Beach, VA(Virginia)</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
 		<div class="footer-widget">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-2">
 						<div class="single-widget">
+							<img src="~/images/logo2.png" />
+							<p></p>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
 							<h2>Dịch vụ</h2>
 							<ul class="nav nav-pills nav-stacked">
-								<li><a href="#">Online Help</a></li>
-								<li><a href="#">Contact Us</a></li>
-								<li><a href="#">Order Status</a></li>
-								<li><a href="#">Change Location</a></li>
-								<li><a href="#">FAQ’s</a></li>
+								<li><a href="#">Tổ chức tiệc và sự kiện</a></li>
+								<li><a href="#">Đặt dịch vụ</a></li>
+								<li><a href="#">Hoạt động</a></li>
+								<li><a href="#">Tiếp cận</a></li>
 							</ul>
 						</div>
 					</div>
@@ -268,8 +233,8 @@
 						<div class="single-widget">
 							<h2>Về chúng tôi</h2>
 							<ul class="nav nav-pills nav-stacked">
-								<li><a href="#">Company Information</a></li>
-								<li><a href="#">Careers</a></li>
+								<li><a href="#">Thông tin liên  hệ</a></li>
+								<li><a href="#">Địa chỉ</a></li>
 							</ul>
 						</div>
 					</div>
@@ -290,8 +255,8 @@
 		<div class="footer-bottom">
 			<div class="container">
 				<div class="row">
-					<p class="pull-left">Copyright © 2024 Wedding Service Inc. All rights reserved.</p>
-					<p class="pull-right">Designed by <span><a target="_blank" href="http://www.themeum.com">Themeum</a></span></p>
+					<p class="pull-left">Copyright © 2024 - Van Phan.</p>
+					<p class="pull-right">Designed by <span><a target="_blank" href="http://www.themeum.com">Themeum and Edit by HoaiAnhPhan</a></span></p>
 				</div>
 			</div>
 		</div>
@@ -311,7 +276,6 @@
 				  chat-title="DVTC_VanPhan"
 				  agent-id="97e3c318-962f-41d0-837e-2ea3d3cae4d3"
 				  language-code="vi"></df-messenger>
-
 
 	@await RenderSectionAsync("Scripts", required: false)
 

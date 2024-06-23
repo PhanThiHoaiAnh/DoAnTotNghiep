@@ -8,7 +8,7 @@ using PhanThiHoaiAnh_223DATN_DVTC.Repository;
 namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize(Roles = "Admin")]
+    //[Authorize(Roles = "Admin")]
     public class MenuController : Controller
     {
         private readonly DataContext _dataContext;
@@ -20,7 +20,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            return View(await _dataContext.Menus.OrderByDescending(s => s.Id).ToListAsync());
+            return View(await _dataContext.tblMenu.OrderByDescending(s => s.Id).ToListAsync());
         }
         public IActionResult Create()
         {
@@ -34,7 +34,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
             {
                 //them du lieu
                 food.Slug = food.Name.Replace(" ", "-");
-                var slug = await _dataContext.Menus.FirstOrDefaultAsync(f => f.Slug == food.Slug);
+                var slug = await _dataContext.tblMenu.FirstOrDefaultAsync(f => f.Slug == food.Slug);
                 if (slug != null)
                 {
                     ModelState.AddModelError("", "Thực đơn đã tồn tại");
@@ -75,7 +75,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
         }
         public async Task<IActionResult> Edit(int Id)
         {
-            MenuModel food = await _dataContext.Menus.FindAsync(Id);
+            MenuModel food = await _dataContext.tblMenu.FindAsync(Id);
             return View(food);
         }
         [HttpPost]
@@ -120,7 +120,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
         }
         public async Task<IActionResult> Delete(int Id)
         {
-            MenuModel food = await _dataContext.Menus.FindAsync(Id);
+            MenuModel food = await _dataContext.tblMenu.FindAsync(Id);
             if (!string.Equals(food.Image, "noimage.jpg"))
             {
                 string uploadDir = Path.Combine(_webHostEnvironment.WebRootPath, "media/food");
@@ -130,7 +130,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
                     System.IO.File.Delete(oldfileImg);
                 }
             }
-            _dataContext.Menus.Remove(food);
+            _dataContext.tblMenu.Remove(food);
             await _dataContext.SaveChangesAsync();
             TempData["error"] = "Thực đơn đã được xóa";
             return RedirectToAction("Index");

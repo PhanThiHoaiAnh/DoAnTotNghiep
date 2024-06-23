@@ -27,12 +27,44 @@
 <body>
 	<header id="header">
 		<!--header-->
+		<div class="header-middle" style="margin:5px">
+			<!--header-middle-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4"></div>
+					<div class="col-sm-8">
+						<div class="shop-menu pull-right">
+							<ul class="nav navbar-nav">
+								@if (User.Identity?.IsAuthenticated ?? false)
+								{
+									<li><a href="#"><i class="fa fa-lock"></i>Chào @User.Identity.Name</a></li>
 
+									<li class="dropdown">
+										<a href="#"><i class="fa fa-user"></i>Tài Khoản<i class="fa fa-angle-down"></i></a>
+										<ul role="menu" class="sub-menu">
+											<li><a asp-controller="Account" asp-action="Profile" style="background: none">Thông tin cá nhân</a></li>
+											<li><a asp-controller="Account" asp-action="EditProfile" style="background: none">Cập nhật thông tin cá nhân</a></li>
+											<li><a asp-controller="Account" asp-action="Logout" style="background: none">Đăng xuất</a></li>
+										</ul>
+									</li>
+
+								}
+								else
+								{
+									<li><a asp-controller="Account" asp-action="Login"><i class="fa fa-lock"></i> Đăng nhập/Đăng ký</a></li>
+								}
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header-middle-->
 		<div class="header-bottom">
 			<!--header-bottom-->
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-9">
+					
+					<div class="col-sm-12">
 						<div class="navbar-header">
 							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 								<span class="sr-only">Toggle navigation</span>
@@ -43,12 +75,13 @@
 						</div>
 						<div class="mainmenu pull-left">
 							<ul class="nav navbar-nav collapse navbar-collapse">
-								<li><a href="http://localhost:37963/" class="active">Về trang chính</a></li>
+								<li><a href="http://localhost:37963/" style="color:darkgreen">HOME</a></li>
 								<li class="dropdown">
 									<a href="#">Dịch vụ<i class="fa fa-angle-down"></i></a>
 									<ul role="menu" class="sub-menu">
 										<li><a asp-controller="OtherServices">Các dịch vụ</a></li>
 										<li><a asp-controller="ServiceCategory">Loại dịch vụ</a></li>
+										<li><a asp-controller="WeddingCard">Các loại thiệp cưới</a></li>
 									</ul>
 								</li>
 								<li class="dropdown">
@@ -72,9 +105,9 @@
 								<li class="dropdown">
 									<a href="#">Đơn hàng<i class="fa fa-angle-down"></i></a>
 									<ul role="menu" class="sub-menu">
-										<li><a asp-controller="Order" asp-action="Index">Đơn đặt dịch vụ</a></li>
+										<li><a asp-controller="Order" asp-action="Index">Danh sách đặt các dịch vụ</a></li>
 										<li><a asp-controller="Party" asp-action="Index">Đơn đặt tiệc</a></li>
-										<li><a asp-controller="OrderParty" asp-action="Index">Hóa đơn đặt tiệc</a></li>
+										<li><a asp-controller="OrderWeddingCard" asp-action="Index">Đơn đặt thiệp cưới</a></li>
 									</ul>
 								</li>
 								<li class="dropdown">
@@ -87,15 +120,9 @@
 										<li><a asp-controller="AppRole" asp-action="Index">Danh sách Quyền</a></li>
 									</ul>
 								</li>
-								
+								<li><a>Thống kê<i class="fa fa-angle-down"></i></a></li>
 								
 							</ul>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						
-						<div class="search_box pull-right">
-							<input type="text" placeholder="Search" />
 						</div>
 					</div>
 				</div>

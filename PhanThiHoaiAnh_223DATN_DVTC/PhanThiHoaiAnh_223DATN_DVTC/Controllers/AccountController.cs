@@ -98,7 +98,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Controllers
                 {
                     string code = await _userManage.GenerateEmailConfirmationTokenAsync(newUser);
                     var callbacklUrl = Url.Action("ConfirmEmail", "Account", new { userId = newUser.Id, code = code }, Request.Scheme);
-					await _emailSender.SendEmailAsync(newUser.Email,"Xác nhận địa chỉ email", $"Vui lòng xác nhận địa chỉ email của bạn bằng cách nhấp vào <a href='{callbacklUrl}'>đây</a>.");
+					await _emailSender.SendEmailAsync(newUser.Email,"Xác nhận địa chỉ email", $"Vui lòng xác nhận địa chỉ email của bạn bằng cách nhấp vào đây {callbacklUrl}");
                     return View("NotificationEmailConfirm");
                 }
                 foreach (IdentityError error in result.Errors)

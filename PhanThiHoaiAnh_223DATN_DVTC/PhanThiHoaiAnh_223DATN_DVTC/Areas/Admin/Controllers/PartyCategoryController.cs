@@ -17,7 +17,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            return View(await _dataContext.PartyCategories.OrderByDescending(s => s.Id).ToListAsync());
+            return View(await _dataContext.tblPartyCategories.OrderByDescending(s => s.Id).ToListAsync());
         }
         public IActionResult Create()
         {
@@ -31,7 +31,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
             {
                 //them du lieu
                 food.Slug = food.Name.Replace(" ", "-");
-                var slug = await _dataContext.FoodCategories.FirstOrDefaultAsync(f => f.Slug == food.Slug);
+                var slug = await _dataContext.tblFoodCategories.FirstOrDefaultAsync(f => f.Slug == food.Slug);
                 if (slug != null)
                 {
                     ModelState.AddModelError("", "Loại tiệc đã tồn tại");
@@ -61,7 +61,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
         }
         public async Task<IActionResult> Edit(string Id)
         {
-            PartyCategoryModel food = await _dataContext.PartyCategories.FindAsync(Id);
+            PartyCategoryModel food = await _dataContext.tblPartyCategories.FindAsync(Id);
             return View(food);
         }
         [HttpPost]
@@ -95,8 +95,8 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
         }
         public async Task<IActionResult> Delete(string Id)
         {
-            PartyCategoryModel food = await _dataContext.PartyCategories.FindAsync(Id);
-            _dataContext.PartyCategories.Remove(food);
+            PartyCategoryModel food = await _dataContext.tblPartyCategories.FindAsync(Id);
+            _dataContext.tblPartyCategories.Remove(food);
             await _dataContext.SaveChangesAsync();
             TempData["error"] = "Loại tiệc đã được xóa";
             return RedirectToAction("Index");

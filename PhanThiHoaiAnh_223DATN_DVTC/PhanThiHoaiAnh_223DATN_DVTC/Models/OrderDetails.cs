@@ -15,6 +15,5 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Models
 		public DateTime ReceivedDate { get; set; }
 		public float Discount { get; set; } = 0;
 		public OtherServicesModel Service { get; set; }
-		public OrderModel OrderModel { get; set; }
 	}
 }

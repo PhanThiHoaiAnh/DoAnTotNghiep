@@ -14,8 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="iTextSharp" Version="5.5.13.3" />
-    <PackageReference Include="itextsharp.xmlworker" Version="5.5.13.3" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.5">
@@ -28,15 +26,86 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2" />
-    <PackageReference Include="Newtonsoft.Json" Version="8.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Select.HtmlToPdf.NetCore" Version="24.1.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\Admin\Views\OrderCard\" />
     <Folder Include="Areas\Admin\Views\Shared\Components\" />
-    <Folder Include="wwwroot\admin\" />
     <Folder Include="wwwroot\backend\css\" />
     <Folder Include="wwwroot\backend\images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\admin\fonts\dripicons-v2-1.bin" />
+    <None Include="wwwroot\admin\fonts\dripicons-v2-2.bin" />
+    <None Include="wwwroot\admin\fonts\dripicons-v2-3.bin" />
+    <None Include="wwwroot\admin\fonts\dripicons-v2.bin" />
+    <None Include="wwwroot\admin\fonts\dripicons-v2.svg" />
+    <None Include="wwwroot\admin\fonts\feather-1.bin" />
+    <None Include="wwwroot\admin\fonts\feather-2.bin" />
+    <None Include="wwwroot\admin\fonts\feather.bin" />
+    <None Include="wwwroot\admin\fonts\feather.svg" />
+    <None Include="wwwroot\admin\fonts\materialdesignicons-webfont-1.bin" />
+    <None Include="wwwroot\admin\fonts\materialdesignicons-webfont-2.bin" />
+    <None Include="wwwroot\admin\fonts\materialdesignicons-webfont-3.bin" />
+    <None Include="wwwroot\admin\fonts\materialdesignicons-webfont-4.bin" />
+    <None Include="wwwroot\admin\fonts\materialdesignicons-webfont.bin" />
+    <None Include="wwwroot\admin\fonts\materialdesignicons-webfont.svg" />
+    <None Include="wwwroot\admin\fonts\summernote-1.bin" />
+    <None Include="wwwroot\admin\fonts\summernote-2.bin" />
+    <None Include="wwwroot\admin\fonts\summernote-3.bin" />
+    <None Include="wwwroot\admin\fonts\summernote.bin" />
+    <None Include="wwwroot\admin\images\error.svg" />
+    <None Include="wwwroot\admin\js\app.min.js" />
+    <None Include="wwwroot\admin\js\pages\calendar.init.js" />
+    <None Include="wwwroot\admin\js\pages\chartjs.init.js" />
+    <None Include="wwwroot\admin\js\pages\dashboard.init.js" />
+    <None Include="wwwroot\admin\js\pages\datatables.init.js" />
+    <None Include="wwwroot\admin\js\pages\form-advanced.init.js" />
+    <None Include="wwwroot\admin\js\pages\form-editor.init.js" />
+    <None Include="wwwroot\admin\js\pages\maps.init.js" />
+    <None Include="wwwroot\admin\js\pages\range-sliders.init.js" />
+    <None Include="wwwroot\admin\js\pages\sparkline.init.js" />
+    <None Include="wwwroot\admin\js\pages\sweet-alerts.init.js" />
+    <None Include="wwwroot\admin\js\pages\toastr.init.js" />
+    <None Include="wwwroot\admin\js\vendor.min.js" />
+    <None Include="wwwroot\admin\libs\bootstrap-daterangepicker\daterangepicker.js" />
+    <None Include="wwwroot\admin\libs\bootstrap-maxlength\bootstrap-maxlength.min.js" />
+    <None Include="wwwroot\admin\libs\chart-js\Chart.bundle.min.js" />
+    <None Include="wwwroot\admin\libs\datatables\buttons.bootstrap4.min.js" />
+    <None Include="wwwroot\admin\libs\datatables\buttons.flash.min.js" />
+    <None Include="wwwroot\admin\libs\datatables\buttons.html5.min.js" />
+    <None Include="wwwroot\admin\libs\datatables\buttons.print.min.js" />
+    <None Include="wwwroot\admin\libs\datatables\dataTables.bootstrap4.min.js" />
+    <None Include="wwwroot\admin\libs\datatables\dataTables.buttons.min.js" />
+    <None Include="wwwroot\admin\libs\datatables\dataTables.keyTable.min.js" />
+    <None Include="wwwroot\admin\libs\datatables\dataTables.responsive.min.js" />
+    <None Include="wwwroot\admin\libs\datatables\dataTables.select.min.js" />
+    <None Include="wwwroot\admin\libs\datatables\jquery.dataTables.min.js" />
+    <None Include="wwwroot\admin\libs\datatables\responsive.bootstrap4.min.js" />
+    <None Include="wwwroot\admin\libs\dropzone\dropzone.min.js" />
+    <None Include="wwwroot\admin\libs\fullcalendar\fullcalendar.min.js" />
+    <None Include="wwwroot\admin\libs\gmaps\gmaps.min.js" />
+    <None Include="wwwroot\admin\libs\ion-rangeslider\ion.rangeSlider.min.js" />
+    <None Include="wwwroot\admin\libs\jquery-mask-plugin\jquery.mask.min.js" />
+    <None Include="wwwroot\admin\libs\jquery-nice-select\jquery.nice-select.min.js" />
+    <None Include="wwwroot\admin\libs\jquery-sparkline\jquery.sparkline.min.js" />
+    <None Include="wwwroot\admin\libs\jquery-ui\jquery-ui.min.js" />
+    <None Include="wwwroot\admin\libs\jquery-vectormap\jquery-jvectormap-1.2.2.min.js" />
+    <None Include="wwwroot\admin\libs\jquery-vectormap\jquery-jvectormap-au-mill-en.js" />
+    <None Include="wwwroot\admin\libs\jquery-vectormap\jquery-jvectormap-in-mill-en.js" />
+    <None Include="wwwroot\admin\libs\jquery-vectormap\jquery-jvectormap-us-il-chicago-mill-en.js" />
+    <None Include="wwwroot\admin\libs\jquery-vectormap\jquery-jvectormap-us-merc-en.js" />
+    <None Include="wwwroot\admin\libs\jquery-vectormap\jquery-jvectormap-world-mill-en.js" />
+    <None Include="wwwroot\admin\libs\moment\moment.min.js" />
+    <None Include="wwwroot\admin\libs\select2\select2.min.js" />
+    <None Include="wwwroot\admin\libs\summernote\summernote-bs4.min.js" />
+    <None Include="wwwroot\admin\libs\sweetalert2\sweetalert2.min.js" />
+    <None Include="wwwroot\admin\libs\switchery\switchery.min.js" />
+    <None Include="wwwroot\admin\libs\toastr\toastr.min.js" />
   </ItemGroup>
 
   <ItemGroup>

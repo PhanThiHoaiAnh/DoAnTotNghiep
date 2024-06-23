@@ -9,7 +9,7 @@ using PhanThiHoaiAnh_223DATN_DVTC.Repository;
 namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize(Roles = "Admin")]
+    //[Authorize(Roles = "Admin")]
     public class LocationController : Controller
     {
         private readonly DataContext _dataContext;
@@ -19,7 +19,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            return View(await _dataContext.Location.OrderByDescending(s => s.Id).ToListAsync());
+            return View(await _dataContext.tblLocation.OrderByDescending(s => s.Id).ToListAsync());
         }
         public IActionResult Create()
         {
@@ -33,7 +33,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
             {
                 //them du lieu
                 lc.Slug = lc.Name.Replace(" ", "-");
-                var slug = await _dataContext.FoodCategories.FirstOrDefaultAsync(f => f.Slug == lc.Slug);
+                var slug = await _dataContext.tblFoodCategories.FirstOrDefaultAsync(f => f.Slug == lc.Slug);
                 if (slug != null)
                 {
                     ModelState.AddModelError("", "Loại tiệc đã tồn tại");
@@ -63,7 +63,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
         }
         public async Task<IActionResult> Edit(int Id)
         {
-            LocationModel food = await _dataContext.Location.FindAsync(Id);
+            LocationModel food = await _dataContext.tblLocation.FindAsync(Id);
             return View(food);
         }
         [HttpPost]
@@ -97,8 +97,8 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
         }
         public async Task<IActionResult> Delete(int Id)
         {
-            LocationModel food = await _dataContext.Location.FindAsync(Id);
-            _dataContext.Location.Remove(food);
+            LocationModel food = await _dataContext.tblLocation.FindAsync(Id);
+            _dataContext.tblLocation.Remove(food);
             await _dataContext.SaveChangesAsync();
             TempData["error"] = "Địa điểm đã được xóa";
             return RedirectToAction("Index");

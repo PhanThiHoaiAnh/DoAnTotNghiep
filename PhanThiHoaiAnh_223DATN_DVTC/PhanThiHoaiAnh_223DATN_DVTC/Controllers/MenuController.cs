@@ -12,14 +12,14 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Controllers
         }
         public IActionResult Index()
         {
-            var menu = _dataContext.Menus.ToList();
+            var menu = _dataContext.tblMenu.ToList();
 
             return View(menu);
         }
         public async Task<IActionResult> Detail(int Id)
         {
             if (Id == null) return RedirectToAction("Index");
-            var serviceById = _dataContext.Menus.Where(s => s.Id == Id).FirstOrDefault();
+            var serviceById = _dataContext.tblMenu.Where(s => s.Id == Id).FirstOrDefault();
 
             return View(serviceById);
         }

@@ -10,7 +10,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Repository.Components
 		{
 			_dataContext = context;
 		}
-		public async Task<IViewComponentResult> InvokeAsync() => View(await _dataContext.ServiceCategories.ToListAsync());
+		public async Task<IViewComponentResult> InvokeAsync() => View(await _dataContext.tblServiceCategories.ToListAsync());
 
 	}
 }

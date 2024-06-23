@@ -1,0 +1,44 @@
+﻿
+@model IEnumerable<OrderDetails>
+@{
+    ViewData["title"] = "Đơn hàng";
+    Layout = "_Template";
+}
+<h3>Chi tiết đơn hàng</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th scope="col">Mã đơn</th>
+            <th scope="col">Dịch vụ</th>
+            <th scope="col">Đơn giá</th>
+            <th scope="col">Số lượng</th>
+            <th scope="col">Ngày đặt</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if(Model != null)
+        {
+            var menuNames = ViewData["TenDichVu"] as Dictionary<int, string>;
+            var i = 1;
+                @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@i</td>
+                    <td scope="row">@item.OrderCode</td>
+                    <td>@(menuNames != null ? menuNames[item.ServiceId] : "")</td>
+                    <td>@item.Price.ToString("N0")</td>
+                    <td>@item.Quantity</td>
+                    <td>@item.ReceivedDate.ToString("dd/MM/yyyy hh:MM")</td>
+                    
+                    <td>
+                        <a asp-action="ViewOrder" class="btn btn-warning btn-sm" asp-controller="Order" asp-route-Id="@item.Id">Xem</a>
+                    </td>
+                </tr>
+                i++;
+            }
+        }
+        
+
+    </tbody>
+</table>

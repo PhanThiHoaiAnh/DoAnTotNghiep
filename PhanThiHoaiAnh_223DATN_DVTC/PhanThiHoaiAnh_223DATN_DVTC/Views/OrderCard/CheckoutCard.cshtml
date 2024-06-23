@@ -1,0 +1,55 @@
+﻿@model DatTiecModel
+@{
+    ViewData["Title"] = "Thông tin đặt tiệc và Thanh toán";
+    Layout = "_Template";
+}
+<div class="container">
+    <h2>Thông Tin Đặt Thiệp</h2>
+    <input type="hidden" id="paypal-order-id" />
+    <table class="table" width="500px">
+
+        <tr>
+            <td class="of_width"><label>Tài khoản</label></td>
+            <td>@Model.UserName</td>
+        </tr>
+        <tr>
+            <td class="of_width"><label>Mã đặt thiệp</label></td>
+            <td>@Model.PartyCode</td>
+        </tr>
+        <tr>
+            <td class="of_width"><label>Tên thiệp</label></td>
+            <td>@ViewData["TenThiep"]</td>
+        </tr>
+        <tr>
+            <td class="of_width"><label>Ngày đặt hàng </label></td>
+            <td>@Model.OrderDate.ToString("dd/MM/yyyy")</td>
+        </tr>
+        <tr>
+            <td class="of_width"><label>Ngày nhận</label></td>
+            <td>@Model.OrderOrg.ToString("dd/MM/yyyy")</td>
+        </tr>
+        <tr>
+            <td class="of_width"><label>Số lượng thiệp</label></td>
+            <td>@Model.Quantity</td>
+        </tr>
+        <tr>
+            <td class="of_width"><label>Tổng tiền</label></td>
+            <td>@Model.Total.ToString("##,##")</td>
+        </tr>
+        <tr>
+            <td class="of_width"><label>Tiền thuế VAT 10%</label></td>
+            <td>Không áp dụng</td>
+        </tr>
+        <tr>
+            <td class="of_width"><label>Tiền cọc cần thanh toán (30% trên tổng hóa đơn)</label></td>
+            <td>@Model.Deposit.ToString("##,##")</td>
+        </tr>
+
+    </table>
+    <div>
+        <input type="submit" name="payment" class="btn btn-success" value="Thanh toán bằng tiền mặt">
+        <input type="submit" name="payment" class="btn btn-success" value="Thanh toán VNPay">
+
+    </div>
+</div>
+

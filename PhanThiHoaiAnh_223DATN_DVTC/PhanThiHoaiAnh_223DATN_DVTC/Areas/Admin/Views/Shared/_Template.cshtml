@@ -1,17 +1,242 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<title>@ViewData["title"]-Trang quản lý</title>
-	
-</head><!--/head-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>@ViewData["title"]-Trang quản lý</title>
+    <link href="~/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+    <link href="~/css/prettyPhoto.css" rel="stylesheet">
+    <link href="~/css/price-range.css" rel="stylesheet">
+    <link href="~/css/animate.css" rel="stylesheet">
+    <link href="~/css/main.css" rel="stylesheet">
+    <link href="~/css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    
+    <link href="~/admin/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="~/admin/css/icons.min.css" rel="stylesheet" type="text/css">
+    <link href="~/admin/css/app.min.css" rel="stylesheet" type="text/css">
+    <style>
+        /* CSS cho giao diện */
+        body {
+            font-family: Arial, sans-serif;
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-gap: 20px;
+            padding: 20px;
+        }
 
+        .sidebar {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .menu-item {
+            margin-bottom: 10px;
+            background-color: #555;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+            .menu-item a {
+                color: #fff;
+                text-decoration: none;
+            }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Thay đổi thành auto-fit và chỉnh kích thước widget */
+            grid-gap: 20px;
+        }
+
+        .widget {
+            background-color: cornsilk;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+            .widget h2 {
+                color: #333;
+                font-size: 18px;
+                margin-top: 0;
+            }
+
+            .widget p {
+                color: #666;
+                font-size: 14px;
+            }
+
+            .widget .value {
+                font-size: 24px;
+                font-weight: bold;
+            }
+    </style>
+</head>
 <body>
+    <header>
+        <div class="left-side-menu">
 
-	@await RenderSectionAsync("Scripts", required: false)
+        <div class="slimscroll-menu">
 
+            <!-- LOGO -->
+            <a href="index.html" class="logo text-center mb-4">
+                <span class="logo-lg">
+                    <img src="assets\images\logo-dark.png" alt="" height="20">
+                </span>
+                <span class="logo-sm">
+                    <img src="assets\images\logo-sm.png" alt="" height="24">
+                </span>
+            </a>
+
+            <!--- Sidemenu -->
+            <div id="sidebar-menu">
+
+                <ul class="metismenu" id="side-menu">
+
+                    <li class="menu-title">Navigation</li>
+
+                    <li>
+                        <a href="index.html">
+                            <i class="fe-airplay"></i>
+                            <span class="badge badge-success float-right">01</span>
+                            <a href="http://localhost:37963/">Về trang chính</a>
+                        </a>
+                    </li
+                     <li>
+                        <a href="index.html">
+                            <i class="fe-airplay"></i>
+                            <span class="badge badge-success float-right">01</span>
+                            <a href="http://localhost:37963/Admin">Về ql</a>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);">
+                            <i class="fe-hard-drive"></i>
+                            <span> Components </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li>
+                                <a href="components-rangeslider.html">Range Slider</a>
+                            </li>
+                            <li>
+                                <a href="components-alerts.html">Alerts</a>
+                            </li>
+                            <li>
+                                <a href="components-ribbons.html">Ribbons</a>
+                            </li>
+                            <li>
+                                <a href="components-sweet-alerts.html">Sweet Alerts</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);">
+                            <i class="fe-grid"></i>
+                            <span> Tables </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li>
+                                <a href="tables-basic.html">Basic Tables</a>
+                            </li>
+                            <li>
+                                <a href="tables-advanced.html">Advanced Tables</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-title">More</li>
+
+                    <li>
+                        <a href="javascript: void(0);">
+                            <i class="fe-layout"></i>
+                            <span> Layouts </span>
+                            <span class="badge badge-danger float-right">New</span>
+                        </a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li>
+                                <a href="layouts-light-sidebar.html">Light Sidebar</a>
+                            </li>
+                            <li>
+                                <a href="layouts-sm-sidebar.html">Small Sidebar</a>
+                            </li>
+                            <li>
+                                <a href="layouts-dark-sidebar.html">Dark Sidebar</a>
+                            </li>
+                            <li>
+                                <a href="layouts-light-topbar.html">Light Topbar</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);">
+                            <i class="fe-book-open"></i>
+                            <span> Pages </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <ul class="nav-second-level" aria-expanded="false">
+
+                            <li>
+                                <a href="pages-calendar.html">Calendar</a>
+                            </li>
+                            <li>
+                                <a href="pages-timeline.html">Timeline</a>
+                            </li>
+
+                            <li>
+                                <a href="pages-contacts.html">Contacts</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+
+                </ul>
+
+            </div>
+            <!-- End Sidebar -->
+
+            <div class="clearfix"></div>
+
+        </div>
+        <!-- Sidebar -left -->
+
+    </div>
+    </header>
+    <div class="dashboard">
+        
+        <section>
+            <div class="container">
+                <div class="row">
+                    @Html.Partial("_NotificationPartial")
+                    @RenderBody()
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Dashboard js -->
+    <script src="~/admin/js/pages/dashboard.init.js"></script>
+    <script>
+        function toggleSubMenu() {
+            var subMenu = document.getElementById("subMenu");
+            subMenu.classList.toggle("active");
+        }
+    </script>
 </body>
 </html>

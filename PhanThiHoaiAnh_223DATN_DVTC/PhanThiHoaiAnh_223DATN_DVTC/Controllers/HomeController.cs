@@ -1,7 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PhanThiHoaiAnh_223DATN_DVTC.Models;
+using PhanThiHoaiAnh_223DATN_DVTC.Models.Views;
 using PhanThiHoaiAnh_223DATN_DVTC.Repository;
+using PhanThiHoaiAnh_223DATN_DVTC.Services;
 using System.Diagnostics;
 
 namespace PhanThiHoaiAnh_223DATN_DVTC.Controllers
@@ -16,10 +18,11 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Controllers
             _logger = logger;
             _dataContext = context;
         }
-		public IActionResult Index(string name)
+		public IActionResult Index()
         {
-            var services = _dataContext.OtherServices.Include("Category").ToList();
-            return View(services);
+            var services = _dataContext.tblOtherServices.Include("Category").ToList();
+			
+			return View(services);
 		}
 		public IActionResult Privacy()
         {
@@ -36,14 +39,24 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
         [HttpGet]
-        public IActionResult TimKiem(string name)
-        {
-            var services = from s in _dataContext.OtherServices select s;
-            if (!string.IsNullOrEmpty(name))
-            {
-                services = services.Where(s => s.Name.Contains(name));
-            }
-            return View(services);
-        }
-    }
+		public IActionResult TimKiem(string query)
+		{
+			var services = _dataContext.tblOtherServices.Include("Category").ToList();
+			if (!string.IsNullOrEmpty(query))
+			{
+				services = services.Where(s => s.Name.Contains(query)).ToList();
+				
+			}
+			var rs = services.Select(s => new ServiceViewModel
+			{
+				Id = s.Id,
+				Name = s.Name,
+				Price = s.Price,
+				Image = s.Image,
+				Category = s.Category.CategoryName
+			});
+
+			return View(rs);
+		}
+	}
 }

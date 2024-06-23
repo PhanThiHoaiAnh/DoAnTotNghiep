@@ -9,7 +9,7 @@ using PhanThiHoaiAnh_223DATN_DVTC.Repository;
 namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
 {
 	[Area("Admin")]
-    [Authorize(Roles = "Admin")]
+    //[Authorize(Roles = "Admin")]
     public class FoodSequenceController : Controller
     {
         private readonly DataContext _dataContext;
@@ -19,7 +19,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            return View(await _dataContext.FoodSequence.OrderByDescending(s => s.Id).ToListAsync());
+            return View(await _dataContext.tblFoodSequence.OrderByDescending(s => s.Id).ToListAsync());
         }
         public IActionResult Create()
         {
@@ -33,7 +33,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
             {
                 //them du lieu
                 food.Slug = food.Name.Replace(" ", "-");
-                var slug = await _dataContext.FoodSequence.FirstOrDefaultAsync(f => f.Slug == food.Slug);
+                var slug = await _dataContext.tblFoodSequence.FirstOrDefaultAsync(f => f.Slug == food.Slug);
                 if (slug != null)
                 {
                     ModelState.AddModelError("", "Trật tự đã tồn tại");
@@ -63,7 +63,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
         }
         public async Task<IActionResult> Edit(string Id)
         {
-            FoodSequenceModel food = await _dataContext.FoodSequence.FindAsync(Id);
+            FoodSequenceModel food = await _dataContext.tblFoodSequence.FindAsync(Id);
             return View(food);
         }
         [HttpPost]
@@ -97,8 +97,8 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
         }
         public async Task<IActionResult> Delete(string Id)
         {
-            FoodSequenceModel food = await _dataContext.FoodSequence.FindAsync(Id);
-            _dataContext.FoodSequence.Remove(food);
+            FoodSequenceModel food = await _dataContext.tblFoodSequence.FindAsync(Id);
+            _dataContext.tblFoodSequence.Remove(food);
             await _dataContext.SaveChangesAsync();
             TempData["error"] = "Trật tự đã được xóa";
             return RedirectToAction("Index");

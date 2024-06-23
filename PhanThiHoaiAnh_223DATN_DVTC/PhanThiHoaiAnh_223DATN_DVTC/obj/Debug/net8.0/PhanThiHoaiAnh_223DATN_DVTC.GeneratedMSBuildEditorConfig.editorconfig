@@ -118,16 +118,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWVudVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/223DATN_0106_PhanThiHoaiAnh/PhanThiHoaiAnh_223DATN/DoAnTotNghiep/PhanThiHoaiAnh_223DATN_DVTC/PhanThiHoaiAnh_223DATN_DVTC/Areas/Admin/Views/OrderParty/Detail.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJQYXJ0eVxEZXRhaWwuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/223DATN_0106_PhanThiHoaiAnh/PhanThiHoaiAnh_223DATN/DoAnTotNghiep/PhanThiHoaiAnh_223DATN_DVTC/PhanThiHoaiAnh_223DATN_DVTC/Areas/Admin/Views/OrderParty/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJQYXJ0eVxJbmRleC5jc2h0bWw=
+[D:/223DATN_0106_PhanThiHoaiAnh/PhanThiHoaiAnh_223DATN/DoAnTotNghiep/PhanThiHoaiAnh_223DATN_DVTC/PhanThiHoaiAnh_223DATN_DVTC/Areas/Admin/Views/Order/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/223DATN_0106_PhanThiHoaiAnh/PhanThiHoaiAnh_223DATN/DoAnTotNghiep/PhanThiHoaiAnh_223DATN_DVTC/PhanThiHoaiAnh_223DATN_DVTC/Areas/Admin/Views/Order/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/223DATN_0106_PhanThiHoaiAnh/PhanThiHoaiAnh_223DATN/DoAnTotNghiep/PhanThiHoaiAnh_223DATN_DVTC/PhanThiHoaiAnh_223DATN_DVTC/Areas/Admin/Views/Order/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/223DATN_0106_PhanThiHoaiAnh/PhanThiHoaiAnh_223DATN/DoAnTotNghiep/PhanThiHoaiAnh_223DATN_DVTC/PhanThiHoaiAnh_223DATN_DVTC/Areas/Admin/Views/Order/ViewOrder.cshtml]
@@ -210,6 +210,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/223DATN_0106_PhanThiHoaiAnh/PhanThiHoaiAnh_223DATN/DoAnTotNghiep/PhanThiHoaiAnh_223DATN_DVTC/PhanThiHoaiAnh_223DATN_DVTC/Areas/Admin/Views/WeddingCard/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcV2VkZGluZ0NhcmRcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/223DATN_0106_PhanThiHoaiAnh/PhanThiHoaiAnh_223DATN/DoAnTotNghiep/PhanThiHoaiAnh_223DATN_DVTC/PhanThiHoaiAnh_223DATN_DVTC/Areas/Admin/Views/WeddingCard/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcV2VkZGluZ0NhcmRcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/223DATN_0106_PhanThiHoaiAnh/PhanThiHoaiAnh_223DATN/DoAnTotNghiep/PhanThiHoaiAnh_223DATN_DVTC/PhanThiHoaiAnh_223DATN_DVTC/Areas/Admin/Views/WeddingCard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcV2VkZGluZ0NhcmRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/223DATN_0106_PhanThiHoaiAnh/PhanThiHoaiAnh_223DATN/DoAnTotNghiep/PhanThiHoaiAnh_223DATN_DVTC/PhanThiHoaiAnh_223DATN_DVTC/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -274,12 +286,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0VGllY1xQYXltZW50Q2FsbEJhY2suY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/223DATN_0106_PhanThiHoaiAnh/PhanThiHoaiAnh_223DATN/DoAnTotNghiep/PhanThiHoaiAnh_223DATN_DVTC/PhanThiHoaiAnh_223DATN_DVTC/Views/DatTiec/Success.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0VGllY1xTdWNjZXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/223DATN_0106_PhanThiHoaiAnh/PhanThiHoaiAnh_223DATN/DoAnTotNghiep/PhanThiHoaiAnh_223DATN_DVTC/PhanThiHoaiAnh_223DATN_DVTC/Views/FoodCategory/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZENhdGVnb3J5XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/223DATN_0106_PhanThiHoaiAnh/PhanThiHoaiAnh_223DATN/DoAnTotNghiep/PhanThiHoaiAnh_223DATN_DVTC/PhanThiHoaiAnh_223DATN_DVTC/Views/FoodSequence/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZFNlcXVlbmNlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/223DATN_0106_PhanThiHoaiAnh/PhanThiHoaiAnh_223DATN/DoAnTotNghiep/PhanThiHoaiAnh_223DATN_DVTC/PhanThiHoaiAnh_223DATN_DVTC/Views/Food/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZFxEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/223DATN_0106_PhanThiHoaiAnh/PhanThiHoaiAnh_223DATN/DoAnTotNghiep/PhanThiHoaiAnh_223DATN_DVTC/PhanThiHoaiAnh_223DATN_DVTC/Views/Food/Index.cshtml]
@@ -314,8 +334,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/223DATN_0106_PhanThiHoaiAnh/PhanThiHoaiAnh_223DATN/DoAnTotNghiep/PhanThiHoaiAnh_223DATN_DVTC/PhanThiHoaiAnh_223DATN_DVTC/Views/OrderCard/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJDYXJkXEluZGV4LmNzaHRtbA==
+[D:/223DATN_0106_PhanThiHoaiAnh/PhanThiHoaiAnh_223DATN/DoAnTotNghiep/PhanThiHoaiAnh_223DATN_DVTC/PhanThiHoaiAnh_223DATN_DVTC/Views/OrderCard/CheckoutCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJDYXJkXENoZWNrb3V0Q2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/223DATN_0106_PhanThiHoaiAnh/PhanThiHoaiAnh_223DATN/DoAnTotNghiep/PhanThiHoaiAnh_223DATN_DVTC/PhanThiHoaiAnh_223DATN_DVTC/Views/OrderCard/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJDYXJkXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/223DATN_0106_PhanThiHoaiAnh/PhanThiHoaiAnh_223DATN/DoAnTotNghiep/PhanThiHoaiAnh_223DATN_DVTC/PhanThiHoaiAnh_223DATN_DVTC/Views/OrderCard/Success.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJDYXJkXFN1Y2Nlc3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/223DATN_0106_PhanThiHoaiAnh/PhanThiHoaiAnh_223DATN/DoAnTotNghiep/PhanThiHoaiAnh_223DATN_DVTC/PhanThiHoaiAnh_223DATN_DVTC/Views/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/223DATN_0106_PhanThiHoaiAnh/PhanThiHoaiAnh_223DATN/DoAnTotNghiep/PhanThiHoaiAnh_223DATN_DVTC/PhanThiHoaiAnh_223DATN_DVTC/Views/Order/IndexOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXhPcmRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/223DATN_0106_PhanThiHoaiAnh/PhanThiHoaiAnh_223DATN/DoAnTotNghiep/PhanThiHoaiAnh_223DATN_DVTC/PhanThiHoaiAnh_223DATN_DVTC/Views/Order/IndexParty.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXhQYXJ0eS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/223DATN_0106_PhanThiHoaiAnh/PhanThiHoaiAnh_223DATN/DoAnTotNghiep/PhanThiHoaiAnh_223DATN_DVTC/PhanThiHoaiAnh_223DATN_DVTC/Views/Order/ViewOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcVmlld09yZGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/223DATN_0106_PhanThiHoaiAnh/PhanThiHoaiAnh_223DATN/DoAnTotNghiep/PhanThiHoaiAnh_223DATN_DVTC/PhanThiHoaiAnh_223DATN_DVTC/Views/OtherServices/Detail.cshtml]
@@ -366,6 +410,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/223DATN_0106_PhanThiHoaiAnh/PhanThiHoaiAnh_223DATN/DoAnTotNghiep/PhanThiHoaiAnh_223DATN_DVTC/PhanThiHoaiAnh_223DATN_DVTC/Views/vnpayAPI/PaymentConfirm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncdm5wYXlBUElcUGF5bWVudENvbmZpcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/223DATN_0106_PhanThiHoaiAnh/PhanThiHoaiAnh_223DATN/DoAnTotNghiep/PhanThiHoaiAnh_223DATN_DVTC/PhanThiHoaiAnh_223DATN_DVTC/Views/WeddingCard/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2VkZGluZ0NhcmRcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/223DATN_0106_PhanThiHoaiAnh/PhanThiHoaiAnh_223DATN/DoAnTotNghiep/PhanThiHoaiAnh_223DATN_DVTC/PhanThiHoaiAnh_223DATN_DVTC/Views/WeddingCard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2VkZGluZ0NhcmRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/223DATN_0106_PhanThiHoaiAnh/PhanThiHoaiAnh_223DATN/DoAnTotNghiep/PhanThiHoaiAnh_223DATN_DVTC/PhanThiHoaiAnh_223DATN_DVTC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -377,6 +433,10 @@ build_metadata.AdditionalFiles.CssScope =
 [D:/223DATN_0106_PhanThiHoaiAnh/PhanThiHoaiAnh_223DATN/DoAnTotNghiep/PhanThiHoaiAnh_223DATN_DVTC/PhanThiHoaiAnh_223DATN_DVTC/Areas/Admin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-g8zypnr7ph
+
+[D:/223DATN_0106_PhanThiHoaiAnh/PhanThiHoaiAnh_223DATN/DoAnTotNghiep/PhanThiHoaiAnh_223DATN_DVTC/PhanThiHoaiAnh_223DATN_DVTC/Areas/Admin/Views/Shared/_None.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9Ob25lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-cind9907nw
 
 [D:/223DATN_0106_PhanThiHoaiAnh/PhanThiHoaiAnh_223DATN/DoAnTotNghiep/PhanThiHoaiAnh_223DATN_DVTC/PhanThiHoaiAnh_223DATN_DVTC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s

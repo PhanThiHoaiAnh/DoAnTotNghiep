@@ -1,0 +1,61 @@
+﻿@model IEnumerable<DatTiecModel>
+@{
+    ViewData["title"] = "Đơn hàng";
+    Layout = "_Template";
+}
+<h3>Chi tiết đơn hàng</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>STT</th>
+            <th scope="col">Mã đơn</th>
+            <th scope="col">Ngày đặt</th>
+            <th scope="col">Thành tiền</th>
+            <th scope="col">Trạng thái</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null)
+        {
+            var i = 1;
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@i</td>
+                    <td scope="row">@item.PartyCode</td>
+                    <td>@item.OrderDate.ToString("dd/MM/yyyy hh:MM")</td>
+                    <td>@item.Total.ToString("N0")</td>
+                    <td>
+                        @if (@item.Status == 0)
+                        {
+                            <span class="text text-success">Chưa đặt cọc</span>
+                        }
+                        else @if (@item.Status == 1)
+                        {
+                            <span class="text text-success">Đã đặt cọc</span>
+                        }
+                        else @if (@item.Status == 2)
+                        {
+                            <span class="text text-success">Đang diễn ra</span>
+                        }
+                        else @if (@item.Status == 3)
+                        {
+                            <span class="text text-success">Đã hoàn thành</span>
+                        }
+                        else @if (@item.Status == 4)
+                        {
+                            <span class="text text-success">Đã thanh toán</span>
+                        }
+                    </td>
+
+                    <td>
+                        <a asp-action="ViewOrder" class="btn btn-warning btn-sm" asp-controller="Order" asp-route-Id="@item.Id">Xem</a>
+                    </td>
+                </tr>
+                i++;
+            }
+        }
+
+
+    </tbody>
+</table>

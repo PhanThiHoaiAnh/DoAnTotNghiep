@@ -1,0 +1,91 @@
+﻿@model DatTiecModel
+@{
+    ViewData["title"] = "Cập nhật trạng thái dịch vụ";
+}
+<h3>Cập nhật trạng thái dịch vụ</h3>
+
+<form asp-controller="Order" asp-action="Update">
+	<div class="form-group">
+		<label>Mã đơn</label>
+		<input asp-for="PartyCode" class="form-control" style="background-color:white" readonly />
+		<span asp-validation-for="PartyCode" class="text-danger" />
+	</div>
+	<div class="form-group">
+		<label >Tài khoản</label>
+		<input asp-for="UserName" class="form-control" style="background-color:white" readonly />
+		<span asp-validation-for="UserName" class="text-danger" />
+	</div>
+	<div class="form-group">
+		<label>Ngày tổ chức </label>
+		<input id="OrgDate" asp-for="OrderOrg" class="form-control" type="date" placeholder="dd/mm/yyyy" style="background-color:white" />
+		<span asp-validation-for="OrderOrg" class="text-danger" />
+	</div>
+	<div class="form-group">
+		<label>Ngày đặt </label>
+		<input asp-for="OrderDate" class="form-control" placeholder="trong 24 giờ theo giờ Việt Nam" style="background-color:white" />
+		<span asp-validation-for="OrderDate" class="text-danger" />
+	</div>
+
+	<div class="form-group">
+		<label>Số bàn tiệc</label>
+		<input asp-for="Quantity" class="form-control" style="background-color:white" readonly />
+		<span asp-validation-for="Quantity" class="text-danger" />
+	</div>
+	<div class="form-group">
+		<label>Số điện thoại</label>
+		<input asp-for="PhoneNumber" class="form-control" style="background-color:white" />
+		<span asp-validation-for="PhoneNumber" class="text-danger" />
+	</div>
+	<div class="form-group">
+		<label>Địa chỉ</label>
+		<input asp-for="Address" class="form-control" placeholder="số nhà,xã/phường/thị trấn,huyện/quận,tỉnh/TP" style="background-color:white" />
+		<span asp-validation-for="Address" class="text-danger" />
+	</div>
+	<th scope="col">Thực đơn</th>
+	<div class="form-group">
+		<label>Thực đơn</label>
+		<input asp-for="ServiceName" class="form-control" style="background-color:white" readonly />
+		<span asp-validation-for="ServiceName" class="text-danger" />
+	</div>
+	<div class="form-group">
+		<label>Tổng tiền</label>
+		<input asp-for="Total" class="form-control" style="background-color:white" readonly />
+		<span asp-validation-for="Total" class="text-danger" />
+	</div>
+	<div class="form-group">
+		<label>Tiền cọc</label>
+		<input asp-for="Deposit" class="form-control" style="background-color:white" readonly />
+		<span asp-validation-for="Deposit" class="text-danger" />
+	</div>
+	<div class="form-group">
+		<label>VAT 10%</label>
+		<input asp-for="Pay" class="form-control" style="background-color:white" readonly />
+		<span asp-validation-for="Pay" class="text-danger" />
+	</div>
+	<div class="form-group">
+		<label>Trạng thái</label>
+		<select asp-for="Status" class="form-control" >
+			<option>--Trạng thái</option>
+			<option value="0" selected>Chưa đặt cọc</option>
+			<option value="1">Đã đặt cọc</option>
+			<option value="2">Đang diễn ra</option>
+			<option value="3">Đã hoàn thành</option>
+			<option value="4">Đã thanh toán</option>
+		</select>
+		<span asp-validation-for="Status" class="text-danger" />
+	</div>
+	<div class="form-group">
+		<label>Hình thức TT</label>
+		<select asp-for="Payment" class="form-control">
+			<option>--Trạng thái</option>
+			<option value="COD" selected>Tiền mặt</option>
+			<option value="VNPay">Ví Vnpay</option>
+			<option value="Chuyển khoản">Chuyển khoản qua STK</option>
+			<option value="MM">MoMo</option>
+			<option value="PP">PayPal</option>
+		</select>
+		<span asp-validation-for="Payment" class="text-danger" />
+	</div>
+	<button type="submit" class="btn btn-default">Cập nhật</button></div>
+
+</form>

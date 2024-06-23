@@ -14,6 +14,8 @@
             <th scope="col">Ngày sinh</th>
             <th scope="col">Số điện thoại</th>
             <th scope="col">Địa chỉ</th>
+            <th scope="col">Chức vụ</th>
+            <th scope="col">Quyền</th>
             <th scope="col"></th>
         </tr>
     </thead>
@@ -28,6 +30,8 @@
                 <td>@item.Birthday</td>
                 <td>@item.PhoneNumber</td>
                 <td>@item.Address</td>
+                <td>@item.Position</td>
+                <td width="150">@item.Rolee</td>
                 <td>
                     <a asp-action="Delete" class="btn btn-danger btn-sm confirmDeletion" asp-controller="Account" asp-route-Id="@item.Id">Xóa</a>
                     <a asp-action="Edit" class="btn btn-warning btn-sm confirmDeletion" asp-controller="Account" asp-route-Id="@item.Id">Sửa</a>

@@ -21,24 +21,24 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            return View(await _dataContext.OtherServices.OrderByDescending(s => s.Id).Include(s => s.Category).ToListAsync());
+            return View(await _dataContext.tblOtherServices.OrderByDescending(s => s.Id).Include(s => s.Category).ToListAsync());
         }
         public IActionResult Create()
         {
-            ViewBag.ServiceCategories = new SelectList(_dataContext.ServiceCategories, "Id", "CategoryName");
+            ViewBag.ServiceCategories = new SelectList(_dataContext.tblServiceCategories, "Id", "CategoryName");
             return View();
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(OtherServicesModel service)
         {
-            ViewBag.ServiceCategories = new SelectList(_dataContext.ServiceCategories, "Id", "CategoryName", service.CategoryId);
+            ViewBag.ServiceCategories = new SelectList(_dataContext.tblServiceCategories, "Id", "CategoryName", service.CategoryId);
 
             if (ModelState.IsValid)
             {
                 //them du lieu
                 service.Slug = service.Name.Replace(" ", "-");
-                var slug = await _dataContext.OtherServices.FirstOrDefaultAsync(s => s.Slug == service.Slug);
+                var slug = await _dataContext.tblOtherServices.FirstOrDefaultAsync(s => s.Slug == service.Slug);
                 if (slug != null)
                 {
                     ModelState.AddModelError("", "Dịch vụ đã tồn tại");
@@ -79,8 +79,8 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
         }
         public async Task<IActionResult> Edit(int Id)
         {
-            OtherServicesModel service = await _dataContext.OtherServices.FindAsync(Id);
-            ViewBag.ServiceCategories = new SelectList(_dataContext.ServiceCategories, "Id", "CategoryName", service.CategoryId);
+            OtherServicesModel service = await _dataContext.tblOtherServices.FindAsync(Id);
+            ViewBag.ServiceCategories = new SelectList(_dataContext.tblServiceCategories, "Id", "CategoryName", service.CategoryId);
 
             return View(service);
         }
@@ -88,13 +88,13 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int Id, OtherServicesModel service)
         {
-            ViewBag.ServiceCategories = new SelectList(_dataContext.ServiceCategories, "Id", "CategoryName", service.CategoryId);
+            ViewBag.ServiceCategories = new SelectList(_dataContext.tblServiceCategories, "Id", "CategoryName", service.CategoryId);
 
             if (ModelState.IsValid)
             {
                 //them du lieu
                 service.Slug = service.Name.Replace(" ", "-");
-                var slug = await _dataContext.OtherServices.FirstOrDefaultAsync(s => s.Slug == service.Slug);
+                var slug = await _dataContext.tblOtherServices.FirstOrDefaultAsync(s => s.Slug == service.Slug);
                 if (slug != null)
                 {
                     ModelState.AddModelError("", "Dịch vụ đã tồn tại");
@@ -134,7 +134,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
         }
         public async Task<IActionResult> Delete(int Id)
         {
-            OtherServicesModel service = await _dataContext.OtherServices.FindAsync(Id);
+            OtherServicesModel service = await _dataContext.tblOtherServices.FindAsync(Id);
             //ViewBag.ServiceCategories = new SelectList(_dataContext.ServiceCategories, "Id", "CategoryName", service.CategoryId);
             if (!string.Equals(service.Image, "noimage.jpg"))
             {
@@ -145,7 +145,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
                     System.IO.File.Delete(oldfileImg);
                 }
             }
-            _dataContext.OtherServices.Remove(service);
+            _dataContext.tblOtherServices.Remove(service);
             await _dataContext.SaveChangesAsync();
             TempData["error"] = "Dịch vụ đã được xóa";
             return RedirectToAction("Index");

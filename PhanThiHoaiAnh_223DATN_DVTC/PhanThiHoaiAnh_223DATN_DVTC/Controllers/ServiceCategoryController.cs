@@ -14,10 +14,10 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Controllers
 		}
 		public async Task<IActionResult> Index(String Slug ="")
         { 
-			ServiceCategoryModel serviceCate = _dataContext.ServiceCategories.Where(c => c.Slug == Slug).FirstOrDefault();
+			ServiceCategoryModel serviceCate = _dataContext.tblServiceCategories.Where(c => c.Slug == Slug).FirstOrDefault();
 			if (serviceCate == null) return RedirectToAction("Index");
 			
-			var serviceByCategory = _dataContext.OtherServices.Where(s => s.CategoryId == serviceCate.Id);
+			var serviceByCategory = _dataContext.tblOtherServices.Where(s => s.CategoryId == serviceCate.Id);
 			
 			return View(await serviceByCategory.OrderByDescending(s => s.Id).ToListAsync()); 
 		}

@@ -8,7 +8,7 @@ using PhanThiHoaiAnh_223DATN_DVTC.Repository;
 namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize(Roles = "Admin")]
+    //[Authorize(Roles = "Admin")]
     public class MenuDetailController : Controller
     {
         private readonly DataContext _dataContext;
@@ -19,24 +19,24 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            return View(await _dataContext.MenuDetails.OrderByDescending(s => s.Id).Include(s=> s.Menu).Include(s=> s.Food).ToListAsync());
+            return View(await _dataContext.tblMenuDetails.OrderByDescending(s => s.Id).Include(s=> s.Menu).Include(s=> s.Food).ToListAsync());
         }
         public IActionResult Create()
         {
-            ViewBag.Menus = new SelectList(_dataContext.Menus, "Id", "Name");
-            ViewBag.FoodModel = new SelectList(_dataContext.FoodModel, "Id", "Name");
+            ViewBag.Menus = new SelectList(_dataContext.tblMenu, "Id", "Name");
+            ViewBag.FoodModel = new SelectList(_dataContext.tblFood, "Id", "Name");
             return View();
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(MenuDetail food)
         {
-            ViewBag.Menus = new SelectList(_dataContext.Menus, "Id", "Name", food.MenuId);
-            ViewBag.FoodModel = new SelectList(_dataContext.FoodModel, "Id", "Name", food.FoodId);
+            ViewBag.Menus = new SelectList(_dataContext.tblMenu, "Id", "Name", food.MenuId);
+            ViewBag.FoodModel = new SelectList(_dataContext.tblFood, "Id", "Name", food.FoodId);
             if (ModelState.IsValid)
             {
                 //them du lieu
-                var slug = await _dataContext.MenuDetails.FirstOrDefaultAsync(f => f.Id == food.Id);
+                var slug = await _dataContext.tblMenuDetails.FirstOrDefaultAsync(f => f.Id == food.Id);
                 if (slug != null)
                 {
                     ModelState.AddModelError("", "Chi tiết thực đơn đã tồn tại");
@@ -66,17 +66,17 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
         }
         public async Task<IActionResult> Edit(int Id)
         {
-            MenuDetail food = await _dataContext.MenuDetails.FindAsync(Id);
-            ViewBag.Menus = new SelectList(_dataContext.Menus, "Id", "Name", food.MenuId);
-            ViewBag.FoodModel = new SelectList(_dataContext.FoodModel, "Id", "Name", food.FoodId);
+            MenuDetail food = await _dataContext.tblMenuDetails.FindAsync(Id);
+            ViewBag.Menus = new SelectList(_dataContext.tblMenu, "Id", "Name", food.MenuId);
+            ViewBag.FoodModel = new SelectList(_dataContext.tblFood, "Id", "Name", food.FoodId);
             return View(food);
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int Id, MenuDetail food)
         {
-            ViewBag.Menus = new SelectList(_dataContext.Menus, "Id", "Name", food.MenuId);
-            ViewBag.FoodModel = new SelectList(_dataContext.FoodModel, "Id", "Name", food.FoodId);
+            ViewBag.Menus = new SelectList(_dataContext.tblMenu, "Id", "Name", food.MenuId);
+            ViewBag.FoodModel = new SelectList(_dataContext.tblFood, "Id", "Name", food.FoodId);
             if (ModelState.IsValid)
             {
                 _dataContext.Update(food);
@@ -102,8 +102,8 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
         }
         public async Task<IActionResult> Delete(int Id)
         {
-            MenuDetail food = await _dataContext.MenuDetails.FindAsync(Id);
-            _dataContext.MenuDetails.Remove(food);
+            MenuDetail food = await _dataContext.tblMenuDetails.FindAsync(Id);
+            _dataContext.tblMenuDetails.Remove(food);
             await _dataContext.SaveChangesAsync();
             TempData["error"] = "Chi tiết thực đơn đã được xóa";
             return RedirectToAction("Index");

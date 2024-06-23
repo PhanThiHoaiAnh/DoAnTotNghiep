@@ -1,0 +1,268 @@
+﻿@model DatTiecModel
+@{
+    ViewData["title"] = "Hóa Đơn Đặt Tiệc";
+    Layout = "_None";
+}
+<style>
+    body {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        margin: 0;
+        padding: 20px;
+        font-weight: bold;
+    }
+
+    .invoice {
+        width: 800px;
+        margin: 0 auto;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 20px;
+    }
+
+    .invoice-header {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-container {
+        flex: 0 0 auto; /* Đảm bảo chiều rộng của logo không thay đổi */
+        margin-right: 10px; /* Khoảng cách giữa logo và các dòng văn bản */
+        width: 120px;
+        height: 60px;
+    }
+
+    .text-container {
+        width: 200px;
+        text-align: left; /* Căn phải các dòng văn bản */
+    }
+
+    .text-container-2 {
+        width: 500px;
+        text-align: center; 
+    }
+
+    .text-container-3 {
+        width: 700px;
+        text-align: left;
+    }
+
+    .text-container-4 {
+        width: 500px;
+        text-align: center;
+        height: 300px;
+    }
+        .invoice-header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+    .invoice-details {
+        margin-bottom: 20px;
+    }
+
+        .invoice-details .row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+    .invoice-items {
+        margin-bottom: 20px;
+    }
+
+        .invoice-items table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .invoice-items th,
+        .invoice-items td {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+
+    .invoice-signature {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+        .invoice-signature img {
+            width: 150px;
+            margin-top: 10px;
+        }
+
+    .invoice-total {
+        text-align: right;
+        font-weight: bold;
+    }
+
+    .divider {
+        border: none;
+        border-top: 1px solid black;
+        margin: 10px 0;
+    }
+</style>
+<body>
+    <div class="invoice">
+        <div class="invoice-header">
+            <div class="logo-container">
+                <img src="~/images/vanphan.png" alt="Logo" >
+            </div>
+            <div class="text-container-2">
+                <h1 style="margin-top: 0 px;margin-bottom: 25px">HÓA ĐƠN GIÁ TRỊ GIA TĂNG</h1>
+                <p style="font-style: italic">Ngày @DateTime.Now.ToString("dd") tháng @DateTime.Now.ToString("MM") năm @DateTime.Now.ToString("yyyy")</p>
+            </div>
+            <div class="text-container">
+                <p>Mẫu số : 01GTKT3001</p>
+                <p>Ký hiệu: AMPID</p>
+                <p>Số: <span style="color:red">006973</span></p>
+            </div>
+           
+        </div>
+        <hr class="divider" />
+        <div class="invoice-header">
+            <div class="text-container-3">
+                <p>Tên đơn vị dịch vụ : <span style="color:red">TRUNG TÂM TỔ CHỨC SỰ KIỆN VÀ DỊCH VỤ VĂN PHÁN</span></p>
+                <p>Địa chỉ : xóm 3, thôn Hy Văn, xã Hoài Sơn, TX.Hoài Nhơn, tỉnh Bình Định</p>
+                <p>Mã số thuế : 0 0 1 0 9 6 7 8 0 3</p>
+                <p>Điện thoại: 0982 114 346</p>
+                <p>Số tài khoản: 040095437446 - Ngân hàng TMCP Sài Gòn Thương Tín - CN Tam Quan</p>
+            </div>
+        </div>
+        <hr class="divider" />
+        <div class="invoice-details">
+            
+                <div class="text-container-3">
+                    <p>Tài khoản đặt hàng: @Model.UserName</p>
+                    <p>Địa chỉ: @Model.Address</p>
+                    <p>Số điện thoại: @Model.PhoneNumber</p>
+                    <p>Mã đơn hàng: @Model.PartyCode</p>
+                    <p>Ngày đặt hàng: @Model.OrderDate.ToString("dd/MM/yyyy")</p>
+                    <p>Ngày nhận hàng: @Model.OrderOrg.ToString("dd/MM/yyyy")</p>
+                </div>
+            
+        </div>
+        <div class="invoice-items" >
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sản phẩm</th>
+                        <th>Đơn vị tính</th>
+                        <th>Số lượng</th>
+                        <th>Đơn giá</th>
+                        <th>Thành tiền</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>@Model.ServiceName</td>
+                        <td></td>
+                        <td>@Model.Quantity</td>
+                        <td></td>
+                        <td>@Model.Total.ToString("N0")</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+        <div class="invoice-details" style="margin:2px;">
+            <div class="row">
+                <div class="col">Tổng tiền hàng</div>
+                <div class="col" style="text-align:right;">@Model.Total.ToString("N0")</div>
+            </div>
+        </div>
+        <hr class="divider" />
+        <div class="invoice-details" style="margin:2px;">
+            <div class="row">
+                <div class="col" style="text-align:left;">Thuế suất GTGT</div>
+                <div class="col" style="font-style: oblique">10%</div>
+                <div class="col">Tiền thuế GTGT</div>
+                <div class="col" style="text-align:right;">@Model.Pay.ToString("N0")</div>
+            </div>
+        </div>
+        <hr class="divider" />
+        <div class="invoice-details" style="margin:2px;">
+            <div class="row">
+                <div class="col">Tổng thanh toán</div>
+                <div class="col" style="text-align:right;">@string.Format("{0:N0}", Model.Total + Model.Pay)</div>
+            </div>
+        </div>
+        <hr class="divider" />
+        @{
+            string[] ones = { "không", "một", "hai", "ba", "bốn", "lăm", "sáu", "bảy", "tám", "chín" };
+            string[] tens = { "", "mười", "hai mươi", "ba mươi", "bốn mươi", "năm mươi", "sáu mươi", "bảy mươi", "tám mươi", "chín mươi" };
+            string[] groups = { "", "ngàn", "triệu", "tỷ" };
+
+            string ConvertToWords(decimal number)
+            {
+                if (number == 0)
+                    return ones[0];
+
+                string words = "";
+                int groupIndex = 0;
+
+                while (number > 0)
+                {
+                    int groupValue = (int)(number % 1000);
+                    number /= 1000;
+
+                    int onesValue = groupValue % 10;
+                    int tensValue = (groupValue / 10) % 10;
+                    int hundredsValue = (groupValue / 100) % 10;
+
+                    string groupWords = "";
+
+                    if (hundredsValue > 0)
+                        groupWords += ones[hundredsValue] + " trăm ";
+
+                    if (tensValue > 1)
+                    {
+                        groupWords += tens[tensValue];
+                        if (onesValue > 0)
+                            groupWords += " " + ones[onesValue];
+                    }
+                    else if (tensValue == 1)
+                    {
+                        if (onesValue > 0)
+                            groupWords += "mười " + ones[onesValue];
+                        else
+                            groupWords += tens[tensValue];
+                    }
+                    else
+                    {
+                        if (onesValue > 0)
+                            groupWords += ones[onesValue];
+                    }
+
+                    if (groupValue > 0)
+                        groupWords += " " + groups[groupIndex];
+
+                    words = groupWords + " " + words;
+                    groupIndex++;
+                }
+
+                return words.Trim();
+            }
+        }
+        <p>Số tiền viết bằng chữ: @ConvertToWords(Model.Total + Model.Pay)</p>
+        <hr class="divider" />
+        <div class="invoice-header">
+            <div class="text-container-4">
+                <p>Người mua hàng</p>
+                <p style="font-style: italic; font-size:12px;">(Ký, ghi rõ họ, tên)</p>
+                <p></p>
+            </div>
+            <div class="text-container-4">
+                <p>Người bán hàng</p>
+                <p style="font-style: italic; font-size:12px;">(Ký, ghi rõ họ, tên)</p>
+                <img src="~/images/vanphan.png" alt="Chữ ký 2">
+            </div>
+        </div>
+    </div>
+    <script>
+        // Chờ cho trang tải xong rồi gọi hàm in
+        window.onload = function () {
+            window.print();
+        };
+    </script>
+</body>

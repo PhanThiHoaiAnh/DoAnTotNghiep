@@ -17,7 +17,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            return View(await _dataContext.ServiceCategories.OrderByDescending(s => s.Id).ToListAsync());
+            return View(await _dataContext.tblServiceCategories.OrderByDescending(s => s.Id).ToListAsync());
         }
         public IActionResult Create()
         {
@@ -31,7 +31,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
             {
                 //them du lieu
                 serviceCategory.Slug = serviceCategory.CategoryName.Replace(" ", "-");
-                var slug = await _dataContext.ServiceCategories.FirstOrDefaultAsync(s => s.Slug == serviceCategory.Slug);
+                var slug = await _dataContext.tblServiceCategories.FirstOrDefaultAsync(s => s.Slug == serviceCategory.Slug);
                 if (slug != null)
                 {
                     ModelState.AddModelError("", "Loại dịch vụ đã tồn tại");
@@ -61,7 +61,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
         }
         public async Task<IActionResult> Edit(string Id)
         {
-            ServiceCategoryModel serviceCategory = await _dataContext.ServiceCategories.FindAsync(Id);
+            ServiceCategoryModel serviceCategory = await _dataContext.tblServiceCategories.FindAsync(Id);
             return View(serviceCategory);
         }
         [HttpPost]
@@ -72,7 +72,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
             {
                 //them du lieu
                 serviceCategory.Slug = serviceCategory.CategoryName.Replace(" ", "-");
-                var slug = await _dataContext.ServiceCategories.FirstOrDefaultAsync(s => s.Slug == serviceCategory.Slug);
+                var slug = await _dataContext.tblServiceCategories.FirstOrDefaultAsync(s => s.Slug == serviceCategory.Slug);
                 if (slug != null)
                 {
                     ModelState.AddModelError("", "Loại dịch vụ đã tồn tại");
@@ -102,9 +102,9 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
         }
         public async Task<IActionResult> Delete(string Id)
         {
-            ServiceCategoryModel serviceCategory = await _dataContext.ServiceCategories.FindAsync(Id);
+            ServiceCategoryModel serviceCategory = await _dataContext.tblServiceCategories.FindAsync(Id);
 
-            _dataContext.ServiceCategories.Remove(serviceCategory);
+            _dataContext.tblServiceCategories.Remove(serviceCategory);
             await _dataContext.SaveChangesAsync();
             TempData["success"] = "Loại dịch vụ đã được xóa";
             return RedirectToAction("Index");

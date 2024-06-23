@@ -2,7 +2,7 @@
 @{
     ViewData["title"] = "Danh sách đặt tiệc";
 }
-<h3>Danh sách Dịch vụ</h3>
+<h3>Danh sách Đặt tiệc</h3>
 
 <table class="table">
     <thead>
@@ -16,6 +16,7 @@
             <th scope="col">Số điện thoại</th>
             <th scope="col">Mã thực đơn</th>
             <th scope="col">Ghi chú</th>
+            <th scope="col">Trạng thái</th>
             <th scope="col">Thao tác</th>
 
         </tr>
@@ -31,11 +32,22 @@
                 <td>@item.PersonTable</td>
                 <td>@item.LocationName</td>
                 <td>@item.PhoneNumber</td>
-                <td>@item.MenuParty</td>
+                <td>@(item.MenuParty != null ? item.ThucDon.Name:"")</td>
                 <td width="150">@Html.Raw(@item.Note)</td>
                 <td>
-                    <a asp-action="Edit" class="btn btn-warning btn-sm" asp-controller="OtherServices" asp-route-Id="@item.Id">Sửa</a>
-                    <a asp-action="Delete" class="btn btn-danger btn-sm confirmDeletion" asp-controller="OtherServices" asp-route-Id="@item.Id">Xóa</a>
+                    @if (@item.Status == false)
+                    {
+                        <span class="text text-success">Chưa duyệt</span>
+                    }
+                    else
+                    {
+                        <span class="text text-success">Đã duyệt</span>
+                    }
+                </td>
+                <td>
+                    <a asp-action="Edit" class="btn btn-warning btn-sm" asp-controller="Party" asp-route-Id="@item.Id">Sửa</a>
+                    <a asp-action="Delete" class="btn btn-danger btn-sm confirmDeletion" asp-controller="Party" asp-route-Id="@item.Id">Xoá</a>
+                    <a asp-action="Inspect" class="btn btn-success btn-sm " asp-controller="Party" asp-route-Id="@item.Id">Duyệt</a>
                 </td>
             </tr>
 

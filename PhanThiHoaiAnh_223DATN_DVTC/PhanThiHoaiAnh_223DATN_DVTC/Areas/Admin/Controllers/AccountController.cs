@@ -25,42 +25,17 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
         public async Task<IActionResult> Index()
         {
             return View(await _dataContext.Users.ToListAsync());
-            //
-            //
+            
         }
-		public IActionResult Login(string returnUrl)
-        {
-            return View(new LoginViewModel { ReturnUrl = returnUrl });
-        }
+		public async Task<IActionResult> EmployeeIndex()
+		{
+			return View(await _dataContext.tblMembers.ToListAsync());
 
-        [HttpPost]
-        public async Task<IActionResult> Login(LoginViewModel loginVM)
-        {
-            if (ModelState.IsValid)
-            {
-                var user = await _userManage.FindByEmailAsync(loginVM.UserName);
-                if (user != null)
-                {
-                    if (!await _userManage.IsEmailConfirmedAsync(user))
-                    {
-                        ModelState.AddModelError("", "Tài khoản chưa được xác nhận email. Vui lòng kiểm tra email và xác nhận tài khoản trước khi đăng nhập.");
-                        return View(loginVM);
-                    }
-                    Microsoft.AspNetCore.Identity.SignInResult result = await _signInManager.PasswordSignInAsync(loginVM.UserName, loginVM.Password, false, false);
-                    if (result.Succeeded)
-                    {
-                        return Redirect(loginVM.ReturnUrl ?? "/");
-                    }
-
-                }
-                ModelState.AddModelError("", "Tên đăng nhập hoặc Mật khẩu không đúng");
-            }
-            return View(loginVM);
-        }
-        public IActionResult Create()
+		}
+		public IActionResult Create()
         {
 			ViewBag.Roles = new SelectList(_dataContext.Roles.ToList(), "Id", "Name");
-			ViewBag.Positions = new SelectList(_dataContext.Positions.ToList(), "Id", "Name");
+			ViewBag.Positions = new SelectList(_dataContext.tblPositions.ToList(), "Id", "Name");
 			return View();
         }
         [HttpPost]
@@ -71,12 +46,23 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
             if (ModelState.IsValid)
             {
                 ViewBag.Roles = new SelectList(_dataContext.Roles.ToList(), "Id", "Name");
-                ViewBag.Positions = new SelectList(_dataContext.Positions.ToList(), "Id", "Name");
-                AppUserModel newUser = new AppUserModel { LName = user.LastName, FName = user.FirstName, 
-                                                        UserName = user.UserName, Email = user.Email, Birthday = user.Birthday,
-                                                         Gender = user.Gender, PhoneNumber = user.PhoneNumber, Address = user.Address, 
-                                                        EmailConfirmed = true, Position = user.Position, IRole = user.Rolee };
+                ViewBag.Positions = new SelectList(_dataContext.tblPositions.ToList(), "Id", "Name");
+                AppUserModel newUser = new AppUserModel 
+                { 
+                    LName = user.LastName, FName = user.FirstName, 
+                    UserName = user.UserName, Email = user.Email, Birthday = user.Birthday,
+                    Gender = user.Gender, PhoneNumber = user.PhoneNumber, Address = user.Address, 
+                    EmailConfirmed = true, Position = user.Position, IRole = user.Rolee 
+                };
+                EmployeeModel newMember = new EmployeeModel
+                {
+                    FirstName = user.FirstName, LastName = user.LastName, UserName = user.FirstName,
+                    Email = user.Email, Address = user.Address, Birthday=user.Birthday,
+                    Gender = user.Gender, PhoneNumber = user.PhoneNumber,
+					Position = user.Position, Rolee = user.Rolee, Password = user.Password
+				};
                 IdentityResult result = await _userManage.CreateAsync(newUser, user.Password);
+                await _dataContext.tblMembers.AddAsync(newMember);
                 
                 if (result.Succeeded)
                 {
@@ -94,11 +80,6 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
                 }
             }
             return View(user);
-        }
-        public async Task<IActionResult> Logout(string returnUrl = "/")
-        {
-            await _signInManager.SignOutAsync();
-            return Redirect(returnUrl);
         }
     }
 }

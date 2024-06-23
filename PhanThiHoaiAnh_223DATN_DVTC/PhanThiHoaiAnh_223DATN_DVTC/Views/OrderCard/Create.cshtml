@@ -1,0 +1,163 @@
+﻿@model WeddingCardModel
+@{
+	ViewData["title"] = "Đặt thiệp cưới";
+	Layout = "_Template";
+}
+<section id="">
+	<!--form-->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-1">
+				<div class="signup-form">
+					<!--sign up form-->
+					<h2>ĐẶT THIỆP CƯỚI</h2>
+					<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+					<form asp-controller="OrderCard" asp-action="Create">
+						<div class="form-group">
+							<label>Họ và tên cô dâu </label>
+							<input asp-for="BrideName" class="form-control" style="background-color:white" />
+							<span asp-validation-for="BrideName" class="text-danger" />
+						</div>
+						<div class="form-group">
+							<label>Họ và tên bố cô dâu</label>
+							<input asp-for="BrideFaName" class="form-control" style="background-color:white" />
+							<span asp-validation-for="BrideFaName" class="text-danger" />
+						</div>
+						<div class="form-group">
+							<label>Họ và tên mẹ cô dâu </label>
+							<input asp-for="BrideMoName" class="form-control" style="background-color:white" />
+							<span asp-validation-for="BrideMoName" class="text-danger" />
+						</div>
+						<div class="form-group">
+							<label>Địa chỉ nhà gái</label>
+							<input asp-for="BrideAddress" class="form-control" placeholder="số nhà,xã/phường/thị trấn,huyện/quận,tỉnh/TP" style="background-color:white" />
+							<span asp-validation-for="BrideAddress" class="text-danger" />
+						</div>
+						<div class="form-group">
+							<label>Họ và tên chú rể</label>
+							<input asp-for="GroomName" class="form-control" style="background-color:white" />
+							<span asp-validation-for="GroomName" class="text-danger" />
+						</div>
+						<div class="form-group">
+							<label>Họ và tên bố chú rể</label>
+							<input asp-for="GroomFaName" class="form-control" style="background-color:white" />
+							<span asp-validation-for="GroomFaName" class="text-danger" />
+						</div>
+						<div class="form-group">
+							<label>Họ và tên mẹ chú rể</label>
+							<input asp-for="GroomMoName" class="form-control" style="background-color:white" />
+							<span asp-validation-for="GroomMoName" class="text-danger" />
+						</div>
+						<div class="form-group">
+							<label>Địa chỉ nhà trai</label>
+							<input asp-for="GroomAddress" class="form-control" placeholder="số nhà,xã/phường/thị trấn,huyện/quận,tỉnh/TP" style="background-color:white" />
+							<span asp-validation-for="GroomAddress" class="text-danger" />
+						</div>
+						<div class="form-group">
+							<label>Giờ làm lễ </label>
+							<input asp-for="Time" class="form-control" placeholder="trong 24 giờ theo giờ Việt Nam" style="background-color:white" />
+							<span asp-validation-for="Time" class="text-danger" />
+						</div>
+						<div class="form-group">
+							<label>Ngày làm lễ</label>
+							<input id="OrgDate" asp-for="Date" class="form-control" type="date" placeholder="dd/mm/yyyy" style="background-color:white" />
+							<span asp-validation-for="Date" class="text-danger" />
+						</div>
+						<div class="form-group">
+							<label>Địa chỉ làm lễ </label>
+							<input asp-for="Address" class="form-control" placeholder="số nhà,xã/phường/thị trấn,huyện/quận,tỉnh/TP" style="background-color:white" />
+							<span asp-validation-for="Address" class="text-danger" />
+						</div>
+						<div class="form-group">
+							<label>Ngày tổ chức tiệc</label>
+							<input id="OrgDate" asp-for="DateWedding" class="form-control" type="date" placeholder="dd/mm/yyyy" style="background-color:white" />
+							<span asp-validation-for="DateWedding" class="text-danger" />
+						</div>
+						<div class="form-group">
+							<label>Giờ cụ thể </label>
+							<input asp-for="TimeWedding" class="form-control" placeholder="trong 24 giờ theo giờ Việt Nam" style="background-color:white" />
+							<span asp-validation-for="TimeWedding" class="text-danger" />
+						</div>
+						<div class="form-group">
+							<label>Địa chỉ tổ chức tiệc</label>
+							<input asp-for="AddressWedding" class="form-control" placeholder="số nhà,xã/phường/thị trấn,huyện/quận,tỉnh/TP" style="background-color:white" />
+							<span asp-validation-for="AddressWedding" class="text-danger" />
+						</div>
+						<div class="form-group">
+							<label>Số điện thoại liên hệ</label>
+							<input asp-for="PhoneNumber" class="form-control" style="background-color:white" />
+							<span asp-validation-for="PhoneNumber" class="text-danger" />
+						</div>
+						
+						@{
+							var menus = ViewBag.WeddingCard as List<WeddingCardCategoryModel>;
+						}
+
+						<div class="form-group">
+							@if (menus != null)
+							{
+								<label>Thiệp mời</label>
+								<div class="menu-container">
+
+									@foreach (var menu in menus)
+									{
+										<div class="menu-item">
+											<div class="form-check">
+												<input class="form-check-input" type="radio" asp-for="CardId" value="@menu.Id">
+
+												<div class="menu-info">
+													<p>@menu.Name</p>
+													<img src="~/media/services/@menu.Image" width="120px" height="80px" />
+													<p>@menu.Price.ToString("N0") đ</p>
+												</div>
+
+											</div>
+										</div>
+									}
+								</div>
+							}
+							<span asp-validation-for="CardId" class="text-danger"></span>
+						</div>
+						<div class="form-group">
+							<label>Số lượng thiệp</label>
+							<input asp-for="Quantity" class="form-control" min="0" style="background-color:white" />
+							<span asp-validation-for="Quantity" class="text-danger" />
+						</div>
+						<div class="form-group">
+							<label>Địa chỉ nhận hàng</label>
+							<input asp-for="AddressReceived" class="form-control" placeholder="số nhà,xã/phường/thị trấn,huyện/quận,tỉnh/TP" style="background-color:white" />
+							<span asp-validation-for="AddressReceived" class="text-danger" />
+						</div>
+						<div class="form-group">
+							<label>Ngày nhận hàng</label>
+							<input id="OrgDate" asp-for="ReceiveDate" class="form-control" type="date" placeholder="dd/mm/yyyy" style="background-color:white" />
+							<span asp-validation-for="ReceiveDate" class="text-danger" />
+						</div>
+						<div class="form-group">
+							<label>Ghi chú</label>
+							<input asp-for="Note" class="form-control" />
+							<span asp-validation-for="Note" class="text-danger" />
+						</div>
+						<div><button type="submit" class="btn btn-default">ĐẶT THIỆP CƯỚI</button></div>
+
+					</form>
+				</div><!--/sign up form-->
+			</div>
+		</div>
+	</div>
+</section><!--/form-->
+@section Scripts {
+	@{
+		await Html.RenderPartialAsync("_ValidationScriptsPartial");
+	}
+	<script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
+	<script>
+		CKEDITOR.replace('Note');
+	</script>
+	<script>
+		var orgDateInput = document.getElementById("OrgDate");
+		var today = new Date().toISOString().split("T")[0];
+		orgDateInput.setAttribute("min", today);
+
+	</script>
+}

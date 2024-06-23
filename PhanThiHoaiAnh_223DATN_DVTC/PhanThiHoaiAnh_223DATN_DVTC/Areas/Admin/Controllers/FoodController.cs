@@ -9,7 +9,7 @@ using PhanThiHoaiAnh_223DATN_DVTC.Repository;
 namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
 {
 	[Area("Admin")]
-    [Authorize(Roles = "Admin")]
+    //[Authorize(Roles = "Admin")]
     public class FoodController : Controller
     {
         private readonly DataContext _dataContext;
@@ -21,26 +21,26 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            return View(await _dataContext.FoodModel.OrderByDescending(s => s.Id).Include(s=> s.FoodSequence).Include(s=> s.FoodCategory).ToListAsync());
+            return View(await _dataContext.tblFood.OrderByDescending(s => s.Id).Include(s=> s.FoodSequence).Include(s=> s.FoodCategory).ToListAsync());
         }
         public IActionResult Create()
         {
-            ViewBag.FoodCategories = new SelectList(_dataContext.FoodCategories, "Id", "CategoryName");
-            ViewBag.FoodSequence = new SelectList(_dataContext.FoodSequence, "Id", "Name");
+            ViewBag.FoodCategories = new SelectList(_dataContext.tblFoodCategories, "Id", "CategoryName");
+            ViewBag.FoodSequence = new SelectList(_dataContext.tblFoodSequence, "Id", "Name");
             return View();
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(FoodModel food)
         {
-            ViewBag.FoodCategories = new SelectList(_dataContext.FoodCategories, "Id", "CategoryName", food.FoodCategoryId);
-            ViewBag.FoodSequence = new SelectList(_dataContext.FoodSequence, "Id", "Name", food.FoodSequenceId);
+            ViewBag.FoodCategories = new SelectList(_dataContext.tblFoodCategories, "Id", "CategoryName", food.FoodCategoryId);
+            ViewBag.FoodSequence = new SelectList(_dataContext.tblFoodSequence, "Id", "Name", food.FoodSequenceId);
 
             if (ModelState.IsValid)
             {
                 //them du lieu
                 food.Slug = food.Name.Replace(" ", "-");
-                var slug = await _dataContext.FoodCategories.FirstOrDefaultAsync(f => f.Slug == food.Slug);
+                var slug = await _dataContext.tblFoodCategories.FirstOrDefaultAsync(f => f.Slug == food.Slug);
                 if (slug != null)
                 {
                     ModelState.AddModelError("", "Món ăn đã tồn tại");
@@ -81,9 +81,9 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
         }
         public async Task<IActionResult> Edit(int Id)
         {
-            FoodModel food = await _dataContext.FoodModel.FindAsync(Id);
-            ViewBag.FoodCategories = new SelectList(_dataContext.FoodCategories, "Id", "CategoryName", food.FoodCategoryId);
-            ViewBag.FoodSequence = new SelectList(_dataContext.FoodSequence, "Id", "Name", food.FoodSequenceId);
+            FoodModel food = await _dataContext.tblFood.FindAsync(Id);
+            ViewBag.FoodCategories = new SelectList(_dataContext.tblFoodCategories, "Id", "CategoryName", food.FoodCategoryId);
+            ViewBag.FoodSequence = new SelectList(_dataContext.tblFoodSequence, "Id", "Name", food.FoodSequenceId);
 
             return View(food);
         }
@@ -91,14 +91,14 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int Id, FoodModel food)
         {
-            ViewBag.FoodCategories = new SelectList(_dataContext.FoodCategories, "Id", "CategoryName", food.FoodCategoryId);
-            ViewBag.FoodSequence = new SelectList(_dataContext.FoodSequence, "Id", "Name", food.FoodSequenceId);
+            ViewBag.FoodCategories = new SelectList(_dataContext.tblFoodCategories, "Id", "CategoryName", food.FoodCategoryId);
+            ViewBag.FoodSequence = new SelectList(_dataContext.tblFoodSequence, "Id", "Name", food.FoodSequenceId);
 
             if (ModelState.IsValid)
             {
                 //them du lieu
                 food.Slug = food.Name.Replace(" ", "-");
-                var slug = await _dataContext.FoodModel.FirstOrDefaultAsync(f => f.Slug == food.Slug);
+                var slug = await _dataContext.tblFood.FirstOrDefaultAsync(f => f.Slug == food.Slug);
                 if (slug != null)
                 {
                     ModelState.AddModelError("", "Món ăn đã tồn tại");
@@ -138,7 +138,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
         }
         public async Task<IActionResult> Delete(int Id)
         {
-            FoodModel food = await _dataContext.FoodModel.FindAsync(Id);
+            FoodModel food = await _dataContext.tblFood.FindAsync(Id);
             if (!string.Equals(food.Image, "noimage.jpg"))
             {
                 string uploadDir = Path.Combine(_webHostEnvironment.WebRootPath, "media/food");
@@ -148,7 +148,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
                     System.IO.File.Delete(oldfileImg);
                 }
             }
-            _dataContext.FoodModel.Remove(food);
+            _dataContext.tblFood.Remove(food);
             await _dataContext.SaveChangesAsync();
             TempData["error"] = "Dịch vụ đã được xóa";
             return RedirectToAction("Index");

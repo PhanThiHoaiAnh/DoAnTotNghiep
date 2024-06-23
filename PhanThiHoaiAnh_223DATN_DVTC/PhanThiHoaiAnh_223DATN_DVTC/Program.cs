@@ -26,6 +26,13 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
 });
 
+//dang ky singleton
+builder.Services.AddSingleton(x => new PaypalClient(
+	builder.Configuration["PaypalOptions:AppId"],
+    builder.Configuration["PaypalOptions:AppSecret"],
+    builder.Configuration["PaypalOptions:Mode"]
+));
+
 builder.Services.AddIdentity<AppUserModel,IdentityRole>()
 	.AddEntityFrameworkStores<DataContext>().AddDefaultTokenProviders();
 
@@ -45,8 +52,6 @@ builder.Services.Configure<IdentityOptions>(options =>
 //gui mail
 builder.Services.AddTransient<IEmailSender, EmailSender>();
 
-//dang ky pdf;
-builder.Services.AddScoped<IViewRenderService, ViewRenderService>();
 
 var app = builder.Build();
 

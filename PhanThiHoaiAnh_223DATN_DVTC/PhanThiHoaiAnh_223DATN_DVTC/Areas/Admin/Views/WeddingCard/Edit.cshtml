@@ -1,0 +1,58 @@
+﻿@model WeddingCardCategoryModel
+@{
+    ViewData["title"] = "Chỉnh sửa thiệp";
+}
+<h4>Chỉnh sửa thiệp</h4>
+<div class="col-md-9">
+    <form asp-action="Edit" enctype="multipart/form-data">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="form-group">
+            <label>Tên thiệp</label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger" />
+        </div>
+
+        <div class="form-group">
+            <label>Giá</label>
+            <input asp-for="Price" class="form-control" />
+            <span asp-validation-for="Price" class="text-danger" />
+        </div>
+
+        <div class="form-group">
+            <label>Hình ảnh</label>
+            <input asp-for="ImageUpload" class="form-control" />
+            <span asp-validation-for="ImageUpload" class="text-danger" />
+            <img id="imgpreview" class="pt-2" />
+            <td><img src="~/media/services/@Model.Image" width="120" /></td>
+        </div>
+
+        <div class="form-group">
+            <label>Mô tả</label>
+            <textarea asp-for="Description" class="form-control"></textarea>
+            <span asp-validation-for="Description" class="text-danger" />
+        </div>
+
+        <div class="form-group">
+            <button class="btn btn-primary">Cập nhật</button>
+        </div>
+
+    </form>
+    <a asp-action="Index">Trở về</a>
+</div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
+    <script>
+        $("#ImageUpload").change(function () {
+            readURL(this);
+        })
+    </script>
+    <script>
+        CKEDITOR.replace('Description');
+    </script>
+
+}
+

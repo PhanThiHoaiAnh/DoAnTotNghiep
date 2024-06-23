@@ -1,0 +1,60 @@
+﻿@model IEnumerable<PartyModel>
+@{
+    ViewData["title"] = "Đơn hàng";
+    Layout = "_Template";
+}
+<h3>Danh sách đơn hàng</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>STT</th>
+            <th scope="col">Mã đơn</th>
+            <th scope="col">Ngày đặt</th>
+            <th scope="col">Ngày tổ chức tiệc</th>
+            <th scope="col">Số bàn tiệc</th>
+            <th scope="col">Thực đơn</th>
+            <th scope="col">Địa chỉ</th>
+            <th scope="col">Tổng tiền</th>
+            <th scope="col">VAT 10%</th>
+            <th scope="col">Tiền cọc</th>
+            <th scope="col">Trạng thái</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null)
+        {
+            var i = 1;
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@i</td>
+                    <td>@item.PartyCode</td>
+                    <td>@item.OrderDate.ToString("dd/MM/yyyy hh:MM")</td>
+                    <td>@item.OrgDate.ToString("dd/MM/yyyy hh:MM")</td>
+                    <td>@item.NumTable</td>
+                    <td>@item.MenuParty</td>
+                    <td>@item.LocationName</td>
+                    <td>@item.Total.ToString("N0")</td>
+                    <td>@item.Pay.ToString("N0")</td>
+                    <td>@item.Deposit.ToString("N0")</td>
+                    <td>
+                        @if (@item.Status == true)
+                        {
+                            <span class="text text-success">Đã duyệt</span>
+                        }
+                        else
+                        {
+                            <span class="text text-success">Chưa duyệt</span>
+                        }
+                    </td>
+                    <td>
+                        <a asp-action="ViewOrder" class="btn btn-warning btn-sm" asp-controller="Order" asp-route-Id="@item.Id">Xem</a>
+                    </td>
+                </tr>
+                i++;
+            }
+        }
+
+
+    </tbody>
+</table>

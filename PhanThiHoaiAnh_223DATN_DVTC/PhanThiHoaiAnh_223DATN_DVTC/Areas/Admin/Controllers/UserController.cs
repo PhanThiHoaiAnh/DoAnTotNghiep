@@ -7,7 +7,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
 {
     [Area("Admin")]
     //[Route("Admin/AspNetRole")]
-    [Authorize(Roles = "Quản lý")]
+    [Authorize(Roles = "Admin")]
     public class UserController : Controller
     {
         private readonly UserManager<AppUserModel> _userManager;

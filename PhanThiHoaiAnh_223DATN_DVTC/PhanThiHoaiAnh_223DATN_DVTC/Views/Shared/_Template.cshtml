@@ -97,7 +97,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-3">
-						<img src="~/images/vanphan.jpg" />
+						<a href="http://localhost:37963/Home"><img src="~/images/vanphan.png" /></a>
 					</div>
 					<div class="col-sm-8">
 						<div class="shop-menu pull-right">
@@ -107,13 +107,16 @@
 								@if (User.Identity?.IsAuthenticated ?? false)
 								{
 									<li><a href="#"><i class="fa fa-lock"></i>Chào @User.Identity.Name</a></li>
-									<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Thanh toán</a></li>
+
 									<li class="dropdown">
 										<a href="#"><i class="fa fa-user"></i>Tài Khoản<i class="fa fa-angle-down"></i></a>
 										<ul role="menu" class="sub-menu">
-											<li><a asp-controller="Account" asp-action="Profile">Thông tin cá nhân</a></li>
-											<li><a asp-controller="Account" asp-action="EditProfile">Cập nhật thông tin cá nhân</a></li>
-											<li><a asp-controller="Account" asp-action="Logout">Đăng xuất</a></li>
+											<li><a asp-controller="Account" asp-action="Profile" style="background: none">Thông tin cá nhân</a></li>
+											<li><a asp-controller="Account" asp-action="EditProfile" style="background: none">Cập nhật thông tin cá nhân</a></li>
+											<li><a asp-controller="Order" asp-action="IndexOrder" style="background: none">Lịch sử đặt hàng</a></li>
+											<li><a asp-controller="Order" asp-action="Index" style="background: none">Chi tiết đặt hàng</a></li>
+											<li><a asp-controller="Order" asp-action="IndexParty" style="background: none">Lịch sử đặt tiệc</a></li>
+											<li><a asp-controller="Account" asp-action="Logout" style="background: none">Đăng xuất</a></li>
 										</ul>
 									</li>
 									<li><a href="#"><i class="fa fa-star"></i> Yêu thích</a></li>
@@ -130,49 +133,48 @@
 			</div>
 		</div><!--/header-middle-->
 
-		<div class="header-bottom">
+		<div class="header-bottom" style="padding-bottom: 5px;">
 			<!--header-bottom-->
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-9">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
+			<div class="header-bottom-border">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-9">
+
+							<div class="mainmenu pull-left">
+								<ul class="nav navbar-nav collapse navbar-collapse">
+									<li><a asp-controller="Home" class="active">Trang chủ</a></li>
+									<li><a asp-controller="Introduce" class="active">Giới thiệu</a></li>
+									<li class="dropdown">
+										<a href="#">Dịch vụ<i class="fa fa-angle-down"></i></a>
+										<ul class="sub-menu">
+											<li><a asp-controller="DatTiec" asp-action="Create">Đặt tiệc</a></li>
+											<li><a asp-controller="DatTiec" asp-action="DatTiec">Đặt tiệc - Demo</a></li>
+											<li><a asp-controller="OrderCard" asp-action="Create">Đặt thiệp cưới</a></li>
+											<li><a asp-controller="Food">Các món ăn</a></li>
+											<li><a asp-controller="Menu">Thực đơn</a></li>
+											<li><a asp-controller="WeddingCard">Mẫu thiệp cưới</a></li>
+											<li><a asp-controller="OtherServices">Các dịch vụ</a></li>
+											<li><a asp-controller="Cart">Giỏ hàng</a></li>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#">Blog<i class="fa fa-angle-down"></i></a>
+										<ul role="menu" class="sub-menu">
+											<li><a>Blog List</a></li>
+											<li><a>Blog Single</a></li>
+										</ul>
+									</li>
+									<li><a href="contact-us.html">Liên Hệ</a></li>
+								</ul>
+							</div>
 						</div>
-						<div class="mainmenu pull-left">
-							<ul class="nav navbar-nav collapse navbar-collapse">
-								<li><a asp-controller="Home" class="active">Trang chủ</a></li>
-								<li><a asp-controller="Introduce" class="active">Giới thiệu</a></li>
-								<li class="dropdown">
-									<a href="#">Dịch vụ<i class="fa fa-angle-down"></i></a>
-									<ul class="sub-menu">
-										<li><a asp-controller="DatTiec" asp-action="Create">Đặt tiệc</a></li>
-										<li><a asp-controller="WeddingCard">Đặt thiệp cưới</a></li>
-										<li><a asp-controller="Food">Các món ăn</a></li>
-										<li><a asp-controller="Menu">Thực đơn</a></li>
-										<li><a asp-controller="OtherServices">Các dịch vụ</a></li>
-										<li><a asp-controller="Cart">Giỏ hàng</a></li>
-									</ul>
-								</li>
-								<li class="dropdown">
-									<a href="#">Blog<i class="fa fa-angle-down"></i></a>
-									<ul role="menu" class="sub-menu">
-										<li><a>Blog List</a></li>
-										<li><a>Blog Single</a></li>
-									</ul>
-								</li>
-								<li><a href="contact-us.html">Liên Hệ</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<form class="search_box pull-right" asp-controller="Home" asp-action="TimKiem">
-							<input type="text" name="name" placeholder="Search" /><button class="btn-search">Tìm kiếm</button>
-						</form>
+						@using (Html.BeginForm("TimKiem", "Home", FormMethod.Get))
+						{
+							<div class="col-sm-3">
+								<input type="search" name="query" placeholder="Nhập từ khóa" />
+								<button class="btn-search">Tìm kiếm</button>
+							</div>
+						}
 					</div>
 				</div>
 			</div>
@@ -190,54 +192,23 @@
 
 	<footer id="footer">
 		<!--Footer-->
-		<div class="footer-top">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-2">
-						<div class="companyinfo">
-							<img src="~/images/logo2.png" />
-							<p></p>
-						</div>
-					</div>
-					<div class="col-sm-7">
-
-						<div class="col-sm-3">
-							<div class="video-gallery text-center">
-								<a href="#">
-									<div class="iframe-img">
-										<img src="images/home/iframe3.png" alt="" />
-									</div>
-									<div class="overlay-icon">
-										<i class="fa fa-play-circle-o"></i>
-									</div>
-								</a>
-								<p>Circle of Hands</p>
-								<h2>24 DEC 2014</h2>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="address">
-							<img src="images/home/map.png" alt="" />
-							<p>505 S Atlantic Ave Virginia Beach, VA(Virginia)</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
 		<div class="footer-widget">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-2">
 						<div class="single-widget">
+							<img src="~/images/logo2.png" />
+							<p></p>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
 							<h2>Dịch vụ</h2>
 							<ul class="nav nav-pills nav-stacked">
-								<li><a href="#">Online Help</a></li>
-								<li><a href="#">Contact Us</a></li>
-								<li><a href="#">Order Status</a></li>
-								<li><a href="#">Change Location</a></li>
-								<li><a href="#">FAQ’s</a></li>
+								<li><a href="#">Tổ chức tiệc và sự kiện</a></li>
+								<li><a href="#">Đặt dịch vụ</a></li>
+								<li><a href="#">Hoạt động</a></li>
+								<li><a href="#">Tiếp cận</a></li>
 							</ul>
 						</div>
 					</div>
@@ -246,8 +217,8 @@
 						<div class="single-widget">
 							<h2>Về chúng tôi</h2>
 							<ul class="nav nav-pills nav-stacked">
-								<li><a href="#">Company Information</a></li>
-								<li><a href="#">Careers</a></li>
+								<li><a href="#">Thông tin liên  hệ</a></li>
+								<li><a href="#">Địa chỉ</a></li>
 							</ul>
 						</div>
 					</div>
@@ -268,8 +239,8 @@
 		<div class="footer-bottom">
 			<div class="container">
 				<div class="row">
-					<p class="pull-left">Copyright © 2024 Wedding Service Inc. All rights reserved.</p>
-					<p class="pull-right">Designed by <span><a target="_blank" href="http://www.themeum.com">Themeum</a></span></p>
+					<p class="pull-left">Copyright © 2024 - Van Phan.</p>
+					<p class="pull-right">Designed by <span><a target="_blank" href="http://www.themeum.com">Themeum and Edit by HoaiAnhPhan</a></span></p>
 				</div>
 			</div>
 		</div>

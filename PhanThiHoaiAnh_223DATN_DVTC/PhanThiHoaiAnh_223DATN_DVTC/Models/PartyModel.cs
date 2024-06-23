@@ -34,11 +34,10 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Models
         public long Pay {  get; set; }
         public int otherService { get; set; }
 		//public List<int> SelectedService { get; set; }
-		public int Status { get; set; }
+		public bool Status { get; set; }
         public DateTime OrderDate { get; set; }
         public PartyCategoryModel PtCategory { get; set; }
 		public LocationModel LocationPt { get; set; }
 		public MenuModel ThucDon { get; set; }
-		public OtherServicesModel Service { get; set;}
 	}
 }
