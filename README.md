@@ -1,4 +1,4 @@
-Project về dịch vụ tiệc cưới theo mô hình MVC nhưng còn đang trong quá trình sửa chữa và hoàn thành:
+Project về dịch vụ tiệc cưới theo mô hình MVC :
 
 Project mong muốn với các chức năng:
 
@@ -6,8 +6,18 @@ Project mong muốn với các chức năng:
 
 -Đăng ký/Đăng Nhập 
 
+-Đặt tiệc
+
+-Đặt thiệp cưới
+
 -Trang quản lý của Admin
 
+  +phân quyền
+
+  +xuất pdf
+
+  +cập nhật ds nhân viên
+  
   +cập nhật danh sách đặt dịch vụ
   
   +cập nhật các thực đơn
@@ -18,20 +28,5 @@ Project mong muốn với các chức năng:
   
   +cập nhật dịch vụ, các loại dịch vụ, món ăn, loại món...
   
--Trang chủ của Khách hàng
 
-------chưa có các chức năng sau:
 
--Đặt tiệc
-
--chọn hình thức thanh toán
-
--Đặt thiệp cưới
-
----Admin còn thiếu:
-
--phân quyền
-
--xuất pdf
-
--cập nhật ds nhân viên
