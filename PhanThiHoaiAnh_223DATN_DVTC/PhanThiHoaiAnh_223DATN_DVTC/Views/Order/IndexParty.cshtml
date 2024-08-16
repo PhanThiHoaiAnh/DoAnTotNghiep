@@ -23,6 +23,7 @@
     <tbody>
         @if (Model != null)
         {
+            var menuNames = ViewData["TenDichVu"] as Dictionary<int, string>;
             var i = 1;
             @foreach (var item in Model)
             {
@@ -30,9 +31,9 @@
                     <td>@i</td>
                     <td>@item.PartyCode</td>
                     <td>@item.OrderDate.ToString("dd/MM/yyyy hh:MM")</td>
-                    <td>@item.OrgDate.ToString("dd/MM/yyyy hh:MM")</td>
+                    <td>@item.OrgDate.ToString("dd/MM/yyyy") @item.Time</td>
                     <td>@item.NumTable</td>
-                    <td>@item.MenuParty</td>
+                    <td>@(menuNames != null ? menuNames[item.MenuParty] : "")</td>
                     <td>@item.LocationName</td>
                     <td>@item.Total.ToString("N0")</td>
                     <td>@item.Pay.ToString("N0")</td>
@@ -47,9 +48,7 @@
                             <span class="text text-success">Chưa duyệt</span>
                         }
                     </td>
-                    <td>
-                        <a asp-action="ViewOrder" class="btn btn-warning btn-sm" asp-controller="Order" asp-route-Id="@item.Id">Xem</a>
-                    </td>
+                    
                 </tr>
                 i++;
             }

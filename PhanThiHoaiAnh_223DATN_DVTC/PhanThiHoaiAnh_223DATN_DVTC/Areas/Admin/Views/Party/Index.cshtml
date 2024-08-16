@@ -7,14 +7,15 @@
 <table class="table">
     <thead>
         <tr>
-            <th scope="col">#</th>
+            <th scope="col">Mã tiệc</th>
+            <th scope="col">Họ và tên</th>
             <th scope="col">Ngày tổ chức</th>
             <th scope="col">Ngày đặt </th>
             <th scope="col">Số lượng khách</th>
             <th scope="col">Số bàn tiệc</th>
             <th scope="col">Địa chỉ</th>
             <th scope="col">Số điện thoại</th>
-            <th scope="col">Mã thực đơn</th>
+            <th scope="col">Các dịch vụ</th>
             <th scope="col">Ghi chú</th>
             <th scope="col">Trạng thái</th>
             <th scope="col">Thao tác</th>
@@ -26,14 +27,35 @@
         {
             <tr>
                 <th scope="row">@item.Id</th>
-                <td>@item.OrgDate</td>
-                <td>@item.OrderDate</td>
+                <td>@item.LastName @item.FirstName</td>
+                <td>@item.OrgDate.ToString("dd/MM/yyyy")</td>
+                <td>@item.OrderDate.ToString("dd/MM/yyyy")</td>
                 <td>@item.CusNumber</td>
                 <td>@item.PersonTable</td>
                 <td>@item.LocationName</td>
                 <td>@item.PhoneNumber</td>
-                <td>@(item.MenuParty != null ? item.ThucDon.Name:"")</td>
-                <td width="150">@Html.Raw(@item.Note)</td>
+                <td width="250px">
+                        @if(@item.MenuParty != null)
+                        {
+                        <p>Menu: @item.ThucDon.Name</p>
+                        }
+                        @if (@item.FoodName != null)
+                        {
+                            @foreach (var foodItemName in @item.FoodName)
+                            {
+                            <li>@foodItemName</li>
+                            }
+                        }
+                    Dịch vụ:
+                        @if (@item.otherServiceName != null)
+                        {
+                            @foreach (var serviceItemName in @item.otherServiceName)
+                            {
+                            <li>@serviceItemName</li>
+                            }
+                        }
+                </td>
+                <td width="100">@Html.Raw(@item.Note)</td>
                 <td>
                     @if (@item.Status == false)
                     {
@@ -44,9 +66,7 @@
                         <span class="text text-success">Đã duyệt</span>
                     }
                 </td>
-                <td>
-                    <a asp-action="Edit" class="btn btn-warning btn-sm" asp-controller="Party" asp-route-Id="@item.Id">Sửa</a>
-                    <a asp-action="Delete" class="btn btn-danger btn-sm confirmDeletion" asp-controller="Party" asp-route-Id="@item.Id">Xoá</a>
+                <td><a asp-action="Delete" class="btn btn-danger btn-sm confirmDeletion" asp-controller="Party" asp-route-Id="@item.Id">Xoá</a>
                     <a asp-action="Inspect" class="btn btn-success btn-sm " asp-controller="Party" asp-route-Id="@item.Id">Duyệt</a>
                 </td>
             </tr>

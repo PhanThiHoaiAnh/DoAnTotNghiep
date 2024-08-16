@@ -7,6 +7,8 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Models.Views
         public string PartyCode { get; set; }
         [MaxLength(256)]
         public string UserName { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
         public string ServiceName { get; set; }
         public DateTime OrderDate { get; set; }
         public DateTime OrderOrg { get; set; }
@@ -15,6 +17,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Models.Views
         public long Total { get; set; }
         public long Deposit { get; set; }
         public long Pay { get; set; }
-       
+        public List<string> ServList { get; set; }
+
     }
 }

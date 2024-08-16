@@ -7,6 +7,10 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Models
         [Key]
         public int Id { get; set; }
         [Required]
+        public string FirstName { get; set; }
+        [Required]
+        public string LastName { get; set; }
+        [Required]
         public string BrideName { get; set; }
         [Required]
         public string GroomName { get; set; }
@@ -23,9 +27,9 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Models
 		[Required]
 		public string GroomAddress { get; set; }
         [Required]
-        public string Time { get; set; }
+        public string Time { get; set; }//Time làm lễ
         [Required]
-        public DateTime Date { get; set; }
+        public DateTime Date { get; set; } //Ngày làm lễ
         [Required]
         public string Address { get; set; }
         [Required]
@@ -33,7 +37,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Models
         [Required]
         public string AddressWedding { get; set; }
         [Required]
-        public DateTime DateWedding { get; set; }
+        public DateTime DateWedding { get; set; }//Ngày tổ chức tiệc
         public int CardId { get; set; }
         [Required]
         public int Quantity { get; set; }
@@ -46,7 +50,8 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Models
 		public long Total { get; set; }
         public bool Status { get; set; }
         public string OrderCode { get; set; }
-		public WeddingCardCategoryModel CardModel { get; set; }
+        public DateTime OrderDate { get; set; }
+        public WeddingCardCategoryModel CardModel { get; set; }
         public string Note { get; set; }
         [MaxLength(256)]
         public string UserName { get; set; }

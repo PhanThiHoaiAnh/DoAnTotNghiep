@@ -4,12 +4,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PhanThiHoaiAnh_223DATN_DVTC.Models;
 using PhanThiHoaiAnh_223DATN_DVTC.Repository;
+using PhanThiHoaiAnh_223DATN_DVTC.Services;
 using SelectPdf;
 
 namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
 {
 	[Area("Admin")]
-    [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin, Member")]
     public class OrderController : Controller
 	{
 		private readonly DataContext _dataContext;
@@ -17,7 +18,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
 		{
 			_dataContext = dataContext;
 		}
-		public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index()
 		{
 			var order = _dataContext.tblOrder.ToList();
 			return View(order);
@@ -36,19 +37,6 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
                 return View("Detail", order);
             }
             return View("Detail");
-
-            //if (order != null && order.Detail != null)
-            //{
-            //    var menuDetails = await _dataContext.tblMenuDetails
-            //	.Where(md => md.MenuId == order.Detail.ServiceId)
-            //	.ToListAsync();
-            // Lấy danh sách chi tiết món ăn từ tblMenuDetail dựa vào MenuId của Menu liên kết với đơn hàng
-
-            //  ViewBag.MenuDetails = menuDetails; // Truyền danh sách chi tiết món ăn vào ViewBag
-
-            //  return View("Detail", order);
-            //}
-
         }
         public async Task<IActionResult> Delete(int Id)
         {
@@ -80,14 +68,35 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
 		}
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public async Task<IActionResult> Update(int Id, DatTiecModel food)
+        [Authorize(Roles = "Member")]
+        public async Task<IActionResult> Update(int Id, DatTiecModel updatedFood)
 		{
 			if (ModelState.IsValid)
 			{
-				_dataContext.Update(food);
-				await _dataContext.SaveChangesAsync();
-				TempData["success"] = "Cập nhật trạng thái dịch vụ thành công";
-				return RedirectToAction("Index");
+                var existingFood = await _dataContext.tblOrder.FindAsync(Id);
+                if (existingFood != null)
+                {
+                    // Gắn kết đối tượng updatedFood vào ngữ cảnh (_dataContext)
+                    _dataContext.Attach(existingFood);
+
+                    // Cập nhật các trường mong muốn
+                    existingFood.FtName = updatedFood.FtName;
+                    existingFood.LtName = updatedFood.LtName;
+                    existingFood.OrderOrg = updatedFood.OrderOrg;
+                    existingFood.PhoneNumber = updatedFood.PhoneNumber;
+                    existingFood.Address = updatedFood.Address;
+                    existingFood.Status = updatedFood.Status;
+                    existingFood.Payment = updatedFood.Payment;
+                    
+                    await _dataContext.SaveChangesAsync();
+                    TempData["success"] = "Cập nhật trạng thái dịch vụ thành công";
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    TempData["error"] = "Không tìm thấy đối tượng dữ liệu";
+                    return NotFound();
+                }
 			}
 			else
 			{
@@ -103,7 +112,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
 				string errorMessage = string.Join("\n", errors);
 				return BadRequest(errorMessage);
 			}
-			return View(food);
+			return View(updatedFood);
 		}
 	}
 }

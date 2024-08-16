@@ -22,6 +22,7 @@
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head><!--/head-->
 
 <body>
@@ -105,9 +106,9 @@
 								<li class="dropdown">
 									<a href="#">Đơn hàng<i class="fa fa-angle-down"></i></a>
 									<ul role="menu" class="sub-menu">
-										<li><a asp-controller="Order" asp-action="Index">Danh sách đặt các dịch vụ</a></li>
+										<li><a asp-controller="Order" asp-action="Index">Danh sách đặt dịch vụ</a></li>
 										<li><a asp-controller="Party" asp-action="Index">Đơn đặt tiệc</a></li>
-										<li><a asp-controller="OrderWeddingCard" asp-action="Index">Đơn đặt thiệp cưới</a></li>
+										<li><a asp-controller="OrderCard" asp-action="Index">Đơn đặt thiệp cưới</a></li>
 									</ul>
 								</li>
 								<li class="dropdown">
@@ -120,7 +121,15 @@
 										<li><a asp-controller="AppRole" asp-action="Index">Danh sách Quyền</a></li>
 									</ul>
 								</li>
-								<li><a>Thống kê<i class="fa fa-angle-down"></i></a></li>
+								<li class="dropdown">
+									<a href="#">Thống kê<i class="fa fa-angle-down"></i></a>
+									<ul role="menu" class="sub-menu">
+										<li><a asp-controller="Statistics" asp-action="GetMonthlyRevenue">Theo Doanh thu tháng</a></li>
+										<li><a asp-controller="Statistics" asp-action="GetOrderStatusStatistics">Theo trạng thái đơn hàng</a></li>
+										<li><a asp-controller="Statistics" asp-action="GetMonthlyOrderCount">Số lượng đơn theo tháng</a></li>
+										<li><a asp-controller="Statistics" asp-action="GetYearlyRevenue">Theo Doanh thu năm</a></li>
+									</ul>
+								</li>
 								
 							</ul>
 						</div>

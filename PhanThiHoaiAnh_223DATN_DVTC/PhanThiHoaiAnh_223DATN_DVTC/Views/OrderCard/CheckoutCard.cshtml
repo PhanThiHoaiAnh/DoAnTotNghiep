@@ -1,16 +1,19 @@
 ﻿@model DatTiecModel
 @{
-    ViewData["Title"] = "Thông tin đặt tiệc và Thanh toán";
+    ViewData["title"] = "Thông tin đặt thiệp và Thanh toán";
     Layout = "_Template";
 }
 <div class="container">
     <h2>Thông Tin Đặt Thiệp</h2>
-    <input type="hidden" id="paypal-order-id" />
-    <table class="table" width="500px">
 
+    <table class="table" width="500px">
         <tr>
             <td class="of_width"><label>Tài khoản</label></td>
             <td>@Model.UserName</td>
+        </tr>
+        <tr>
+            <td class="of_width"><label>Tên khách hàng</label></td>
+            <td>@Model.LtName @Model.FtName</td>
         </tr>
         <tr>
             <td class="of_width"><label>Mã đặt thiệp</label></td>
@@ -38,7 +41,7 @@
         </tr>
         <tr>
             <td class="of_width"><label>Tiền thuế VAT 10%</label></td>
-            <td>Không áp dụng</td>
+            <td>Không áp dụng cho thiệp</td>
         </tr>
         <tr>
             <td class="of_width"><label>Tiền cọc cần thanh toán (30% trên tổng hóa đơn)</label></td>
@@ -47,7 +50,7 @@
 
     </table>
     <div>
-        <input type="submit" name="payment" class="btn btn-success" value="Thanh toán bằng tiền mặt">
+        <button type="submit" class="btn btn-default"><a asp-controller="OrderCard" asp-action="Success">Thanh toán tiền mặt</a></button>
         <input type="submit" name="payment" class="btn btn-success" value="Thanh toán VNPay">
 
     </div>

@@ -5,264 +5,16 @@
       "PackagePath": "staticwebassets\\PhanThiHoaiAnh_223DATN_DVTC.bundle.scp.css"
     },
     {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\css\\app.min.css",
-      "PackagePath": "staticwebassets\\admin\\css\\app.min.css"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\css\\bootstrap.min.css",
-      "PackagePath": "staticwebassets\\admin\\css\\bootstrap.min.css"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\css\\css-1.css",
-      "PackagePath": "staticwebassets\\admin\\css\\css-1.css"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\css\\css.css",
-      "PackagePath": "staticwebassets\\admin\\css\\css.css"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\css\\icons.min.css",
-      "PackagePath": "staticwebassets\\admin\\css\\icons.min.css"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\css\\s\\rubik\\v11\\iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-4I-FV0Uw.ttf",
-      "PackagePath": "staticwebassets\\admin\\css\\s\\rubik\\v11\\iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-4I-FV0Uw.ttf"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\css\\s\\rubik\\v11\\iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFV0Uw.ttf",
-      "PackagePath": "staticwebassets\\admin\\css\\s\\rubik\\v11\\iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFV0Uw.ttf"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\css\\s\\rubik\\v11\\iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-NYiFV0Uw.ttf",
-      "PackagePath": "staticwebassets\\admin\\css\\s\\rubik\\v11\\iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-NYiFV0Uw.ttf"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\css\\s\\rubik\\v11\\iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-WYiFV0Uw.ttf",
-      "PackagePath": "staticwebassets\\admin\\css\\s\\rubik\\v11\\iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-WYiFV0Uw.ttf"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\fonts\\dripicons-v2-1.bin",
-      "PackagePath": "staticwebassets\\admin\\fonts\\dripicons-v2-1.bin"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\fonts\\dripicons-v2-2.bin",
-      "PackagePath": "staticwebassets\\admin\\fonts\\dripicons-v2-2.bin"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\fonts\\dripicons-v2-3.bin",
-      "PackagePath": "staticwebassets\\admin\\fonts\\dripicons-v2-3.bin"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\fonts\\dripicons-v2.bin",
-      "PackagePath": "staticwebassets\\admin\\fonts\\dripicons-v2.bin"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\fonts\\dripicons-v2.svg",
-      "PackagePath": "staticwebassets\\admin\\fonts\\dripicons-v2.svg"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\fonts\\feather-1.bin",
-      "PackagePath": "staticwebassets\\admin\\fonts\\feather-1.bin"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\fonts\\feather-2.bin",
-      "PackagePath": "staticwebassets\\admin\\fonts\\feather-2.bin"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\fonts\\feather.bin",
-      "PackagePath": "staticwebassets\\admin\\fonts\\feather.bin"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\fonts\\feather.svg",
-      "PackagePath": "staticwebassets\\admin\\fonts\\feather.svg"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\fonts\\materialdesignicons-webfont-1.bin",
-      "PackagePath": "staticwebassets\\admin\\fonts\\materialdesignicons-webfont-1.bin"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\fonts\\materialdesignicons-webfont-2.bin",
-      "PackagePath": "staticwebassets\\admin\\fonts\\materialdesignicons-webfont-2.bin"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\fonts\\materialdesignicons-webfont-3.bin",
-      "PackagePath": "staticwebassets\\admin\\fonts\\materialdesignicons-webfont-3.bin"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\fonts\\materialdesignicons-webfont-4.bin",
-      "PackagePath": "staticwebassets\\admin\\fonts\\materialdesignicons-webfont-4.bin"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\fonts\\materialdesignicons-webfont.bin",
-      "PackagePath": "staticwebassets\\admin\\fonts\\materialdesignicons-webfont.bin"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\fonts\\materialdesignicons-webfont.svg",
-      "PackagePath": "staticwebassets\\admin\\fonts\\materialdesignicons-webfont.svg"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\fonts\\summernote-1.bin",
-      "PackagePath": "staticwebassets\\admin\\fonts\\summernote-1.bin"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\fonts\\summernote-2.bin",
-      "PackagePath": "staticwebassets\\admin\\fonts\\summernote-2.bin"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\fonts\\summernote-3.bin",
-      "PackagePath": "staticwebassets\\admin\\fonts\\summernote-3.bin"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\fonts\\summernote.bin",
-      "PackagePath": "staticwebassets\\admin\\fonts\\summernote.bin"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\images\\error.svg",
-      "PackagePath": "staticwebassets\\admin\\images\\error.svg"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\images\\favicon.ico",
-      "PackagePath": "staticwebassets\\admin\\images\\favicon.ico"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\images\\flags\\germany.jpg",
-      "PackagePath": "staticwebassets\\admin\\images\\flags\\germany.jpg"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\images\\flags\\italy.jpg",
-      "PackagePath": "staticwebassets\\admin\\images\\flags\\italy.jpg"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\images\\flags\\russia.jpg",
-      "PackagePath": "staticwebassets\\admin\\images\\flags\\russia.jpg"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\images\\flags\\spain.jpg",
-      "PackagePath": "staticwebassets\\admin\\images\\flags\\spain.jpg"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\images\\flags\\us.jpg",
-      "PackagePath": "staticwebassets\\admin\\images\\flags\\us.jpg"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\images\\logo-dark.png",
-      "PackagePath": "staticwebassets\\admin\\images\\logo-dark.png"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\images\\logo-light.png",
-      "PackagePath": "staticwebassets\\admin\\images\\logo-light.png"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\images\\logo-sm.png",
-      "PackagePath": "staticwebassets\\admin\\images\\logo-sm.png"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\images\\small\\img-1.jpg",
-      "PackagePath": "staticwebassets\\admin\\images\\small\\img-1.jpg"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\images\\small\\img-2.jpg",
-      "PackagePath": "staticwebassets\\admin\\images\\small\\img-2.jpg"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\images\\small\\img-3.jpg",
-      "PackagePath": "staticwebassets\\admin\\images\\small\\img-3.jpg"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\images\\small\\img-4.jpg",
-      "PackagePath": "staticwebassets\\admin\\images\\small\\img-4.jpg"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\images\\users\\avatar-1.jpg",
-      "PackagePath": "staticwebassets\\admin\\images\\users\\avatar-1.jpg"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\images\\users\\avatar-10.jpg",
-      "PackagePath": "staticwebassets\\admin\\images\\users\\avatar-10.jpg"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\images\\users\\avatar-2.jpg",
-      "PackagePath": "staticwebassets\\admin\\images\\users\\avatar-2.jpg"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\images\\users\\avatar-3.jpg",
-      "PackagePath": "staticwebassets\\admin\\images\\users\\avatar-3.jpg"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\images\\users\\avatar-4.jpg",
-      "PackagePath": "staticwebassets\\admin\\images\\users\\avatar-4.jpg"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\images\\users\\avatar-5.jpg",
-      "PackagePath": "staticwebassets\\admin\\images\\users\\avatar-5.jpg"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\images\\users\\avatar-6.jpg",
-      "PackagePath": "staticwebassets\\admin\\images\\users\\avatar-6.jpg"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\images\\users\\avatar-7.jpg",
-      "PackagePath": "staticwebassets\\admin\\images\\users\\avatar-7.jpg"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\images\\users\\avatar-8.jpg",
-      "PackagePath": "staticwebassets\\admin\\images\\users\\avatar-8.jpg"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\images\\users\\avatar-9.jpg",
-      "PackagePath": "staticwebassets\\admin\\images\\users\\avatar-9.jpg"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\index.html",
-      "PackagePath": "staticwebassets\\admin\\index.html"
-    },
-    {
       "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\js\\app.min.js",
       "PackagePath": "staticwebassets\\admin\\js\\app.min.js"
     },
     {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\js\\pages\\calendar.init.js",
-      "PackagePath": "staticwebassets\\admin\\js\\pages\\calendar.init.js"
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\js\\calendar.init.js",
+      "PackagePath": "staticwebassets\\admin\\js\\calendar.init.js"
     },
     {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\js\\pages\\chartjs.init.js",
-      "PackagePath": "staticwebassets\\admin\\js\\pages\\chartjs.init.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\js\\pages\\dashboard.init.js",
-      "PackagePath": "staticwebassets\\admin\\js\\pages\\dashboard.init.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\js\\pages\\datatables.init.js",
-      "PackagePath": "staticwebassets\\admin\\js\\pages\\datatables.init.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\js\\pages\\form-advanced.init.js",
-      "PackagePath": "staticwebassets\\admin\\js\\pages\\form-advanced.init.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\js\\pages\\form-editor.init.js",
-      "PackagePath": "staticwebassets\\admin\\js\\pages\\form-editor.init.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\js\\pages\\maps.init.js",
-      "PackagePath": "staticwebassets\\admin\\js\\pages\\maps.init.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\js\\pages\\range-sliders.init.js",
-      "PackagePath": "staticwebassets\\admin\\js\\pages\\range-sliders.init.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\js\\pages\\sparkline.init.js",
-      "PackagePath": "staticwebassets\\admin\\js\\pages\\sparkline.init.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\js\\pages\\sweet-alerts.init.js",
-      "PackagePath": "staticwebassets\\admin\\js\\pages\\sweet-alerts.init.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\js\\pages\\toastr.init.js",
-      "PackagePath": "staticwebassets\\admin\\js\\pages\\toastr.init.js"
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\js\\chartjs.init.js",
+      "PackagePath": "staticwebassets\\admin\\js\\chartjs.init.js"
     },
     {
       "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\js\\vendor.min.js",
@@ -285,184 +37,12 @@
       "PackagePath": "staticwebassets\\admin\\libs\\chart-js\\Chart.bundle.min.js"
     },
     {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\datatables\\buttons.bootstrap4.min.css",
-      "PackagePath": "staticwebassets\\admin\\libs\\datatables\\buttons.bootstrap4.min.css"
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\chart-js\\echarts.min.js",
+      "PackagePath": "staticwebassets\\admin\\libs\\chart-js\\echarts.min.js"
     },
     {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\datatables\\buttons.bootstrap4.min.js",
-      "PackagePath": "staticwebassets\\admin\\libs\\datatables\\buttons.bootstrap4.min.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\datatables\\buttons.flash.min.js",
-      "PackagePath": "staticwebassets\\admin\\libs\\datatables\\buttons.flash.min.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\datatables\\buttons.html5.min.js",
-      "PackagePath": "staticwebassets\\admin\\libs\\datatables\\buttons.html5.min.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\datatables\\buttons.print.min.js",
-      "PackagePath": "staticwebassets\\admin\\libs\\datatables\\buttons.print.min.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\datatables\\dataTables.bootstrap4.min.css",
-      "PackagePath": "staticwebassets\\admin\\libs\\datatables\\dataTables.bootstrap4.min.css"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\datatables\\dataTables.bootstrap4.min.js",
-      "PackagePath": "staticwebassets\\admin\\libs\\datatables\\dataTables.bootstrap4.min.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\datatables\\dataTables.buttons.min.js",
-      "PackagePath": "staticwebassets\\admin\\libs\\datatables\\dataTables.buttons.min.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\datatables\\dataTables.keyTable.min.js",
-      "PackagePath": "staticwebassets\\admin\\libs\\datatables\\dataTables.keyTable.min.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\datatables\\dataTables.responsive.min.js",
-      "PackagePath": "staticwebassets\\admin\\libs\\datatables\\dataTables.responsive.min.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\datatables\\dataTables.select.min.js",
-      "PackagePath": "staticwebassets\\admin\\libs\\datatables\\dataTables.select.min.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\datatables\\jquery.dataTables.min.js",
-      "PackagePath": "staticwebassets\\admin\\libs\\datatables\\jquery.dataTables.min.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\datatables\\responsive.bootstrap4.min.css",
-      "PackagePath": "staticwebassets\\admin\\libs\\datatables\\responsive.bootstrap4.min.css"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\datatables\\responsive.bootstrap4.min.js",
-      "PackagePath": "staticwebassets\\admin\\libs\\datatables\\responsive.bootstrap4.min.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\datatables\\select.bootstrap4.min.css",
-      "PackagePath": "staticwebassets\\admin\\libs\\datatables\\select.bootstrap4.min.css"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\dropzone\\dropzone.min.css",
-      "PackagePath": "staticwebassets\\admin\\libs\\dropzone\\dropzone.min.css"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\dropzone\\dropzone.min.js",
-      "PackagePath": "staticwebassets\\admin\\libs\\dropzone\\dropzone.min.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\fullcalendar\\fullcalendar.min.css",
-      "PackagePath": "staticwebassets\\admin\\libs\\fullcalendar\\fullcalendar.min.css"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\fullcalendar\\fullcalendar.min.js",
-      "PackagePath": "staticwebassets\\admin\\libs\\fullcalendar\\fullcalendar.min.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\gmaps\\gmaps.min.js",
-      "PackagePath": "staticwebassets\\admin\\libs\\gmaps\\gmaps.min.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\ion-rangeslider\\ion.rangeSlider.css",
-      "PackagePath": "staticwebassets\\admin\\libs\\ion-rangeslider\\ion.rangeSlider.css"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\ion-rangeslider\\ion.rangeSlider.min.js",
-      "PackagePath": "staticwebassets\\admin\\libs\\ion-rangeslider\\ion.rangeSlider.min.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\jquery-mask-plugin\\jquery.mask.min.js",
-      "PackagePath": "staticwebassets\\admin\\libs\\jquery-mask-plugin\\jquery.mask.min.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\jquery-nice-select\\jquery.nice-select.min.js",
-      "PackagePath": "staticwebassets\\admin\\libs\\jquery-nice-select\\jquery.nice-select.min.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\jquery-nice-select\\nice-select.css",
-      "PackagePath": "staticwebassets\\admin\\libs\\jquery-nice-select\\nice-select.css"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\jquery-sparkline\\jquery.sparkline.min.js",
-      "PackagePath": "staticwebassets\\admin\\libs\\jquery-sparkline\\jquery.sparkline.min.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\jquery-ui\\jquery-ui.min.js",
-      "PackagePath": "staticwebassets\\admin\\libs\\jquery-ui\\jquery-ui.min.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\jquery-vectormap\\jquery-jvectormap-1.2.2.css",
-      "PackagePath": "staticwebassets\\admin\\libs\\jquery-vectormap\\jquery-jvectormap-1.2.2.css"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\jquery-vectormap\\jquery-jvectormap-1.2.2.min.js",
-      "PackagePath": "staticwebassets\\admin\\libs\\jquery-vectormap\\jquery-jvectormap-1.2.2.min.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\jquery-vectormap\\jquery-jvectormap-au-mill-en.js",
-      "PackagePath": "staticwebassets\\admin\\libs\\jquery-vectormap\\jquery-jvectormap-au-mill-en.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\jquery-vectormap\\jquery-jvectormap-in-mill-en.js",
-      "PackagePath": "staticwebassets\\admin\\libs\\jquery-vectormap\\jquery-jvectormap-in-mill-en.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\jquery-vectormap\\jquery-jvectormap-us-il-chicago-mill-en.js",
-      "PackagePath": "staticwebassets\\admin\\libs\\jquery-vectormap\\jquery-jvectormap-us-il-chicago-mill-en.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\jquery-vectormap\\jquery-jvectormap-us-merc-en.js",
-      "PackagePath": "staticwebassets\\admin\\libs\\jquery-vectormap\\jquery-jvectormap-us-merc-en.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\jquery-vectormap\\jquery-jvectormap-world-mill-en.js",
-      "PackagePath": "staticwebassets\\admin\\libs\\jquery-vectormap\\jquery-jvectormap-world-mill-en.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\moment\\moment.min.js",
-      "PackagePath": "staticwebassets\\admin\\libs\\moment\\moment.min.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\select2\\select2.min.css",
-      "PackagePath": "staticwebassets\\admin\\libs\\select2\\select2.min.css"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\select2\\select2.min.js",
-      "PackagePath": "staticwebassets\\admin\\libs\\select2\\select2.min.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\summernote\\summernote-bs4.css",
-      "PackagePath": "staticwebassets\\admin\\libs\\summernote\\summernote-bs4.css"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\summernote\\summernote-bs4.min.js",
-      "PackagePath": "staticwebassets\\admin\\libs\\summernote\\summernote-bs4.min.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\sweetalert2\\sweetalert2.min.css",
-      "PackagePath": "staticwebassets\\admin\\libs\\sweetalert2\\sweetalert2.min.css"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\sweetalert2\\sweetalert2.min.js",
-      "PackagePath": "staticwebassets\\admin\\libs\\sweetalert2\\sweetalert2.min.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\switchery\\switchery.min.css",
-      "PackagePath": "staticwebassets\\admin\\libs\\switchery\\switchery.min.css"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\switchery\\switchery.min.js",
-      "PackagePath": "staticwebassets\\admin\\libs\\switchery\\switchery.min.js"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\toastr\\toastr.min.css",
-      "PackagePath": "staticwebassets\\admin\\libs\\toastr\\toastr.min.css"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\toastr\\toastr.min.js",
-      "PackagePath": "staticwebassets\\admin\\libs\\toastr\\toastr.min.js"
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\admin\\libs\\chart-js\\echarts.simple.js",
+      "PackagePath": "staticwebassets\\admin\\libs\\chart-js\\echarts.simple.js"
     },
     {
       "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\backend\\js\\site.js",
@@ -531,6 +111,10 @@
     {
       "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\images\\anht2.jpg",
       "PackagePath": "staticwebassets\\images\\anht2.jpg"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\images\\dvtckiten.jpg",
+      "PackagePath": "staticwebassets\\images\\dvtckiten.jpg"
     },
     {
       "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\images\\error404.jpg",
@@ -833,20 +417,56 @@
       "PackagePath": "staticwebassets\\media\\food\\026de5c3-04d3-4694-a3b4-1c8af8d944f7_suphs.jpg"
     },
     {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\food\\068ec433-537b-4676-97e1-a8de0cc22e04_thuc6.jpg",
-      "PackagePath": "staticwebassets\\media\\food\\068ec433-537b-4676-97e1-a8de0cc22e04_thuc6.jpg"
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\food\\1b392f03-7f44-4565-a0fe-d25430c2deab_948013ac-a764-4a00-81d7-b241b32ccb89_logo2.png",
+      "PackagePath": "staticwebassets\\media\\food\\1b392f03-7f44-4565-a0fe-d25430c2deab_948013ac-a764-4a00-81d7-b241b32ccb89_logo2.png"
     },
     {
       "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\food\\1fee49f7-9f7c-43e1-982d-e000ab174453_thdon2.jpg",
       "PackagePath": "staticwebassets\\media\\food\\1fee49f7-9f7c-43e1-982d-e000ab174453_thdon2.jpg"
     },
     {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\food\\28927666-1dd3-4a4b-9afc-8ab6fa451557_nombo.jpg",
+      "PackagePath": "staticwebassets\\media\\food\\28927666-1dd3-4a4b-9afc-8ab6fa451557_nombo.jpg"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\food\\3015cba4-86ae-4cde-b6db-c1a93ad77d03_nombo.jpg",
+      "PackagePath": "staticwebassets\\media\\food\\3015cba4-86ae-4cde-b6db-c1a93ad77d03_nombo.jpg"
+    },
+    {
       "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\food\\335c5df4-f582-404a-b261-1a8d0b2a7760_chagio.jpg",
       "PackagePath": "staticwebassets\\media\\food\\335c5df4-f582-404a-b261-1a8d0b2a7760_chagio.jpg"
     },
     {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\food\\45854c94-ef37-43fe-8cf7-869880421d24_thucdon4.jpg",
-      "PackagePath": "staticwebassets\\media\\food\\45854c94-ef37-43fe-8cf7-869880421d24_thucdon4.jpg"
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\food\\33bfc118-73a9-40d4-9b42-94a57ef9bf18_948013ac-a764-4a00-81d7-b241b32ccb89_logo2.png",
+      "PackagePath": "staticwebassets\\media\\food\\33bfc118-73a9-40d4-9b42-94a57ef9bf18_948013ac-a764-4a00-81d7-b241b32ccb89_logo2.png"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\food\\3d40d268-c5dd-475d-a340-f2c26aefc360_biasg.jpg",
+      "PackagePath": "staticwebassets\\media\\food\\3d40d268-c5dd-475d-a340-f2c26aefc360_biasg.jpg"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\food\\3f08ea2d-b0bb-42d8-a00d-84bd0398ebdd_lauga.jpg",
+      "PackagePath": "staticwebassets\\media\\food\\3f08ea2d-b0bb-42d8-a00d-84bd0398ebdd_lauga.jpg"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\food\\42598a8b-2bb4-4373-a8ed-26cae74be4fc_948013ac-a764-4a00-81d7-b241b32ccb89_logo2.png",
+      "PackagePath": "staticwebassets\\media\\food\\42598a8b-2bb4-4373-a8ed-26cae74be4fc_948013ac-a764-4a00-81d7-b241b32ccb89_logo2.png"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\food\\490f2920-9b0c-4b6b-b734-91c3f5dedf40_948013ac-a764-4a00-81d7-b241b32ccb89_logo2.png",
+      "PackagePath": "staticwebassets\\media\\food\\490f2920-9b0c-4b6b-b734-91c3f5dedf40_948013ac-a764-4a00-81d7-b241b32ccb89_logo2.png"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\food\\540a15ef-95a8-47b5-971f-6b57de2f8ed2_948013ac-a764-4a00-81d7-b241b32ccb89_logo2.png",
+      "PackagePath": "staticwebassets\\media\\food\\540a15ef-95a8-47b5-971f-6b57de2f8ed2_948013ac-a764-4a00-81d7-b241b32ccb89_logo2.png"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\food\\615725c7-bb2a-4e61-9a77-5a5d538cbee8_948013ac-a764-4a00-81d7-b241b32ccb89_logo2.png",
+      "PackagePath": "staticwebassets\\media\\food\\615725c7-bb2a-4e61-9a77-5a5d538cbee8_948013ac-a764-4a00-81d7-b241b32ccb89_logo2.png"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\food\\675ab0c5-7fca-42b9-869a-d44ac56907d9_salad.jpg",
+      "PackagePath": "staticwebassets\\media\\food\\675ab0c5-7fca-42b9-869a-d44ac56907d9_salad.jpg"
     },
     {
       "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\food\\6dbadba2-b2ee-4602-9fc0-083ebd4259ee_thdon2.jpg",
@@ -861,6 +481,10 @@
       "PackagePath": "staticwebassets\\media\\food\\7ede5878-d041-4685-aa60-1d1d20464db5_thdon2.jpg"
     },
     {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\food\\876a9f6e-b436-448a-9fe5-82979ec9df7b_948013ac-a764-4a00-81d7-b241b32ccb89_logo2.png",
+      "PackagePath": "staticwebassets\\media\\food\\876a9f6e-b436-448a-9fe5-82979ec9df7b_948013ac-a764-4a00-81d7-b241b32ccb89_logo2.png"
+    },
+    {
       "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\food\\87dfccfc-d439-46c9-9189-4ac9d4b0219b_heo.jpg",
       "PackagePath": "staticwebassets\\media\\food\\87dfccfc-d439-46c9-9189-4ac9d4b0219b_heo.jpg"
     },
@@ -869,12 +493,16 @@
       "PackagePath": "staticwebassets\\media\\food\\8b67b7a7-a063-4475-b056-d8b5ebf5b251_lauga.jpg"
     },
     {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\food\\8de9cfee-ec61-48bd-99e1-ddb585dccc47_thdon2.jpg",
-      "PackagePath": "staticwebassets\\media\\food\\8de9cfee-ec61-48bd-99e1-ddb585dccc47_thdon2.jpg"
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\food\\8ce126bb-3952-4bf3-a020-6016ff65d01b_948013ac-a764-4a00-81d7-b241b32ccb89_logo2.png",
+      "PackagePath": "staticwebassets\\media\\food\\8ce126bb-3952-4bf3-a020-6016ff65d01b_948013ac-a764-4a00-81d7-b241b32ccb89_logo2.png"
     },
     {
       "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\food\\96a9c6db-533f-4e48-9db2-54377c098ef3_chagio.jpg",
       "PackagePath": "staticwebassets\\media\\food\\96a9c6db-533f-4e48-9db2-54377c098ef3_chagio.jpg"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\food\\9e99e88e-2b28-477b-b0bb-7aaf5b4acad4_goitomxoai.jpg",
+      "PackagePath": "staticwebassets\\media\\food\\9e99e88e-2b28-477b-b0bb-7aaf5b4acad4_goitomxoai.jpg"
     },
     {
       "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\food\\ad6a75c2-1452-41f0-a5a0-85a10ba6d6aa_td1.jpg",
@@ -913,6 +541,10 @@
       "PackagePath": "staticwebassets\\media\\food\\e0335653-e266-47aa-b5b1-6b5906358a21_thdon2.jpg"
     },
     {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\food\\e80aca10-8b0a-48b9-9236-b549c525d9ba_suphs.jpg",
+      "PackagePath": "staticwebassets\\media\\food\\e80aca10-8b0a-48b9-9236-b549c525d9ba_suphs.jpg"
+    },
+    {
       "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\food\\e99252cc-94ce-46af-9942-91fff12330ce_thdon1.jpg",
       "PackagePath": "staticwebassets\\media\\food\\e99252cc-94ce-46af-9942-91fff12330ce_thdon1.jpg"
     },
@@ -921,8 +553,20 @@
       "PackagePath": "staticwebassets\\media\\food\\ee3e8af5-28ec-4dc6-9b42-eeb2974cda89_suphs.jpg"
     },
     {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\food\\efc4ab04-cfe0-49cd-8483-459383eca2f5_detaichanh.jpg",
+      "PackagePath": "staticwebassets\\media\\food\\efc4ab04-cfe0-49cd-8483-459383eca2f5_detaichanh.jpg"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\food\\f1000e80-7635-4b8d-b585-5d04417b240f_948013ac-a764-4a00-81d7-b241b32ccb89_logo2.png",
+      "PackagePath": "staticwebassets\\media\\food\\f1000e80-7635-4b8d-b585-5d04417b240f_948013ac-a764-4a00-81d7-b241b32ccb89_logo2.png"
+    },
+    {
       "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\food\\fad9c282-9125-4e27-b37b-d72cdb827ae3_chao.jpg",
       "PackagePath": "staticwebassets\\media\\food\\fad9c282-9125-4e27-b37b-d72cdb827ae3_chao.jpg"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\food\\ff048717-11b7-4f78-a41f-62300b1d4798_thachraucau.jpg",
+      "PackagePath": "staticwebassets\\media\\food\\ff048717-11b7-4f78-a41f-62300b1d4798_thachraucau.jpg"
     },
     {
       "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\food\\fruit.jpg",
@@ -935,10 +579,6 @@
     {
       "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\services\\068d11ed-5c19-430f-9caf-41620a1e5637_thiepcuoivemaunc.jpg",
       "PackagePath": "staticwebassets\\media\\services\\068d11ed-5c19-430f-9caf-41620a1e5637_thiepcuoivemaunc.jpg"
-    },
-    {
-      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\services\\1.jpg",
-      "PackagePath": "staticwebassets\\media\\services\\1.jpg"
     },
     {
       "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\services\\1240b6f6-487d-4cf3-9880-a6115a2a0841_6a64310f-2013-403f-8b01-13002564e1fb_1.jpg",
@@ -969,6 +609,10 @@
       "PackagePath": "staticwebassets\\media\\services\\60e3bf5c-5430-43ab-9ca3-d99a1a91af7f_trangtri.jpg"
     },
     {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\services\\6c07dbf0-bbe1-4bd4-8505-d0da988bc62b_xe16.jpg",
+      "PackagePath": "staticwebassets\\media\\services\\6c07dbf0-bbe1-4bd4-8505-d0da988bc62b_xe16.jpg"
+    },
+    {
       "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\services\\7b26dc87-3ceb-457f-8086-ab0d35587a97_th.jpg",
       "PackagePath": "staticwebassets\\media\\services\\7b26dc87-3ceb-457f-8086-ab0d35587a97_th.jpg"
     },
@@ -981,6 +625,10 @@
       "PackagePath": "staticwebassets\\media\\services\\b20b7d5b-3089-4f5d-b8e2-28d75adbbc32_nhac.jpg"
     },
     {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\services\\bbd92d07-8d64-43d1-afd6-4fdd8d3c784f_aodaicap.jpg",
+      "PackagePath": "staticwebassets\\media\\services\\bbd92d07-8d64-43d1-afd6-4fdd8d3c784f_aodaicap.jpg"
+    },
+    {
       "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\services\\daf0763c-3f4c-4d91-a24f-4c5845f73bdf_mc.jpg",
       "PackagePath": "staticwebassets\\media\\services\\daf0763c-3f4c-4d91-a24f-4c5845f73bdf_mc.jpg"
     },
@@ -991,6 +639,10 @@
     {
       "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\services\\efc0992b-26af-46ab-b016-c2fad5557af6_nc1.jpg",
       "PackagePath": "staticwebassets\\media\\services\\efc0992b-26af-46ab-b016-c2fad5557af6_nc1.jpg"
+    },
+    {
+      "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\services\\f343e881-e416-42bd-b91b-f5fe784a4943_ao-dai-cuoi-dep-1.jpg",
+      "PackagePath": "staticwebassets\\media\\services\\f343e881-e416-42bd-b91b-f5fe784a4943_ao-dai-cuoi-dep-1.jpg"
     },
     {
       "Id": "D:\\223DATN_0106_PhanThiHoaiAnh\\PhanThiHoaiAnh_223DATN\\DoAnTotNghiep\\PhanThiHoaiAnh_223DATN_DVTC\\PhanThiHoaiAnh_223DATN_DVTC\\wwwroot\\media\\services\\f81b1e98-24a8-49f4-936b-c83868107836_nc1.jpg",

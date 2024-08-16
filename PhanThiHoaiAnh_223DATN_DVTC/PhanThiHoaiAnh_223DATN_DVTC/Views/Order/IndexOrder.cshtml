@@ -10,7 +10,10 @@
             <th>STT</th>
             <th scope="col">Mã đơn</th>
             <th scope="col">Ngày đặt</th>
+
             <th scope="col">Thành tiền</th>
+            <th scope="col">Tiền cọc</th>
+            <th scope="col">Tiền còn lại sau đặt cọc</th>
             <th scope="col">Trạng thái</th>
         </tr>
     </thead>
@@ -25,6 +28,8 @@
                     <td scope="row">@item.PartyCode</td>
                     <td>@item.OrderDate.ToString("dd/MM/yyyy hh:MM")</td>
                     <td>@item.Total.ToString("N0")</td>
+                    <td>@item.Deposit.ToString("N0")</td>
+                    <td>@string.Format("{0:N0}", item.Total - item.Deposit)</td>
                     <td>
                         @if (@item.Status == 0)
                         {

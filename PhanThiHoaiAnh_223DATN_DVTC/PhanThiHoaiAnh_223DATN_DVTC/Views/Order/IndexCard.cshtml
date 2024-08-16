@@ -1,0 +1,59 @@
+﻿@model IEnumerable<WeddingCardModel>
+@{
+    ViewData["title"] = "Đơn hàng";
+    Layout = "_Template";
+}
+<h3>Danh sách đơn hàng</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>STT</th>
+            <th scope="col">Mã đơn</th>
+            <th scope="col">Ngày đặt</th>
+            <th scope="col">Ngày nhận</th>
+            <th scope="col">Số lượng thiệp</th>
+            <th scope="col">Loại thiệp</th>
+            <th scope="col">Địa chỉ nhận</th>
+            <th scope="col">Tổng tiền</th>
+            <th scope="col">Tiền cọc</th>
+            <th scope="col">Tiền phải trả sau cọc</th>
+            <th scope="col">Trạng thái</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null)
+        {
+            var menuNames = ViewData["TenThiep"] as Dictionary<int, string>;
+            var i = 1;
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@i</td>
+                    <td>@item.OrderCode</td>
+                    <td>@item.OrderDate.ToString("dd/MM/yyyy hh:MM")</td>
+                    <td>@item.ReceiveDate.ToString("dd/MM/yyyy")</td>
+                    <td>@item.Quantity</td>
+                    <td>@(menuNames != null ? menuNames[item.CardId] : "")</td>
+                    <td>@item.AddressReceived</td>
+                    <td>@item.Total.ToString("N0")</td>
+                    <td>@string.Format("{0:N0}", item.Total *30 /100)</td>
+                    <td>@string.Format("{0:N0}", item.Total-(item.Total * 30 / 100))</td>
+                    <td>
+                        @if (@item.Status == true)
+                        {
+                            <span class="text text-success">Đã duyệt</span>
+                        }
+                        else
+                        {
+                            <span class="text text-success">Chưa duyệt</span>
+                        }
+                    </td>
+
+                </tr>
+                i++;
+            }
+        }
+
+
+    </tbody>
+</table>

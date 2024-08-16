@@ -8,7 +8,7 @@
     <thead>
         <tr>
             <th scope="col">#</th>
-            <th scope="col">Tài khoản</th>
+            <th scope="col">Họ và tên</th>
             <th scope="col">Ngày tổ chức</th>
             <th scope="col">Ngày đặt </th>
             <th scope="col">Số bàn tiệc</th>
@@ -28,9 +28,9 @@
         {
             <tr>
                 <th scope="row">@item.Id</th>
-                <td>@item.UserName</td>
-                <td>@item.OrderOrg</td>
-                <td>@item.OrderDate</td>
+                <td>@item.LtName @item.FtName</td>
+                <td>@item.OrderOrg.ToString("dd/MM/yyyyy")</td>
+                <td>@item.OrderDate.ToString("dd/MM/yyyyy")</td>
                 <td>@item.Quantity</td>
                 <td>@item.Address</td>
                 <td>@item.ServiceName</td>
@@ -58,13 +58,16 @@
                     {
                         <span class="text text-success">Đã thanh toán</span>
                     }
+                    else @if (@item.Status == 5)
+                    {
+                        <span class="text text-success">Đã hủy đơn</span>
+                    }
                 </td>
                 <td>@item.Payment</td>
                 <td>
-                    <a asp-action="Update" class="btn btn-warning btn-sm" asp-controller="Order" asp-route-Id="@item.Id">Cập nhật</a>
-                    <a asp-action="Delete" class="btn btn-danger btn-sm confirmDeletion" asp-controller="Order" asp-route-Id="@item.Id">Xóa</a>
-                    <a asp-action="Detail" class="btn btn-success btn-sm " asp-controller="Order" asp-route-Id="@item.Id">Hóa đơn</a>
-                    <a asp-action="DetailService" class="btn btn-success btn-sm " asp-controller="Order" asp-route-Id="@item.Id">Chi tiết</a>
+                    <a asp-action="Update" class="btn btn-warning btn-sm" asp-controller="Order" asp-route-Id="@item.Id" style="width:65px">Cập nhật</a>
+                    <a asp-action="Delete" class="btn btn-danger btn-sm confirmDeletion" asp-controller="Order" asp-route-Id="@item.Id" style="width:65px">Xóa</a>
+                    <a asp-action="Detail" class="btn btn-success btn-sm " asp-controller="Order" asp-route-Id="@item.Id" style="width:65px">Hóa đơn</a>
                 </td>
             </tr>
 

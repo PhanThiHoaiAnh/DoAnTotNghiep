@@ -1,8 +1,8 @@
 ﻿@model MenuModel
 @{
-    ViewData["title"] = "Chỉnh sửa thực đơn";
+    ViewData["title"] = "Cập nhật thực đơn";
 }
-<h4>Chỉnh sửa thực đơn</h4>
+<h4>Cập nhật thực đơn</h4>
 <div class="col-md-9">
     <form asp-action="Edit" enctype="multipart/form-data">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -12,18 +12,17 @@
             <input asp-for="Name" class="form-control" />
             <span asp-validation-for="Name" class="text-danger" />
         </div>
-
         <div class="form-group">
-            <label>Số lượng món</label>
-            <input asp-for="Quantity" class="form-control" />
-            <span asp-validation-for="Quantity" class="text-danger" />
+            <label>Chọn món</label>
+            @foreach (var foodItem in Model.FoodItems)
+            {
+                <div>
+                    <input type="checkbox" name="selectedFoodItems" value="@foodItem.Id" />
+                    <label>@foodItem.Name</label>
+                </div>
+            }
         </div>
 
-        <div class="form-group">
-            <label>Giá Menu</label>
-            <input asp-for="Price" class="form-control" />
-            <span asp-validation-for="Price" class="text-danger" />
-        </div>
 
         <div class="form-group">
             <label>Hình ảnh</label>
@@ -49,7 +48,7 @@
         </div>
 
         <div class="form-group">
-            <button class="btn btn-primary">Cập nhật</button>
+            <button class="btn btn-primary">Tạo thực đơn</button>
         </div>
 
     </form>
@@ -61,13 +60,7 @@
     }
     <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
     <script>
-        $("#ImageUpload").change(function () {
-            readURL(this);
-        })
-    </script>
-    <script>
         CKEDITOR.replace('Description');
     </script>
 
 }
-

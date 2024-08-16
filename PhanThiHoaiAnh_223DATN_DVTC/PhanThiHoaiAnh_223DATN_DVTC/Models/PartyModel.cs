@@ -6,6 +6,8 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Models
 	{
 		[Key]
 		public int Id { get; set; }
+		public string FirstName { get; set; } = string.Empty;
+		public string LastName { get; set; } = string.Empty;
 		public string PartyCode { get; set; }
 		[Required(ErrorMessage = "Chọn ngày và giờ cụ thể")]
 		public DateTime OrgDate { get; set; }
@@ -32,8 +34,10 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Models
 		public string UserName { get; set; }
         public long Deposit { get; set; }
         public long Pay {  get; set; }
-        public int otherService { get; set; }
-		//public List<int> SelectedService { get; set; }
+        public List<OtherServicesModel> otherService { get; set; }
+        public List<int> SelectedServiceItems { get; set; }
+        public List<string> otherServiceName { get; set; }
+        public List<string> FoodName { get; set; }
 		public bool Status { get; set; }
         public DateTime OrderDate { get; set; }
         public PartyCategoryModel PtCategory { get; set; }

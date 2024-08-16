@@ -22,6 +22,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Models
 		public FoodCategoryModel FoodCategory { get; set; }
         public FoodSequenceModel FoodSequence { get; set; }
         public string Image {  get; set; }
+        public bool Selected { get; set; }
 
         [NotMapped]
         [FileExtension]

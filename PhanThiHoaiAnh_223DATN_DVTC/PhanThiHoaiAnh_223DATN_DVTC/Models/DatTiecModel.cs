@@ -5,7 +5,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Models
 	public class DatTiecModel
 	{
 		public int Id { get; set; }
-		public string PartyCode { get; set; }
+        public string PartyCode { get; set; }
         public string FtName { get; set; } = string.Empty;
 		public string LtName { get; set; } = string.Empty;
         [MaxLength(256)]
@@ -22,8 +22,11 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Models
 		public string Payment { get; set; }
 		public string PhoneNumber { get; set; }
 		public string Note { get; set; }
-		public PartyModel Tiec { get; set; }
+		public List<string> FoodList { get; set; }
+        public List<string> ServiceList { get; set; }
+        public PartyModel Tiec { get; set; }
         public UserModel User { get; set; }
-		public OrderDetails Detail { get; set; }
+        public MenuModel Menu { get; set; }
+        public OrderDetails Detail { get; set; }
     }
 }

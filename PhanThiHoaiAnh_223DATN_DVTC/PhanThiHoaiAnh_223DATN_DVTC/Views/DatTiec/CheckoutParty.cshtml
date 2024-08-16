@@ -11,6 +11,10 @@
                 <td class="of_width"><label>Tài khoản</label></td>
                 <td>@Model.UserName</td>
             </tr>
+        <tr>
+            <td class="of_width"><label>Họ và tên</label></td>
+            <td>@Model.LtName @Model.FtName</td>
+        </tr>
             <tr>
                 <td class="of_width"><label>Mã đặt tiệc</label></td>
                 <td>@Model.PartyCode</td>
@@ -31,6 +35,22 @@
                 <td class="of_width"><label>Số lượng bàn tiệc</label></td>
                 <td>@Model.Quantity</td>
             </tr>
+        <tr>
+            <td class="of_width"><label>Các dịch vụ khác</label></td>
+            <td>
+                @if (Model.ServiceList != null)
+                {
+                    @foreach (var foodItemName in Model.ServiceList)
+                    {
+                        <li>@foodItemName</li>
+                    }
+                }
+                else
+                {
+                    <p>Trống</p>
+                }
+            </td>
+        </tr>
             <tr>
                 <td class="of_width"><label>Địa điểm tổ chức</label></td>
                 <td>@Model.Address</td>
@@ -50,48 +70,10 @@
        
         </table>
         <div>
-        <button asp-controller="DatTiec" asp-action="Success" type="submit" class="btn btn-success">Thanh toán tiền mặt</button>
+        <button type="submit" class="btn btn-default"><a asp-controller="DatTiec" asp-action="Success">Thanh toán tiền mặt</a></button>
         <input type="submit" name="payment" class="btn btn-success" value="Thanh toán VNPay">
         
         </div>
 
 </div>
-@section Scripts {
-    <script src="https://www.paypal.com/sdk/js?client-id=AfhLXavrOWSe7PORC60kdG9UkH1CCYVoY7Ynuo5_Ver7DjAmnR4RQGqgU0cTCqLxmpoX9UHuuYNMI2Sh"></script>
-    <script>
-        $(function () {
-            var ttAmount = @Model.Deposit;
-            paypal.Buttons({
-                createOrder: function (data, action) {
-                    return action.order.create({
-                        "purchase_units": [
-                            {
-                                "amount": {
-                                    "currency_code": "USD",
-                                    "value": ttAmount
-                                },
-                                "items": []
-                            }
-                        ]
-                    })
-                },
-                onApprove: function (data, action) {
-                    return action.order.capture().then(function (response) {
-                        console.log(response);
-                        if (response?.status === "COMPLETED") {
-                            $('#paypal-order-id').val(response.id);
-        @Model.Status = 1;
-                            window.location.href = "/DatTiec/Success";
-                        }
-                    })
-                },
-                style: {
-                    layout: 'vertical',
-                    color: 'blue',
-                    shape: 'rect',
-                    label: 'paypal'
-                }
-            }).render('#paypal-button-container');
-        });
-    </script>
-}
+

@@ -1,0 +1,104 @@
+﻿@model List<MonthlyOrderCountModel>
+@{
+    ViewData["title"] = "Thống kê";
+}
+<div style="margin-bottom:15px; text-align:center">
+    <h3>Số lượng đơn hàng theo tháng</h3>
+</div>
+<div class="chart-container">
+    <canvas id="monthlOrderCount"></canvas>
+</div>
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var orderData = @Html.Raw(Json.Serialize(Model));
+
+        var months = orderData.map(function (data) {
+            return data.month;
+        });
+
+        var count = orderData.map(function (data) {
+            return data.count;
+        });
+
+        var ctx = document.getElementById('monthlyOrderCount').getContext('2d');
+        var chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: months,
+                datasets: [{
+                    label: 'Số đơn hàng theo tháng',
+                    data: count,
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            precision: 0
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+    </script>
+    <script>
+        var orderData = @Html.Raw(Json.Serialize(Model));
+
+        var months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+        var count = new Array(12).fill(0);
+
+        orderData.forEach(function (data) {
+            var monthIndex = months.indexOf(data.month);
+            if (monthIndex !== -1) {
+                count[monthIndex] = data.count;
+            }
+        });
+
+        var ctx = document.getElementById('monthlOrderCount').getContext('2d');
+        var chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: months,
+                datasets: [{
+                    label: 'Số lượng đơn tháng',
+                    data: count,
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            precision: 0
+                        }
+                    },
+                    x: {
+                        type: 'linear',
+                        position: 'bottom',
+                        ticks: {
+                            stepSize: 1
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+    </script>
+}

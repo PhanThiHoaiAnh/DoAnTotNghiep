@@ -7,7 +7,7 @@ using PhanThiHoaiAnh_223DATN_DVTC.Repository;
 namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin, Member")]
     public class PartyController : Controller
     {
         private readonly DataContext _dataContext;
@@ -16,6 +16,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
             _dataContext = context;
 
         }
+        [Authorize(Roles = "Member")]
         public async Task<IActionResult> Index()
         {
             var parties = await _dataContext.tblParty.Include(s => s.ThucDon).ToListAsync();
@@ -29,6 +30,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
             }
             return View(parties);
         }
+        [Authorize(Roles = "Member")]
         public async Task<IActionResult> Inspect(int id)
         {
             var party = await _dataContext.tblParty.FindAsync(id);

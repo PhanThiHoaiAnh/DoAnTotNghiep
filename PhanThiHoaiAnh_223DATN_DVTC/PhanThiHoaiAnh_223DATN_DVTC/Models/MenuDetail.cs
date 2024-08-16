@@ -10,7 +10,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Models
         public int MenuId { get; set; }
         [Required(ErrorMessage = "Chọn món")]
         public int FoodId { get; set; }
-        public string Description { get; set; }
+        public long Price { get; set; }
         public MenuModel Menu { get; set; }
         public FoodModel Food { get; set; }
     }

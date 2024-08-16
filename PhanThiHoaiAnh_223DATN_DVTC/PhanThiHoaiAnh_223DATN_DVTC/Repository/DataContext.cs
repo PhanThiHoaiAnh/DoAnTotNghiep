@@ -28,6 +28,6 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Repository
         public DbSet<WeddingCardCategoryModel> tblWeddingCardCategories { get; set;}
         public DbSet<EmployeeModel> tblMembers { get; set; }
 		public DbSet<TaskModel> tblTasks { get; set; }
-		
+
 	}
 }

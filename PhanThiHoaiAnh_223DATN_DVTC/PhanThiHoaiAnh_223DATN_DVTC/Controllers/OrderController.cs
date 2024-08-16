@@ -42,6 +42,26 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Controllers
             var listOrder = (from item in _dataContext.tblParty
                              where item.UserName == userEmail
                              select item).ToList();
+            var menuIds = listOrder.Select(item => item.MenuParty).Distinct().ToList();
+            var menuNames = _dataContext.tblMenu
+                 .Where(m => menuIds.Contains(m.Id))
+                 .ToDictionary(m => m.Id, m => m.Name);
+
+            ViewData["TenDichVu"] = menuNames;
+            return View(listOrder);
+        }
+        public IActionResult IndexCard()
+        {
+            var userEmail = User.FindFirstValue(ClaimTypes.Email);
+            var listOrder = (from item in _dataContext.tblOrderWeddingCard
+                             where item.UserName == userEmail
+                             select item).ToList();
+            var menuIds = listOrder.Select(item => item.CardId).Distinct().ToList();
+            var menuNames = _dataContext.tblWeddingCardCategories
+                 .Where(m => menuIds.Contains(m.Id))
+                 .ToDictionary(m => m.Id, m => m.Name);
+
+            ViewData["TenThiep"] = menuNames;
             return View(listOrder);
         }
     }

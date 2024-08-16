@@ -43,8 +43,8 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Controllers
 					if (result.Succeeded)
 					{
 						//Kiểm tra quyền của người dùng và gán đường dẫn tới Admin nếu là Admin
-						if (await _userManage.IsInRoleAsync(user, "Admin"))
-						{
+						if (await _userManage.IsInRoleAsync(user, "Admin") || await _userManage.IsInRoleAsync(user, "Member"))
+                        {
 							return Redirect("/Admin"); // Đường dẫn tới trang Admin
 						}
 
@@ -206,5 +206,62 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Controllers
 			// Nếu ModelState không hợp lệ, hiển thị lại form chỉnh sửa với các lỗi
 			return View(model);
 		}
-	}
+		public IActionResult ForgotPassword()
+		{
+			return View();
+		}
+        public IActionResult ForgotPasswordConfirm()
+        {
+            return View();
+        }
+        [HttpPost]
+		public async Task<IActionResult> ForgotPassword(ForgotPasswordViewModel model)
+		{
+			if(ModelState.IsValid)
+			{
+				var user = await _userManage.FindByEmailAsync(model.Email);
+				if(user == null || !await _userManage.IsEmailConfirmedAsync(user))
+				{
+					return View("ForgotPasswordConfirm");
+				}
+				string code = await _userManage.GeneratePasswordResetTokenAsync(user);
+				var callBackUrl = Url.Action("ResetPassword", "Account", new { userId = user.Id, code = code },protocol:Request.Scheme);
+				await _emailSender.SendEmailAsync(user.Email, "Quên mật khẩu", $"Vui lòng click vào link để đặt lại mật khẩu {callBackUrl}");
+				return RedirectToAction("ForgotPasswordConfirm", "Account");
+			}
+			return View(model);
+		}
+        public IActionResult ResetPassword()
+        {
+            return View();
+        }
+        public IActionResult ResetPasswordConfirm()
+        {
+            return View();
+        }
+		[HttpPost]
+		[AllowAnonymous]
+		[ValidateAntiForgeryToken]
+		public async Task<IActionResult> ResetPassword(ResetPasswordViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+				return RedirectToAction("ResetPasswordConfirm", "Account");
+			}
+			var user = await _userManage.FindByEmailAsync(model.Email);
+			if (user == null)
+			{
+				return RedirectToAction("ResetPasswordConfirm","Account");
+			}
+			var resetToken = await _userManage.GeneratePasswordResetTokenAsync(user);
+			var result = await _userManage.ResetPasswordAsync(user, resetToken, model.Password);
+            var resultEnd = await _userManage.UpdateAsync(user);
+            if (resultEnd.Succeeded)
+			{
+                //await _userManage.UpdateAsync(user);
+                return RedirectToAction("ResetPasswordConfirm", "Account");
+			}
+			return View();
+		}
+    }
 }

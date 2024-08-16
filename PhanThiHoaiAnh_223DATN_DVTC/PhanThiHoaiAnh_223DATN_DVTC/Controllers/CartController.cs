@@ -249,7 +249,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Controllers
 					HttpContext.Session.Remove("Cart");
 					return RedirectToAction("Success", "Cart");
 
-				} catch (Exception ex)
+				} catch (Exception exc)
 				{
 					return RedirectToAction("Cart");
 				}

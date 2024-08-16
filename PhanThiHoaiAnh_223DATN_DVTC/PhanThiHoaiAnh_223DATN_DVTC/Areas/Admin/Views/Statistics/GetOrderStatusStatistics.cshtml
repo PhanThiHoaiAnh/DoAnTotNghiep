@@ -1,0 +1,65 @@
+﻿@model List<OrderStatusStatisticsModel>
+@{
+    ViewData["title"] = "Thống kê";
+}
+<h2>Theo trạng thái đơn hàng</h2>
+
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+
+<table>
+    <thead>
+        <tr>
+            <th>Trạng thái đơn</th>
+            <th>Số lượng</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @if (item.Status == "0")
+                    {
+                        <text>Chưa đặt cọc</text>
+                    }
+                    else @if (item.Status == "1")
+                    {
+                        <text>Đã đặt cọc</text>
+                    }
+                    else @if (item.Status == "2")
+                    {
+                        <text>Đang diễn ra</text>
+                    }
+                    else @if (item.Status == "3")
+                    {
+                        <text>Đã hoàn thành</text>
+                    }
+                    else @if (item.Status == "4")
+                    {
+                        <text>Đã thanh toán</text>
+                    }
+                    else @if (item.Status == "5")
+                    {
+                        <text>Đã hủy đơn</text>
+                    }
+                </td>
+                <td>@item.Count</td>
+            </tr>
+        }
+    </tbody>
+</table>

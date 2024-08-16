@@ -1,0 +1,32 @@
+﻿@model MenuModel
+
+<h2>Chi tiết thực đơn</h2>
+
+<div>
+    <h4>Tên thực đơn: @Model.Name</h4>
+    <p>Giá: @Model.Price.ToString("N0") đ</p>
+</div>
+
+<div>
+    <h4>Mô tả:</h4>
+    <p>@Model.Description</p>
+</div>
+
+<div>
+    <h4>Các món ăn:</h4>
+    @if (Model.SelectedFoodItems != null && Model.SelectedFoodItems.Count > 0)
+    {
+        <ul>
+            @foreach (var foodItemId in Model.SelectedFoodItems)
+            {
+                <li>@foodItemId</li>
+            }
+        </ul>
+    }
+    else
+    {
+        <p>Không có món ăn nào trong thực đơn này.</p>
+    }
+</div>
+
+<a asp-action="Index" asp-controller="Menu" type="submit">Trở về</a>

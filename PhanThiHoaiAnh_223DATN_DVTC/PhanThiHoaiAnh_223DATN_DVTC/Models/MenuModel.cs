@@ -11,17 +11,19 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Models
         [Required(ErrorMessage = "Yêu cầu nhập Tên thực đơn")]
         public string Name { get; set; }
         public string Slug { get; set; }
-        [Required(ErrorMessage = "Nhập số lượng món trong thực đơn")]
-        public int Quantity { get; set; }
-        [Required(ErrorMessage = "Nhập giá của thực đơn")]
-        public long Price { get; set; }
         [Required(ErrorMessage = "Nhập mô tả thực đơn")]
         public string Description { get; set; }
+        public long Price { get; set; }
         public bool Status { get; set; }
-        public string Image { get; set; }
+        public string Image { get; set; } = "noimage.jpg";
+        public List<FoodModel> FoodItems { get; set; }
+        public List<int> SelectedFoodItems { get; set; } // Danh sách ID món ăn được chọn
+        public List<string> SelectedFoodItemNames { get; set; }// Danh sách tên món ăn được chọn
 
         [NotMapped]
         [FileExtension]
         public IFormFile ImageUpload { get; set; }
-    }
+
+	}
+
 }

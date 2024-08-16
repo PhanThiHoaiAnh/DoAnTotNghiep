@@ -13,7 +13,7 @@
             <th scope="col">Dịch vụ</th>
             <th scope="col">Đơn giá</th>
             <th scope="col">Số lượng</th>
-            <th scope="col">Ngày đặt</th>
+            <th scope="col">Ngày nhận</th>
         </tr>
     </thead>
     <tbody>
@@ -29,7 +29,7 @@
                     <td>@(menuNames != null ? menuNames[item.ServiceId] : "")</td>
                     <td>@item.Price.ToString("N0")</td>
                     <td>@item.Quantity</td>
-                    <td>@item.ReceivedDate.ToString("dd/MM/yyyy hh:MM")</td>
+                    <td>@item.ReceivedDate.ToString("dd/MM/yyyy")</td>
                     
                     <td>
                         <a asp-action="ViewOrder" class="btn btn-warning btn-sm" asp-controller="Order" asp-route-Id="@item.Id">Xem</a>

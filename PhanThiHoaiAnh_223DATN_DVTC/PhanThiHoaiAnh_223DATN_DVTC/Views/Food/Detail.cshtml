@@ -1,5 +1,5 @@
 ﻿@using PhanThiHoaiAnh_223DATN_DVTC.Models.Views
-@model CardDetailViewModel
+@model FoodDetailViewModel
 @{
 	Layout = "_Template";
 }
@@ -13,7 +13,7 @@
 			<!--product-details-->
 			<div class="col-sm-5">
 				<div class="view-product">
-					<img src="~/media/services/@Model.Image" alt="" with="100%" />
+					<img src="~/media/food/@Model.Image" alt="" with="100%" />
 				</div>
 
 			</div>
@@ -24,12 +24,8 @@
 					<h3>@Model.Price.ToString("N0") VND</h3>
 					
 					<p></p>
-					<button type="button" class="btn btn-fefault add-to-cart">
-						<a asp-action="AddWishList" asp-controller="Cart" asp-route-id="@Model.Id">
-							<i class="fa fa-star"></i>
-							Thêm vào yêu thích
-						</a>
-					</button>
+						<a class="btn btn-default add-to-cart" asp-action="AddFood" asp-controller="Cart" asp-route-id="@Model.Id"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ hàng</a>
+					
 					<a href=""><img src="images/product-details/share.png" class="share img-responsive" alt="" /></a>
 				</div><!--/product-information-->
 			</div>

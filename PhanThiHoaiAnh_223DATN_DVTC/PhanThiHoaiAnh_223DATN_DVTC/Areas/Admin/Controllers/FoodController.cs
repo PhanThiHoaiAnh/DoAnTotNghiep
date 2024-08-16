@@ -98,12 +98,7 @@ namespace PhanThiHoaiAnh_223DATN_DVTC.Areas.Admin.Controllers
             {
                 //them du lieu
                 food.Slug = food.Name.Replace(" ", "-");
-                var slug = await _dataContext.tblFood.FirstOrDefaultAsync(f => f.Slug == food.Slug);
-                if (slug != null)
-                {
-                    ModelState.AddModelError("", "Món ăn đã tồn tại");
-                    return View(food);
-                }
+                
                 if (food.ImageUpload != null)
                 {
                     string uploadDir = Path.Combine(_webHostEnvironment.WebRootPath, "media/food");
